@@ -1,0 +1,3 @@
+[submodule "ai-on-z-samples"]
+	path = ai-on-z-samples
+	url = https://github.com/IBM/ai-on-z-samples
