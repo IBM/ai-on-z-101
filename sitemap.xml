@@ -6,6 +6,31 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/</loc>
+         <lastmod>2022-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/CONTRIBUTING/</loc>
+         <lastmod>2022-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/MAINTAINERS/</loc>
+         <lastmod>2022-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/nlp-spaCy/</loc>
+         <lastmod>2022-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-fraud-detection/</loc>
+         <lastmod>2022-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-samples/</loc>
          <lastmod>2022-01-05</lastmod>
          <changefreq>daily</changefreq>

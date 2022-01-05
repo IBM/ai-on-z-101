@@ -10,14 +10,14 @@
         <meta name="author" content="IBM Developer">
       
       
-        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/ai-on-z-samples/CONTRIBUTING/">
+        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/ai-on-z-containers/nlp-spaCy/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
     
     
       
-        <title>CONTRIBUTING - AI on Z 101</title>
+        <title>Index - AI on Z 101</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contributing-in-general" class="md-skip">
+        <a href="#spacy-a-natural-language-processing-library" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CONTRIBUTING
+              Index
             
           </span>
         </div>
@@ -224,7 +224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../ai-on-z-samples/" class="md-nav__link">
         Samples
       </a>
     </li>
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai-on-z-containers/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Containers
       </a>
     </li>
@@ -278,6 +278,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -286,8 +288,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contributing-in-general" class="md-nav__link">
-    Contributing In General
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
@@ -304,25 +313,30 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/IBM/ai-on-z-101/edit/master/docs/ai-on-z-samples/CONTRIBUTING.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/IBM/ai-on-z-101/edit/master/docs/ai-on-z-containers/nlp-spaCy/README.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-  <h1>CONTRIBUTING</h1>
-
-<h2 id="contributing-in-general">Contributing In General<a class="headerlink" href="#contributing-in-general" title="Permanent link">&para;</a></h2>
-<p>Our project welcomes external contributions. If you have an itch, please feel
-free to scratch it.</p>
-<p>To contribute code or documentation, please submit a <a href="https://github.com/ibm/ai-on-z-samples/pulls">pull request</a>.</p>
-<p>A good way to familiarize yourself with the codebase and contribution process is
-to look for and tackle low-hanging fruit in the <a href="https://github.com/ibm/ai-on-z-samples/issues">issue tracker</a>.</p>
-<div class="highlight"><pre><span></span><code>/*
-Copyright &lt;holder&gt; All Rights Reserved.
-
-SPDX-License-Identifier: Apache-2.0
-*/
-</code></pre></div>
+<!-- This should be the location of the title of the repository, normally the short name -->
+<h1 id="spacy-a-natural-language-processing-library">spaCy, a natural language processing library.<a class="headerlink" href="#spacy-a-natural-language-processing-library" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p><a href="https://spacy.io/">spaCy.io</a></p>
+<p><a href="https://github.com/explosion/spaCy">spaCy github</a></p>
+<p>from the spaCy github project:</p>
+<blockquote>
+<p>spaCy is a library for advanced Natural Language Processing in Python and Cython. It's built on the very latest research, and was designed from day one to be used in real products.</p>
+<p>spaCy comes with pretrained pipelines and currently supports tokenization and training for 60+ languages. It features state-of-the-art speed and neural network models for tagging, parsing, named entity recognition, text classification and more, multi-task learning with pretrained transformers like BERT, as well as a production-ready training system and easy model packaging, deployment and workflow management. spaCy is commercial open-source software, released under the MIT license.</p>
+</blockquote>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<p>This image can be built using the podman or docker build command.  e.g., <code>docker build -t 'spacy_s390x' .</code>
+Note that this docker files relies on base images from the <a href="https://ibm.github.io/ibm-z-oss-hub/main/main.html">IBM Z and LinuxONE Container Image Registry (ICR) </a>. </p>
+<p>This build file includes jupyter and an example notebook to demonstrate basic syntax analysis with spaCy. </p>
+<p>Once this image is built, you can start a container using a command like this:
+<code>docker run -d --rm -p 8571:8888 &lt;image_id&gt;</code></p>
+<p>This will start a container which exposing jupyter port 8888 on host system port 8571. 
+If you specify -d (as above) you will need to display the jupyter token; this can be found by issuing <code>docker logs &lt;container_id&gt;</code>
+You can then direct your web browser to <code>&lt;host_ip_addr&gt;:&lt;exposed_port&gt;/?token=&lt;jupyter_token&gt;</code></p>
 
               
             </article>
