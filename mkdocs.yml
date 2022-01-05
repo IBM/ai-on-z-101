@@ -12,6 +12,9 @@ edit_uri: edit/master/docs
 nav:
   - Welcome: README.md
   - Samples: ai-on-z-samples/README.md
+  - Fraud Detection: ai-on-z-fraud-detection/README.md
+  - Containers: ai-on-z-containers/README.md
+
 
 
 ## DO NOT CHANGE BELOW THIS LINE
