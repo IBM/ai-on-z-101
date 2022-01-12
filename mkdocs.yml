@@ -17,6 +17,9 @@ nav:
       - zDNN: zDNN/README.md
   - Use Cases:
     - Fraud Detection: ai-on-z-fraud-detection/README.md
+  - External Content: 
+    - IBM Z and LinuxOne Content Solutions: https://www.ibm.com/support/z-content-solutions/journey-to-ai-on-z/
+    - IBM Z Xplore: https://ibmzxplore.influitive.com
 
 
 
