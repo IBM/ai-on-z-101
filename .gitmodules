@@ -7,3 +7,6 @@
 [submodule "docs/ai-on-z-containers"]
 	path = docs/ai-on-z-containers
 	url = https://github.com/IBM/ai-on-z-containers
+[submodule "zDNN"]
+	path = zDNN
+	url = https://github.com/IBM/zDNN
