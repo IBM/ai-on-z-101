@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-dataset-used-in-this-repo-can-be-found-here-httpsgithubcomibmtabformertreemaindatacredit_card" class="md-skip">
+        <a href="#scope" class="md-skip">
           Skip to content
         </a>
       
@@ -358,15 +358,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-dataset-used-in-this-repo-can-be-found-here-httpsgithubcomibmtabformertreemaindatacredit_card" class="md-nav__link">
-    The dataset used in this repo can be found here:  https://github.com/IBM/TabFormer/tree/main/data/credit_card
+  <a href="#scope" class="md-nav__link">
+    Scope
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#scope" class="md-nav__link">
-    Scope
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    Environment:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-dataset-used-in-this-repo-can-be-found-here" class="md-nav__link">
+    The dataset used in this repo can be found here:
   </a>
   
 </li>
@@ -480,15 +494,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-dataset-used-in-this-repo-can-be-found-here-httpsgithubcomibmtabformertreemaindatacredit_card" class="md-nav__link">
-    The dataset used in this repo can be found here:  https://github.com/IBM/TabFormer/tree/main/data/credit_card
+  <a href="#scope" class="md-nav__link">
+    Scope
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#scope" class="md-nav__link">
-    Scope
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    Environment:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-dataset-used-in-this-repo-can-be-found-here" class="md-nav__link">
+    The dataset used in this repo can be found here:
   </a>
   
 </li>
@@ -519,9 +547,30 @@
 
   <h1>Fraud Detection</h1>
 
-<h2 id="the-dataset-used-in-this-repo-can-be-found-here-httpsgithubcomibmtabformertreemaindatacredit_card">The dataset used in this repo can be found here:  https://github.com/IBM/TabFormer/tree/main/data/credit_card<a class="headerlink" href="#the-dataset-used-in-this-repo-can-be-found-here-httpsgithubcomibmtabformertreemaindatacredit_card" title="Permanent link">&para;</a></h2>
 <h2 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link">&para;</a></h2>
-<p>This repository provides TensorFlow source code for building and training credit card fraud models using an LSTM and a GRU.  The saved models were converted to the ONNX format and are also included.</p>
+<p>This repository provides TensorFlow source code for building and training credit card fraud models using an LSTM and a GRU.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>The models included in this repository are multi-layer LSTM or GRU models that analyze time series data to predict whether a credit card transaction is fraudulent.</p>
+<p>The models consist of a recurrent neural network (RNN) with 2 layers of long short-term memory (LSTM) or gated recurrent unit (GRU), 200 units in each layer, followed by a dense layer.  There is one output, which is Fraud/Non-fraud.  A sequence of 7 transactions is used as the input to model. </p>
+<p>In a transactional environment such as z/OS CICS, new data is generated from card terminal transactions.  The transaction is received by a z/OS application that then must process it.  As part of this processing, validation occurs.  This can include the use of AI to provide insight on whether the transaction is potentially fraudulent.</p>
+<p>The TensorFlow saved models were converted to the ONNX format using the tf2onnx 1.10.0 library and are also included in this repo.  The models were converted using the following template:
+<div class="highlight"><pre><span></span><code>import tf2onnx
+spec = (tf.TensorSpec((7, 16, 220), tf.float32, name=&quot;input&quot;),)
+output_path = new_model.name + &quot;.onnx&quot;
+onnx_model = tf2onnx.convert.from_keras(new_model, spec, output_path=output_path)
+</code></pre></div></p>
+<h2 id="environment">Environment:<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h2>
+<ul>
+<li>s390x</li>
+<li>python version 3.6.9</li>
+<li>pandas version 1.0.1</li>
+<li>numpy version 1.16.2</li>
+<li>scikit-learn version 0.22.1</li>
+<li>sklearn-pandas version 1.8.0</li>
+<li>TensorFlow version 2.1.0</li>
+</ul>
+<h2 id="the-dataset-used-in-this-repo-can-be-found-here">The dataset used in this repo can be found here:<a class="headerlink" href="#the-dataset-used-in-this-repo-can-be-found-here" title="Permanent link">&para;</a></h2>
+<p>https://github.com/IBM/TabFormer/tree/main/data/credit_card</p>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p>If you would like to see the detailed LICENSE click <a href="LICENSE">here</a>.</p>
 
