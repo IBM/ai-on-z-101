@@ -15,12 +15,13 @@ nav:
       - Samples: ai-on-z-samples/README.md
       - Containers: ai-on-z-containers/README.md
       - zDNN: zDNN/README.md
-  - Use Cases:
+  - Models:
     - Fraud Detection: ai-on-z-fraud-detection/README.md
   - External Content: 
     - IBM Z and LinuxOne Content Solutions: https://www.ibm.com/support/z-content-solutions/journey-to-ai-on-z/
     - IBM Z Xplore: https://ibmzxplore.influitive.com
-
+    - AI on IBM Z and LinuxONE Community: https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=038560b2-e962-4500-b0b5-e3745175a065
+    - IBM Z and LinuxONE Container Registry: https://ibm.github.io/ibm-z-oss-hub/main/main.html
 
 
 
