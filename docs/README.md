@@ -1,4 +1,4 @@
-# Enabling Smarter Workloads: AI on Z
+# Enabling Smarter Workloads: AI on IBM Z and LinuxONE
 ![This is an image](blog-zandlinuxone.jpg)
 
 The IBM Z platform has been and continues to be a key backbone for processing data globally. 
