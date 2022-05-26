@@ -21,12 +21,12 @@ nav:
   - Infusing AI into your IBM zSystem business applications: infusing.md
   - Getting help: help.md
   - Reference Models:
-    - Fraud Detection: ai-on-z-fraud-detection/README.md
+    - Fraud Detection: https://github.com/IBM/ai-on-z-fraud-detection/
   - Compiler and AI framework developer resources: codingAIU.md 
   - Resources: 
-      - Samples: ai-on-z-samples/README.md
-      - Additional container build files: ai-on-z-containers/README.md
-      - zDNN: zDNN/README.md
+      - Samples: https://github.com/IBM/ai-on-z-samples
+      - Additional container build files: https://github.com/IBM/ai-on-z-containers
+      - zDNN: https://github.com/IBM/zDNN
   - External Content: 
     - IBM Z and LinuxOne Content Solutions: https://www.ibm.com/support/z-content-solutions/journey-to-ai-on-z/
     - IBM Z Xplore: https://ibmzxplore.influitive.com

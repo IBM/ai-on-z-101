@@ -1,6 +1,6 @@
-## Resources for compiler and AI framework developers
+## Developing for the Integrated Accelerator for AI
 
-Most users of the IBM z16 Integrated Accelerator for AI will be accessing it through frameworks and technologies like the IBM Deep Learning Compiler, TensorFlow, or Snap ML. 
+Most users of the IBM z16 Integrated Accelerator for AI will be accessing it through frameworks and technologies like the IBM Deep Learning Compiler, TensorFlow, or Snap ML. The other pages on this site are focused on this type of usage.
 
 For those that wish to develop or enhance AI frameworks and compilers to leverage the Integrated Accelerator for AI, an lower level SDK is needed.
 

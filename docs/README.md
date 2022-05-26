@@ -7,7 +7,7 @@ IBM zSystems have continuously evolved to meet the worlds ever growing needs. Wi
 
 Whether you come here as a beginner or experienced AI practioner, IBM zSystems provide numerous options for getting started with AI.
 
-Within these pages, you'll find information on how to leverage the best of the open source ecosystem on zSystems, as well as pointers to community edition and freely available software that can help you quickly get started.
+Within these pages, you'll find information on how to leverage the best of the open source ecosystem on IBM zSystems and LinuxONE, as well as pointers to community edition and freely available software that can help you quickly get started.
 
 IBM zSystems and LinuxONE are, at their core, enterprise platforms. As such, these pages will also contain pointers to informaton on infusing critical business applications with AI. 
 
