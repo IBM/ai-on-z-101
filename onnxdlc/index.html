@@ -10,21 +10,21 @@
         <meta name="author" content="IBM Developer">
       
       
-        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/ai-on-z-samples/tf-zcx-zos/">
+        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/onnxdlc/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Demonstrating interaction between z/OS and TensorFlow Serving - AI on IBM Z 101</title>
+        <title>ONNX and the IBM Deep Learning Compiler - AI on IBM Z 101</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
         
           
           
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#demonstrating-interaction-between-zos-and-tensorflow-serving" class="md-skip">
+        <a href="#deploying-onnx-deep-learning-models-on-ibm-zsystems" class="md-skip">
           Skip to content
         </a>
       
@@ -81,7 +81,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="AI on IBM Z 101" class="md-header__button md-logo" aria-label="AI on IBM Z 101" data-md-component="logo">
+    <a href=".." title="AI on IBM Z 101" class="md-header__button md-logo" aria-label="AI on IBM Z 101" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Demonstrating interaction between z/OS and TensorFlow Serving
+              ONNX and the IBM Deep Learning Compiler
             
           </span>
         </div>
@@ -179,7 +179,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="AI on IBM Z 101" class="md-nav__button md-logo" aria-label="AI on IBM Z 101" data-md-component="logo">
+    <a href=".." title="AI on IBM Z 101" class="md-nav__button md-logo" aria-label="AI on IBM Z 101" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -210,7 +210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Overview
       </a>
     </li>
@@ -225,7 +225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../z16Accel/" class="md-nav__link">
+      <a href="../z16Accel/" class="md-nav__link">
         Leveraging the IBM z16 Integrated Accelerator for AI
       </a>
     </li>
@@ -238,12 +238,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -264,11 +266,68 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../onnxdlc/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ONNX and the IBM Deep Learning Compiler
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         ONNX and the IBM Deep Learning Compiler
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-onnx-deep-learning-models-on-ibm-zsystems" class="md-nav__link">
+    Deploying ONNX deep learning models on IBM zSystems
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying ONNX deep learning models on IBM zSystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#z16-integrated-accelerator-for-ai" class="md-nav__link">
+    z16 Integrated Accelerator for AI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-started-with-the-ibm-deep-learning-compiler" class="md-nav__link">
+    Getting Started with the IBM Deep Learning Compiler
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -280,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../snapml/" class="md-nav__link">
+      <a href="../snapml/" class="md-nav__link">
         IBM Snap Machine Learning (Snap ML)
       </a>
     </li>
@@ -294,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tensorflow/" class="md-nav__link">
+      <a href="../tensorflow/" class="md-nav__link">
         TensorFlow
       </a>
     </li>
@@ -330,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../opensource/" class="md-nav__link">
+      <a href="../opensource/" class="md-nav__link">
         Obtaining open-source packages
       </a>
     </li>
@@ -345,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infusing/" class="md-nav__link">
+      <a href="../infusing/" class="md-nav__link">
         Infusing AI into your IBM zSystem business applications
       </a>
     </li>
@@ -360,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../help/" class="md-nav__link">
+      <a href="../help/" class="md-nav__link">
         Getting help
       </a>
     </li>
@@ -423,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../codingAIU/" class="md-nav__link">
+      <a href="../codingAIU/" class="md-nav__link">
         Compiler and AI framework developer resources
       </a>
     </li>
@@ -613,8 +672,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -623,16 +680,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deploying-tensorflow-serving-on-zos-container-extensions" class="md-nav__link">
-    Deploying TensorFlow Serving on z/OS Container Extensions
+  <a href="#deploying-onnx-deep-learning-models-on-ibm-zsystems" class="md-nav__link">
+    Deploying ONNX deep learning models on IBM zSystems
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying ONNX deep learning models on IBM zSystems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#z16-integrated-accelerator-for-ai" class="md-nav__link">
+    z16 Integrated Accelerator for AI
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-and-deploying-the-zos-application" class="md-nav__link">
-    Updating and deploying the z/OS application
+        
+          <li class="md-nav__item">
+  <a href="#getting-started-with-the-ibm-deep-learning-compiler" class="md-nav__link">
+    Getting Started with the IBM Deep Learning Compiler
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -648,88 +718,64 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/IBM/ai-on-z-101/edit/master/docs/ai-on-z-samples/tf-zcx-zos/README.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/IBM/ai-on-z-101/edit/master/docs/onnxdlc.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="demonstrating-interaction-between-zos-and-tensorflow-serving">Demonstrating interaction between z/OS and TensorFlow Serving<a class="headerlink" href="#demonstrating-interaction-between-zos-and-tensorflow-serving" title="Permanent link">&para;</a></h1>
-<p>This project intends to demonstrate a call to TensorFlow Serving using REST API from a simple z/OS Java app. 
-The purpose is to create a simple and easily deployable scenario that can be used on z/OS to understand serving concepts.</p>
-<p>This model performns a matrix multiplication of a [1,5] input tensor by a [5,1] weights tensor, where all weights are defined with a value of 1. This results in an output tensor shape of [1,1].</p>
-<p>For example, with this model an input tensor of [[1,2,3,4,5]] is multiplied by a weights tensor of [[1],[1],[1],[1],[1]], 
-resulting in a value of [[15.]]</p>
-<p>Note that since this project is intended for deployment to z/OS, we are avoiding managing dependecies through sub-moduling or Maven/Ant.
-The intent is to quickly try this project out without installing additional software. Required Jar files can be pulled from the references below.</p>
-<h2 id="deploying-tensorflow-serving-on-zos-container-extensions">Deploying TensorFlow Serving on z/OS Container Extensions<a class="headerlink" href="#deploying-tensorflow-serving-on-zos-container-extensions" title="Permanent link">&para;</a></h2>
+  <h1>ONNX and the IBM Deep Learning Compiler</h1>
+
+<h2 id="deploying-onnx-deep-learning-models-on-ibm-zsystems">Deploying ONNX deep learning models on IBM zSystems<a class="headerlink" href="#deploying-onnx-deep-learning-models-on-ibm-zsystems" title="Permanent link">&para;</a></h2>
+<p>ONNX is the Open Neural Network eXchange. You can read more about it <a href="https://onnx.ai/">here</a>.</p>
+<p>ONNX establishes a streamlined path to take a project from playground to production.  </p>
+<p>With ONNX, you can start a data science project using the frameworks and libraries of your choosing, including popular frameworks such as PyTorch and TensorFlow. The model can be developed and trained leveraging these frameworks on the training platform of your choice. Once the model is trained and ready to begin the deployment journey, you would export or convert it to the ONNX format. </p>
+<p>Tools such as <a href="https://netron.app/">Netron</a> allow inspection and exploration of an ONNX model. When it comes to running the model, there are various back-ends that can be used to test and serve ONNX models. This includes model compilers such as the IBM Deep Learning Compiler (DLC), which is based on ONNX-MLIR. </p>
+<p>The <a href="https://onnx.ai/onnx-mlir/">ONNX-MLIR project</a> provides compiler technology to transform a valid Open Neural Network Exchange (ONNX) graph into code that implements the graph with minimum runtime support. It implements the ONNX standard and is based on the underlying LLVM/MLIR compiler technology. </p>
+<p>The result of this compiler is a lightweight shared object library that has no dependencies on the framework or libraries that the model was developed and trained in. It can easily be used for inference from C++, Java or Python programs. </p>
+<h3 id="z16-integrated-accelerator-for-ai">z16 Integrated Accelerator for AI<a class="headerlink" href="#z16-integrated-accelerator-for-ai" title="Permanent link">&para;</a></h3>
+<p>IBM Research enhanced the IBM Deep Learning Compiler (DLC) to target the IBM Integrated Accelerator for AI for a variety of ONNX primitives. This support has been contributed to ONNX-MLIR, which is the foundation for the IBM Deep Learning Compiler.</p>
+<h3 id="getting-started-with-the-ibm-deep-learning-compiler">Getting Started with the IBM Deep Learning Compiler<a class="headerlink" href="#getting-started-with-the-ibm-deep-learning-compiler" title="Permanent link">&para;</a></h3>
+<p>The best approach to getting started with ONNX models using the IBM Deep Learning Compiler will depend on the IBM zSystem operating system on which you plan to use the inference program. </p>
+<p>z/OS users should likely choose a Watson Machine Learning for z/OS (WMLz) based approach. 
+There are two paths:</p>
 <ul>
-<li>TensorFlow Serving can be obtained from the IBM Container Image Repository or built from source for Linux on Z</li>
-<li><a href="https://ibm.github.io/ibm-z-oss-hub/main/main.html">IBM Container Image Repository</a></li>
-<li><a href="https://github.com/linux-on-ibm-z/docs/wiki/Building-TensorFlow-Serving">Source</a></li>
 <li>
-<p>Details on the TFServing API can be found here: https://www.tensorflow.org/tfx/serving/api_rest</p>
-</li>
-<li>
-<p>To deploy the example model, you can follow this procedure:</p>
-</li>
-<li>SFTP the TensorFlow saved model to zCX. This should be the model folder and all subfolders.<ul>
-<li>The saved model can be found in the model subdirectory of this project.</li>
-<li>The notebook used to create the model is simplemm.ipynb</li>
-</ul>
-</li>
-<li>Create a new docker volume.<ul>
-<li>e.g., <code>docker volume create tfmodels</code></li>
-<li><strong>tfmodels</strong> is the volume name we create to use in subsequent steps</li>
-</ul>
-</li>
-<li>Copy the model directory into the docker volume. <ul>
-<li>One approach is to create a simple container using the volume to allow a docker cp:<ul>
-<li><code>docker container create --name tfsimple -v tfmodels:/models simple_image</code></li>
-<li><code>docker cp &lt;host_model_dir&gt; tfsimple:/models</code><ul>
-<li><strong>tfsimple</strong> is the container name we create to facilitate the copy via docker CP. </li>
-<li><strong>simple_image</strong> can be any base image, and it can be deleted after this copy.</li>
-<li><strong>models</strong> is a directory we choose to copy the model into. </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Run the TFServing image:
-         - <code>docker run -d --rm -p 8507:8501 -v tfmodels:/models -e MODEL_NAME=&lt;model_name&gt; &lt;image id&gt;</code>
-            - 8501 is the default TFServing REST port. Here it is mapped to zCX port 8507. 
-            - <strong>model_name</strong> is the TensorFlow model name; this is commonly the directory name that holds the saved_model.pb file</li>
-</ul>
-<h2 id="updating-and-deploying-the-zos-application">Updating and deploying the z/OS application<a class="headerlink" href="#updating-and-deploying-the-zos-application" title="Permanent link">&para;</a></h2>
+<p>Watson Machine Learning for z/OS Online Scoring Community Edition (OSCE), which is freely available and excels at enabling rapid prototyping and proof of concept exercises. </p>
 <ul>
-<li>First, deploy the project to your host system. This program is intended for Unix environments.</li>
-<li>Suggestion on how to get github projects to z/OS can be found here: https://github.com/IBM/IBM-Z-zOS</li>
-<li>The following Jar files must be in the project root directory;</li>
-<li>Apache Commons Logging: <a href="http://archive.apache.org/dist/commons/logging/binaries/">commons-logging-1.1.3.jar</a></li>
-<li>Apache HttpClient: <a href="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/">httpclient-4.5.13.jar</a></li>
-<li>Apache Httpcore: <a href="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.14/">httpcore-4.4.14.jar</a></li>
-<li>Json Processing API <a href="https://repo1.maven.org/maven2/org/glassfish/javax.json/1.0/">javax.json-1.0.jar</a></li>
-<li>We suggest using SFTP to transmit the jars to the z/OS environment.</li>
-<li>Note: If different versions are used, update the Makefile to reference the correect version.</li>
-<li>run <code>make</code> to build compile the .java files</li>
-<li>issue the following command to try a TensorFlow Serving request:   </li>
-<li><code>make run HOSTIP=tf-serve-ip PORT=tf-serv-port MODEL_DIR=model-dir PAYLOAD=input-tensor</code><ul>
-<li><strong>tf-serve-ip</strong> is the IP address of the server or instance hosting TensorFlow Serving</li>
-<li><strong>tf-serv-port</strong> is the TF Serving REST port</li>
-<li><strong>model-dir</strong> is the model path, which should typically be /v1/models/simplemm for the sample model.</li>
-<li><strong>input-tensor</strong> consists of 5 comma separated decimal values. </li>
+<li>Simple install to z/OS Container Extensions (zCX).</li>
+<li>Enables you to upload your ONNX model then compile and deploy at the push of a button. </li>
+<li>Includes serving capability that exposes REST end points to call from an application.</li>
+<li>Available on the ibm.com WMLz page: <a href="https://www.ibm.com/products/machine-learning-for-zos">'Download trial code'</a>.</li>
+</ul>
+</li>
+<li>
+<p>Watson Machine Learning for z/OS, which is a z/OS product that manages full model lifecycle and includes numerous features to improve performance for AI models and simplify deployment. </p>
+<ul>
+<li>Enables you to upload your ONNX model then compile and deploy at the push of a button. </li>
+<li>Supports server side mini-batching for ONNX/DLC model serving to get the best benefit out of the Integrated Accelerator for AI.</li>
+<li>Infuse AI into z/OS applications either through native CICS Cobol scoring services or by using model server REST endpoints.</li>
+</ul>
+</li>
+<li>
+<p>Additional resources: </p>
+<ul>
+<li>If you are interested in trying WMLz OSCE, here is a quick self-directed exercise that demonstrates how to call a ONNX model from a z/OS Java program: <a href="https://github.com/IBM/ai-on-z-wmlzce-zos">Demonstrating a z/OS application calling WMLz OSCE</a></li>
 </ul>
 </li>
 </ul>
-<p>For example, if we mapped the TFServing REST port to 8507, we would use something like this (changing the IP address 
-   to one in use by zCX):
-      <code>make run HOSTIP=127.0.0.1 PORT=8507 MODEL_DIR=/v1/models/simplemm PAYLOAD=1.0,2.0,3.0,4.0,5.0</code></p>
-<p>In addition to verbose messages, the result for test would show:
-      {
-         "predictions": [[15.0]
-         ]
-      }</p>
+<p>Linux on Z and LinuxONE users can leverage the Deep Learning Compiler directly to create model programs that can be incorporated into serving environments or applications directly.</p>
+<ul>
+<li>Available through the <a href="https://ibm.github.io/ibm-z-oss-hub/main/main.html">IBM Z and LinuxONE Container Registry</a> listed under ONNX-MLIR.</li>
+<li>Command-line model compiler that produces a .so library with optional Java and Python wrappers.</li>
+<li>Additional resources: <ul>
+<li><a href="TBD">Sample C++, Java, and Python clients</a></li>
+<li><a href="https://docs.bentoml.org/en/latest/frameworks/index.html">BentoML ONNX-MLIR support</a></li>
+</ul>
+</li>
+</ul>
+<p>Read our blogs on ONNX for more information:
+ - <a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/andrew-sica/2021/10/29/leveraging-onnx-models-on-ibm-z-and-linuxone">Leveraging ONNX models on IBM zSystems and LinuxONE</a></p>
 
               
             </article>
@@ -739,6 +785,41 @@ The intent is to quickly try this project out without installing additional soft
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../z16Accel/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Leveraging the IBM z16 Integrated Accelerator for AI" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Leveraging the IBM z16 Integrated Accelerator for AI
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../snapml/" class="md-footer__link md-footer__link--next" aria-label="Next: IBM Snap Machine Learning (Snap ML)" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              IBM Snap Machine Learning (Snap ML)
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -813,10 +894,10 @@ The intent is to quickly try this project out without installing additional soft
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
     
   </body>
