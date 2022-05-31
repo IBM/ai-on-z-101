@@ -10,13 +10,23 @@ edit_uri: edit/master/docs
 
 # Navigation
 nav:
-  - Welcome: README.md
+  - Overview: README.md
+  - Leveraging the IBM z16 Integrated Accelerator for AI: z16Accel.md
+  - Featured Frameworks and Technologies:
+      - ONNX and the IBM Deep Learning Compiler: onnxdlc.md
+      - IBM Snap Machine Learning (Snap ML): snapml.md
+      - TensorFlow: tensorflow.md
+      - Db2 13 SQL Data Insights: https://www.ibm.com/common/ssi/ShowDoc.wss?docURL=/common/ssi/rep_ca/1/897/ENUS222-061/index.html
+  - Obtaining open-source packages: opensource.md
+  - Infusing AI into your IBM zSystem business applications: infusing.md
+  - Getting help: help.md
+  - Reference Models:
+    - Fraud Detection: https://github.com/IBM/ai-on-z-fraud-detection/
+  - Compiler and AI framework developer resources: codingAIU.md 
   - Resources: 
-      - Samples: ai-on-z-samples/README.md
-      - Containers: ai-on-z-containers/README.md
-      - zDNN: zDNN/README.md
-  - Models:
-    - Fraud Detection: ai-on-z-fraud-detection/README.md
+      - Samples: https://github.com/IBM/ai-on-z-samples
+      - Additional container build files: https://github.com/IBM/ai-on-z-containers
+      - zDNN: https://github.com/IBM/zDNN
   - External Content: 
     - IBM Z and LinuxOne Content Solutions: https://www.ibm.com/support/z-content-solutions/journey-to-ai-on-z/
     - IBM Z Xplore: https://ibmzxplore.influitive.com
