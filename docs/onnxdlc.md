@@ -42,9 +42,11 @@ Linux on Z and LinuxONE users can leverage the Deep Learning Compiler directly t
 - Available through the [IBM Z and LinuxONE Container Registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) listed under ONNX-MLIR.
 - Command-line model compiler that produces a .so library with optional Java and Python wrappers.
 - Additional resources: 
-    - [Sample C++, Java, and Python clients](TBD)
+    - [Documentation and samples, including C++, Java, and Python clients](https://github.com/IBM/zDLC)
     - [BentoML ONNX-MLIR support](https://docs.bentoml.org/en/latest/frameworks/index.html)
 
 
 Read our blogs on ONNX for more information:
+ - [IBM Z and the Open Neural Network Exchange](https://www.ibm.com/blogs/systems/ibm-z-and-the-open-neural-network-exchange-onnx/)
  - [Leveraging ONNX models on IBM zSystems and LinuxONE](https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/andrew-sica/2021/10/29/leveraging-onnx-models-on-ibm-z-and-linuxone)
+ - [Announcing ONNX-MLIR/IBM Deep Learning Compiler for Linux on Z and LinuxONE](https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/charles-volzka/2022/05/26/ibm-z-deep-learning-compiler-onnx-mlir)
