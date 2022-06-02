@@ -20,16 +20,16 @@ IBM Research enhanced the IBM Deep Learning Compiler (DLC) to target the IBM Int
 
 The best approach to getting started with ONNX models using the IBM Deep Learning Compiler will depend on the IBM zSystem operating system on which you plan to use the inference program. 
 
-z/OS users should likely choose a Watson Machine Learning for z/OS (WMLz) based approach. 
+**z/OS users** should likely choose a Watson Machine Learning for z/OS (WMLz) based approach. 
 There are two paths:
 
-- Watson Machine Learning for z/OS Online Scoring Community Edition (OSCE), which is freely available and excels at enabling rapid prototyping and proof of concept exercises. 
+- **Watson Machine Learning for z/OS Online Scoring Community Edition (OSCE)**, which is freely available and excels at enabling rapid prototyping and proof of concept exercises. 
     - Simple install to z/OS Container Extensions (zCX).
     - Enables you to upload your ONNX model then compile and deploy at the push of a button. 
     - Includes serving capability that exposes REST end points to call from an application.
     - Available on the ibm.com WMLz page: ['Download trial code'](https://www.ibm.com/products/machine-learning-for-zos).
 
-- Watson Machine Learning for z/OS, which is a z/OS product that manages full model lifecycle and includes numerous features to improve performance for AI models and simplify deployment. 
+- **Watson Machine Learning for z/OS**, which is a z/OS product that manages full model lifecycle and includes numerous features to improve performance for AI models and simplify deployment. 
     - Enables you to upload your ONNX model then compile and deploy at the push of a button. 
     - Supports server side mini-batching for ONNX/DLC model serving to get the best benefit out of the Integrated Accelerator for AI.
     - Infuse AI into z/OS applications either through native CICS Cobol scoring services or by using model server REST endpoints.
@@ -37,9 +37,9 @@ There are two paths:
 - Additional resources: 
     - If you are interested in trying WMLz OSCE, here is a quick self-directed exercise that demonstrates how to call a ONNX model from a z/OS Java program: [Demonstrating a z/OS application calling WMLz OSCE](https://github.com/IBM/ai-on-z-wmlzce-zos)
 
-Linux on Z and LinuxONE users can leverage the Deep Learning Compiler directly to create model programs that can be incorporated into serving environments or applications directly.
+**Linux on Z and LinuxONE** users can leverage the Deep Learning Compiler directly to create model programs that can be incorporated into serving environments or applications directly.
 
-- Available through the [IBM Z and LinuxONE Container Registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) listed under ONNX-MLIR.
+- Available through the [IBM Z and LinuxONE Container Registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) listed under **ONNX-MLIR**.
 - Command-line model compiler that produces a .so library with optional Java and Python wrappers.
 - Additional resources: 
     - [Documentation and samples, including C++, Java, and Python clients](https://github.com/IBM/zDLC)
