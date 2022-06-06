@@ -19,6 +19,7 @@ nav:
       - Db2 13 SQL Data Insights: https://www.ibm.com/common/ssi/ShowDoc.wss?docURL=/common/ssi/rep_ca/1/897/ENUS222-061/index.html
   - Obtaining open-source packages: opensource.md
   - Infusing AI into your IBM zSystem business applications: infusing.md
+  - Terminology: terminology.md
   - Getting help: help.md
   - Reference Models:
     - Fraud Detection: https://github.com/IBM/ai-on-z-fraud-detection/
