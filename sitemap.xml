@@ -2,112 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/codingAIU/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/help/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/infusing/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/onnxdlc/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/opensource/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/snapml/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/tensorflow/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/terminology/</loc>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/z16Accel/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/CONTRIBUTING/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/MAINTAINERS/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/nlp-spaCy/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-fraud-detection/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-samples/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-samples/CONTRIBUTING/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-samples/MAINTAINERS/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-samples/onnx-conversion/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-samples/tf-zcx-zos/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/zDNN/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/zDNN/CONTRIBUTING/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/zDNN/samples/</loc>
-         <lastmod>2022-06-02</lastmod>
+         <lastmod>2022-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
