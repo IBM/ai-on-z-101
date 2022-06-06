@@ -1,4 +1,4 @@
-# Enabling Smarter Workloads: AI on IBM Z and LinuxONE
+# Enabling Smarter Workloads: AI on IBM zSystems and LinuxONE
 ![This is an image](overview_1.jpg)
 
 The IBM zSystems platform excels at processing the most critical enterprise workloads. 

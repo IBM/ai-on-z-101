@@ -22,7 +22,7 @@ Snap ML:
 
 - Is developed & maintained by IBM Research. 
 - Is fully compatible with the scikit-learn Python API.
-- Supports scikit-learn, XGBoost and LightGBM trained models when exported or converted to: PMML, JSON, ONNX. 
+- Supports accelerated scoring of scikit-learn, XGBoost and LightGBM trained models when exported or converted to: PMML, JSON, ONNX.
 
 In addition to being available through PyPI, Snap ML is an available python framework in IBM Cloud Pak for Data. 
 
@@ -52,3 +52,7 @@ Snap ML is an available python framework in IBM Cloud Pak for Data.
 [Click here for official documentation](https://snapml.readthedocs.io/en/latest/)
 [Click here for examples using Snap ML](https://github.com/IBM/snapml-examples)
 [Example using Snap ML with BentoML Serving](https://github.com/IBM/snapml-examples/tree/main/examples/inference/random_forest/bentoml)
+
+### Notes: ###
+
+- Starting With Snap ML 1.9.1, SnapML-trained tree-based models (RF, ET and GB) can be exported to PMML.
