@@ -12,11 +12,11 @@ The [ONNX-MLIR project](https://onnx.ai/onnx-mlir/) provides compiler technology
 
 The result of this compiler is a lightweight shared object library that has no dependencies on the framework or libraries that the model was developed and trained in. It can easily be used for inference from C++, Java or Python programs. 
 
-### z16 Integrated Accelerator for AI ###
+### IBM z16 Integrated Accelerator for AI ###
 
 IBM Research enhanced the IBM Deep Learning Compiler (DLC) to target the IBM Integrated Accelerator for AI for a variety of ONNX primitives. This support has been contributed to ONNX-MLIR, which is the foundation for the IBM Deep Learning Compiler.
 
-### Getting Started with the IBM Deep Learning Compiler ###
+### Getting Started with the IBM Z Deep Learning Compiler ###
 
 The best approach to getting started with ONNX models using the IBM Deep Learning Compiler will depend on the IBM zSystem operating system on which you plan to use the inference program. 
 

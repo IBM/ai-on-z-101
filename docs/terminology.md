@@ -4,9 +4,9 @@ This page is focused primarily on IBM technologies and terminology. General open
 
 Where applicable, for links see the sidebar.
 
-- IBM **Deep Learning Compiler** is an ONNX model compiler based on ONNX-MLIR. When compiling for IBM z16, it uses IBM zDNN APIs for ONNX operators that the Integrated Accelerator for AI supports. 
+- IBM Z **Deep Learning Compiler** is an ONNX model compiler based on ONNX-MLIR. When compiling for IBM z16, it uses IBM zDNN APIs for ONNX operators that the Integrated Accelerator for AI supports. 
 
-- IBM **Integrated Accelerator for AI** is an on-chip AI inference accelerator that optimizes and acclerates complex AI operations beyond just matrix multiplication. It is invoked through the Neural Network Processing Assist (NNPA) instruction.
+- IBM Z **Integrated Accelerator for AI** is an on-chip AI inference accelerator that optimizes and acclerates complex AI operations beyond just matrix multiplication. It is invoked through the Neural Network Processing Assist (NNPA) instruction.
 
 - **NNPA (Neural Network Processing Assist)** is a new architected instruction with the IBM z16 which is used to execute work on the IBM Integrated Accelerator for AI. Framework and compiler developers would typically use IBM zDNN library instead of attempting to directly code the NNPA instruction. Note that this is not something end users need to worry about - frameworks and compilers like the IBM Deep Learning Compiler (ONNX-MLIR), Snap ML, TensorFlow will handle this for you (at the right software levels!).
 
