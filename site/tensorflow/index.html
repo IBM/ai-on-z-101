@@ -511,22 +511,37 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Need access to a IBM Z or LinuxONE Environment?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_10">
+        <label class="md-nav__link" for="__nav_11">
           Resources
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Resources" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
+        <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Resources
         </label>
@@ -591,18 +606,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_11">
+        <label class="md-nav__link" for="__nav_12">
           External Content
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="External Content" data-md-level="1">
-        <label class="md-nav__title" for="__nav_11">
+        <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           External Content
         </label>
@@ -747,9 +762,9 @@
 <p>With TensorFlow Servng, you can expose REST and GRPC endpoints for model inference requests. This supports high throughput, low latency inference serving.</p>
 <p>On IBM zSystems and LinuxONE, TensorFlow is built to exploit the vector architecture for training and inference operations. On IBM z16 hardware, TensorFlow can leverage new inference acceleration capabilities. Read more below!</p>
 <h3 id="z16-integrated-accelerator-for-ai">z16 Integrated Accelerator for AI<a class="headerlink" href="#z16-integrated-accelerator-for-ai" title="Permanent link">&para;</a></h3>
-<p>Starting in late 2Q 2022, IBM will release an open beta of TensorFlow core that includes device support for the IBM Integrated Accelerator for AI. 
-This capability will allow TensorFlow to transparently target the accelerator for a number of compute intenstive operations. 
-The beta container image will be released through the IBM Z and LinuxONE Container Registry (see below).</p>
+<p>On June 30<sup>th</sup>, 2022 IBM released an open beta of TensorFlow core that includes device support for the IBM Integrated Accelerator for AI. This open beta is publshed under the name 'IBM Z Optimized for TensorFlow'. </p>
+<p>This capability will allow TensorFlow to transparently target the z16 accelerator for a number of compute intenstive operations. The beta container image is available through the IBM Z and LinuxONE Container Registry (see below).</p>
+<p>Read more about this support <a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/prashantha-subbarao/2022/06/30/ibm-z-optimized-for-tensorflow">here</a></p>
 <h3 id="getting-started-with-tensorflow-on-ibm-zsystems-and-linuxone">Getting Started with TensorFlow on IBM zSystems and LinuxONE<a class="headerlink" href="#getting-started-with-tensorflow-on-ibm-zsystems-and-linuxone" title="Permanent link">&para;</a></h3>
 <p>The recommended path for obtaining TensorFlow is to download a prebuilt container image from the <a href="https://ibm.github.io/ibm-z-oss-hub/main/main.html">IBM Z and LinuxONE Container Registry</a>.</p>
 <p>The following images are available:</p>
@@ -757,12 +772,10 @@ The beta container image will be released through the IBM Z and LinuxONE Contain
 <li>TensorFlow Core (CPU)</li>
 <li>TensorFlow Serving (CPU)</li>
 </ul>
-<p>Coming soon:</p>
-<ul>
-<li>TensorFlow Core (IBM z16 Accelerator)</li>
-</ul>
-<p>If you are interested in trying TensorFlow out, here is a quick self-directed exercise that demonstrates how to call a TensorFlow model from a z/OS Java program: <a href="https://github.com/IBM/ai-on-z-tensorflow-zcx">TensorFlow and zCX interaction</a>.
-Note that although this lab highlights TensorFlow on zCX, the image can just as easily be deployed to a Linux LPAR or VM using these steps.</p>
+<p>New (open beta):
+   - IBM Z Optimized for TensorFlow (this is TensorFlow core, leveraging the IBM z16 Integrated Accelerator for AI)</p>
+<p>If you are interested in trying TensorFlow out, here is a quick self-directed exercise that demonstrates how to call a TensorFlow model from a z/OS Java program: <a href="https://github.com/IBM/ai-on-z-tensorflow-zcx">TensorFlow and zCX interaction</a>.</p>
+<p>Note that although this lab highlights TensorFlow on zCX, the image can just as easily be deployed to a Linux LPAR or VM using these steps.</p>
 
               
             </article>

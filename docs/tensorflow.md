@@ -11,9 +11,11 @@ On IBM zSystems and LinuxONE, TensorFlow is built to exploit the vector architec
 
 ### z16 Integrated Accelerator for AI ###
 
-Starting in late 2Q 2022, IBM will release an open beta of TensorFlow core that includes device support for the IBM Integrated Accelerator for AI. 
-This capability will allow TensorFlow to transparently target the accelerator for a number of compute intenstive operations. 
-The beta container image will be released through the IBM Z and LinuxONE Container Registry (see below).
+On June 30th, 2022 IBM released an open beta of TensorFlow core that includes device support for the IBM Integrated Accelerator for AI. This open beta is publshed under the name 'IBM Z Optimized for TensorFlow'. 
+
+This capability will allow TensorFlow to transparently target the z16 accelerator for a number of compute intenstive operations. The beta container image is available through the IBM Z and LinuxONE Container Registry (see below).
+
+Read more about this support [here](https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/prashantha-subbarao/2022/06/30/ibm-z-optimized-for-tensorflow)
 
 ### Getting Started with TensorFlow on IBM zSystems and LinuxONE ###
 
@@ -24,11 +26,11 @@ The following images are available:
 - TensorFlow Core (CPU)
 - TensorFlow Serving (CPU)
 
-Coming soon:
-
-- TensorFlow Core (IBM z16 Accelerator)
+New (open beta):
+   - IBM Z Optimized for TensorFlow (this is TensorFlow core, leveraging the IBM z16 Integrated Accelerator for AI)
 
 If you are interested in trying TensorFlow out, here is a quick self-directed exercise that demonstrates how to call a TensorFlow model from a z/OS Java program: [TensorFlow and zCX interaction](https://github.com/IBM/ai-on-z-tensorflow-zcx).
+
 Note that although this lab highlights TensorFlow on zCX, the image can just as easily be deployed to a Linux LPAR or VM using these steps.
 
 
