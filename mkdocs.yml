@@ -24,6 +24,7 @@ nav:
   - Reference Models:
     - Fraud Detection: https://github.com/IBM/ai-on-z-fraud-detection/
   - Compiler and AI framework developer resources: codingAIU.md 
+  - Need access to a IBM Z or LinuxONE Environment?: resources.md
   - Resources: 
       - Samples: https://github.com/IBM/ai-on-z-samples
       - Additional container build files: https://github.com/IBM/ai-on-z-containers
