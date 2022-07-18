@@ -48,6 +48,6 @@ For further details, use the navigation bar on this page to select a 'Featured F
 
 Each of these are available as standalone packages, free of charge, or embedded within IBM products such as Watson Machine Learning for z/OS and Cloud Pak for Data. 
 
-Furthe reading:
+Further reading:
 
 - [IBM Telum announcement](https://www.ibm.com/blogs/systems/ibm-telum-processor-the-next-gen-microprocessor-for-ibm-z-and-ibm-linuxone/)
