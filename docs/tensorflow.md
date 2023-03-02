@@ -11,11 +11,13 @@ On IBM zSystems and LinuxONE, TensorFlow is built to exploit the vector architec
 
 ### z16 Integrated Accelerator for AI ###
 
-On June 30th, 2022 IBM released an open beta of TensorFlow core that includes device support for the IBM Integrated Accelerator for AI. This open beta is publshed under the name 'IBM Z Optimized for TensorFlow'. 
+On Feb 8th 2023, IBM released a library called [IBM-zDNN-Plugin](https://pypi.org/project/ibm-zdnn-plugin/) on the Python Package Index (PyPI). 
 
-This capability will allow TensorFlow to transparently target the z16 accelerator for a number of compute intenstive operations. The beta container image is available through the IBM Z and LinuxONE Container Registry (see below).
+The ibm-zdnn-plugin is a device plugin for TensorFlow that leverages the IBM z Deep Neural Network (zDNN) library for accelerated inferencing. On IBM® z16™ hardware (running Linux on IBM Z or IBM® z/OS® Container Extensions (IBM zCX)), TensorFlow core 2.9 or later can leverage new inference acceleration capabilities by transparently targeting the IBM Integrated Accelerator for AI through the IBM-zDNN-Plugin.
 
-Read more about this support [here](https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/prashantha-subbarao/2022/06/30/ibm-z-optimized-for-tensorflow)
+IBM-zDNN-Plugin follows the [PluggableDevice architecture](https://blog.tensorflow.org/2021/06/pluggabledevice-device-plugins-for-TensorFlow.html), which provides a plug-in mechanism that allows devices to be registered in TensorFlow without changing the TensorFlow code. This capability allows TensorFlow to target the z16 accelerator seamlessly and transparently for several compute intensive operations.
+
+Read more about this support [here](https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/prashantha-subbarao/2023/02/08/ibm-zdnn-plugin?CommunityKey=038560b2-e962-4500-b0b5-e3745175a065)
 
 ### Getting Started with TensorFlow on IBM zSystems and LinuxONE ###
 
@@ -25,9 +27,6 @@ The following images are available:
 
 - TensorFlow Core (CPU)
 - TensorFlow Serving (CPU)
-
-New (open beta):
-   - IBM Z Optimized for TensorFlow (this is TensorFlow core, leveraging the IBM z16 Integrated Accelerator for AI)
 
 If you are interested in trying TensorFlow out, here is a quick self-directed exercise that demonstrates how to call a TensorFlow model from a z/OS Java program: [TensorFlow and zCX interaction](https://github.com/IBM/ai-on-z-tensorflow-zcx).
 
