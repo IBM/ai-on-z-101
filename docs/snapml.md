@@ -51,6 +51,7 @@ Snap ML is an available python framework in IBM Cloud Pak for Data.
 
 - [Click here for official documentation](https://snapml.readthedocs.io/en/latest/)
 - [Click here for examples using Snap ML](https://github.com/IBM/snapml-examples)
+- [Leveraging Snap ML with Triton Inference Server on LoZ](https://github.com/IBM/ai-on-z-triton-is-examples)
 - [Example using Snap ML with BentoML Serving](https://github.com/IBM/snapml-examples/tree/main/examples/inference/random_forest/bentoml)
 
 ### Notes: ###

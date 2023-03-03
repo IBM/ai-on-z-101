@@ -43,7 +43,7 @@ There are two paths:
 - Command-line model compiler that produces a .so library with optional Java and Python wrappers.
 - Additional resources: 
     - [Documentation and samples, including C++, Java, and Python clients](https://github.com/IBM/zDLC)
-    - [BentoML ONNX-MLIR support](https://docs.bentoml.org/en/latest/frameworks/index.html)
+    - [Leveraging DLC with Triton Inference Server on LoZ](https://github.com/IBM/onnxmlir-triton-backend)
 
 
 Read our blogs on ONNX for more information:
