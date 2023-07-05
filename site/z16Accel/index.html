@@ -267,6 +267,19 @@
     Leveraging the IBM Integrated Accelerator for AI
   </a>
   
+    <nav class="md-nav" aria-label="Leveraging the IBM Integrated Accelerator for AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-integrated-accelerator-for-ai" class="md-nav__link">
+    Using the Integrated Accelerator for AI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -704,6 +717,19 @@
     Leveraging the IBM Integrated Accelerator for AI
   </a>
   
+    <nav class="md-nav" aria-label="Leveraging the IBM Integrated Accelerator for AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-integrated-accelerator-for-ai" class="md-nav__link">
+    Using the Integrated Accelerator for AI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -727,9 +753,9 @@
   <h1>Leveraging the IBM z16 Integrated Accelerator for AI</h1>
 
 <h2 id="leveraging-the-ibm-integrated-accelerator-for-ai">Leveraging the IBM Integrated Accelerator for AI<a class="headerlink" href="#leveraging-the-ibm-integrated-accelerator-for-ai" title="Permanent link">&para;</a></h2>
-<p>The IBM Integrated Accelerator for AI is an on-chip AI accelerator available on the IBM Telum chip that is part of IBM z16. It is designed to enable high throughput, low latency inference for deep learning and machine learning. </p>
+<p>The IBM Integrated Accelerator for AI is an on-chip AI accelerator available on the IBM Telum chip that is part of IBM z16 and LinuxONE 4 servers. It is designed to enable high throughput, low latency inference for deep learning and machine learning. </p>
 <p>With IBM z16 and the Integrated Accelerator for AI, you can build and train your models on any platform - including IBM zSystems and LinuxONE. When you are ready to deploy your assets, they will receive transparent acceleration and optimization on IBM zSystems, and will leverage the best available acceleration for the model type.</p>
-<p>The IBM Integrated Accelerator for AI is more than just a matrix multiply accelerator - it provides optimization and acceleration for a set of complex functions commonly found in deep learning and machine learning models. This enables a broader set of functions to be accelerated on the chip.</p>
+<p>The IBM Integrated Accelerator for AI is more than just a matrix multiply accelerator - it provides optimization and acceleration for a wide set of complex functions commonly found in deep learning and machine learning models. This enables a broader set of functions to be accelerated on the chip.</p>
 <p>As of IBM z16, the following operations are supported on the accelerator:</p>
 <div class="highlight"><pre><span></span><code>LSTM Activation
 GRU Activation
@@ -752,24 +778,37 @@ Max
 Log
 </code></pre></div>
 
-<p>These allow the supporting frameworks to target an even broader set of operations to the Integrated Accelerator for AI. </p>
-<p>Currently, the following frameworks can leverage the IBM z16 Integrated Accelerator for AI:</p>
+<p>These allow supporting frameworks to target a significantly larger set of operations to the Integrated Accelerator for AI. </p>
+<h3 id="using-the-integrated-accelerator-for-ai">Using the Integrated Accelerator for AI<a class="headerlink" href="#using-the-integrated-accelerator-for-ai" title="Permanent link">&para;</a></h3>
+<p><img alt="z16 AIU reference technologies " src="../z16aiusw.png" /></p>
+<p>Depending on your model type, there are a few essential approaches to leveraging the Integrated Accelerator for AI. These capabilities are all available in various IBM product offerings as well as through no-cost channels (such as the IBM Z Container Image Repository). </p>
+<p>For deep learning models, such as those created in PyTorch or TensorFlow:</p>
 <ul>
-<li><strong>ONNX deep learning models</strong>, when compiled using the IBM Deep Learning Compiler or ONNX-MLIR. <ul>
+<li><a href="../onnxdlc/"><strong>ONNX deep learning models</strong></a>, when compiled using the <a href="https://github.com/ibm/zdlc">IBM Z Deep Learning Compiler</a> (onnx-mlir). <ul>
 <li>Note that Pytorch, TensorFlow, Apache MXNet and other model types can be easily converted to ONNX.</li>
 </ul>
 </li>
-<li><strong>IBM Snap ML</strong>, a machine learning framework that provides optimized training and inference.<ul>
-<li>Random Forest and Boosting Machine models are accelerated using the Integrated Accelerator for AI.</li>
-<li>IBM Snap ML provides: <ul>
+<li><a href="../tensorflow/"><strong>TensorFlow</strong></a><ul>
+<li>By leveraging <a href="https://github.com/IBM/ibm-zdnn-plugin">ibm-zdnn-plugin</a>, which is a device plug-in for TensorFlow that allows TensorFlow to seamlessly utilize the Integrated Accelerator for AI.</li>
+</ul>
+</li>
+</ul>
+<p>For machine learning models, such as those created in sci-kit learn, XGBoost, or lightGBM:</p>
+<ul>
+<li><a href="../snapml/"><strong>IBM Snap ML</strong></a>, a machine learning framework that provides optimized training and inference.<ul>
+<li>Tree based models such as Random Forest and Boosting Machine are accelerated using the Integrated Accelerator for AI.</li>
+<li><a href="https://github.com/IBM/snapml-examples/tree/main">IBM Snap ML</a> provides: <ul>
 <li>Seamless acceleration of sci-kit learn applications.</li>
 <li>Ability to execute lightGBM and XGBoost trained models when converted to JSON, PMML, or ONNX.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><strong>TensorFlow</strong> (incubating)<ul>
-<li>Available initially as an open beta in late 2Q 2022.</li>
+</ul>
+<p>For those interested in enhancing frameworks or compilers to use the Integrated Accelerator for AI:</p>
+<ul>
+<li><a href="../codingAIU/"><strong>IBM zDNN</strong></a><ul>
+<li>This is the accelerator development library, which is intended for use by those interested in enhancing frameworks or compilers to use the accelerator.  </li>
 </ul>
 </li>
 </ul>

@@ -1,17 +1,10 @@
-# Enabling Smarter Workloads: AI on IBM zSystems and LinuxONE
+# Getting started with AI on IBM Z and LinuxONE systems
 ![This is an image](overview_1.jpg)
 
-The IBM zSystems platform excels at processing the most critical enterprise workloads. 
+IBM Z and LinuxONE feature state of the art hardware and software capabilities designed to optimize AI at scale alongside your enterprise's most critical workloads and data. 
 
-IBM zSystems have continuously evolved to meet the worlds ever growing needs. With the introduction of the [IBM z16](https://newsroom.ibm.com/2022-04-05-Announcing-IBM-z16-Real-time-AI-for-Transaction-Processing-at-Scale-and-Industrys-First-Quantum-Safe-System) this includes an on-chip AI accelerator which enables workloads to be infused with AI at throughput rates and latencies previously unobtainable.
+AI on IBM Z and LinuxONE is a large umbrella that covers both server technology as well as numerous IBM and vendor offerings and open-source projects. This includes enhancements such as the IBM Telum on-chip inference accelerator used by [IBM z16 and LinuxONE 4 systems](https://www.ibm.com/products/z16?utm_content=SRCWW&p1=Search&p4=43700070528300721&p5=p&gclid=CjwKCAjwqZSlBhBwEiwAfoZUIMn3YT7pSg2gmExBNy3hFF5WW2KEnlnPfMm8Lk-qj4zhsn04KT2mCBoCMOUQAvD_BwE&gclsrc=aw.ds). 
 
-Whether you come here as a beginner or experienced AI practioner, IBM zSystems provide numerous options for getting started with AI.
+This github page is designed to help you get jump started on leveraging AI. It features information on how to leverage the best of the open source ecosystem on IBM Z and LinuxONE, as well as pointers to community edition and freely available software that can help you quickly get started. It additionally provides example use cases, code samples, and other content to serve as a technical resource for your AI on Z journey. 
 
-Within these pages, you'll find information on how to leverage the best of the open source ecosystem on IBM zSystems and LinuxONE, as well as pointers to community edition and freely available software that can help you quickly get started.
-
-IBM zSystems and LinuxONE are, at their core, enterprise platforms. As such, these pages will also contain pointers to informaton on infusing critical business applications with AI. 
-
-This Github 101 page has been created to assist in that enablement by providing use cases, code samples, and other content to serve as a technical resource for your AI on Z journey. 
-
-Use the navigation bar on the left to begin your journey.
-
+Use the navigation bar on the left to select the most apporpriate topic. For other questions, reach out directly to [aionz@us.ibm.com](mailto:aionz@us.ibm.com)

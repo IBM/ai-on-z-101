@@ -20,8 +20,9 @@ IBM Research enhanced the IBM Deep Learning Compiler (DLC) to target the IBM Int
 
 The best approach to getting started with ONNX models using the IBM Deep Learning Compiler will depend on the IBM zSystem operating system on which you plan to use the inference program. 
 
-**z/OS users** should likely choose a Watson Machine Learning for z/OS (WMLz) based approach. 
-There are two paths:
+**z/OS users** can either choose a Watson Machine Learning for z/OS (WMLz) based approach or leverage Linux on Z options; in either case, z/OS Container Extensions will be required to utilize the IBM Z Deep Learning Compiler.
+ 
+There are two WMLz based options:
 
 - **Watson Machine Learning for z/OS Online Scoring Community Edition (OSCE)**, which is freely available and excels at enabling rapid prototyping and proof of concept exercises. 
     - Simple install to z/OS Container Extensions (zCX).
@@ -39,12 +40,13 @@ There are two paths:
 
 **Linux on Z and LinuxONE** users can leverage the Deep Learning Compiler directly to create model programs that can be incorporated into serving environments or applications directly.
 
-- Available through the [IBM Z and LinuxONE Container Registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) listed under **ONNX-MLIR**.
+- Available through the [IBM Z and LinuxONE Container Registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) listed under **zDLC**.
 - Command-line model compiler that produces a .so library with optional Java and Python wrappers.
-- Additional resources: 
-    - [Documentation and samples, including C++, Java, and Python clients](https://github.com/IBM/zDLC)
+- These model libraries can be leveraged either directly or through open-source AI inference servers such as Triton Inference Server. 
     - [Leveraging DLC with Triton Inference Server on LoZ](https://github.com/IBM/onnxmlir-triton-backend)
-
+- Additional samples: 
+    - [Documentation and samples, including C++, Java, and Python clients](https://github.com/IBM/zDLC)
+    
 
 Read our blogs on ONNX for more information:
  - [IBM Z and the Open Neural Network Exchange](https://www.ibm.com/blogs/systems/ibm-z-and-the-open-neural-network-exchange-onnx/)

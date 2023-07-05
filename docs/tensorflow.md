@@ -15,7 +15,7 @@ On Feb 8th 2023, IBM released a library called [IBM-zDNN-Plugin](https://pypi.or
 
 The ibm-zdnn-plugin is a device plugin for TensorFlow that leverages the IBM z Deep Neural Network (zDNN) library for accelerated inferencing. On IBM® z16™ hardware (running Linux on IBM Z or IBM® z/OS® Container Extensions (IBM zCX)), TensorFlow core 2.9 or later can leverage new inference acceleration capabilities by transparently targeting the IBM Integrated Accelerator for AI through the IBM-zDNN-Plugin.
 
-IBM-zDNN-Plugin follows the [PluggableDevice architecture](https://blog.tensorflow.org/2021/06/pluggabledevice-device-plugins-for-TensorFlow.html), which provides a plug-in mechanism that allows devices to be registered in TensorFlow without changing the TensorFlow code. This capability allows TensorFlow to target the z16 accelerator seamlessly and transparently for several compute intensive operations.
+ibm-zdnn-plugin follows the TensorFlow [PluggableDevice architecture](https://blog.tensorflow.org/2021/06/pluggabledevice-device-plugins-for-TensorFlow.html), which provides a plug-in mechanism that allows devices to be registered in TensorFlow without changing the TensorFlow code. This capability allows TensorFlow to target the z16 accelerator seamlessly and transparently for several compute intensive operations.
 
 Read more about this support [here](https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/prashantha-subbarao/2023/02/08/ibm-zdnn-plugin?CommunityKey=038560b2-e962-4500-b0b5-e3745175a065)
 
