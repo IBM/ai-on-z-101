@@ -4,7 +4,7 @@ ONNX is the Open Neural Network eXchange. You can read more about it [here](http
 
 ONNX establishes a streamlined path to take a project from playground to production.  
 
-With ONNX, you can start a data science project using the frameworks and libraries of your choosing, including popular frameworks such as PyTorch and TensorFlow. The model can be developed and trained leveraging these frameworks on the training platform of your choice. Once the model is trained and ready to begin the deployment journey, you would export or convert it to the ONNX format. 
+With ONNX, you can start a data science project using the frameworks and libraries of your choosing, including popular frameworks such as PyTorch and TensorFlow. The model can be developed and trained leveraging these frameworks on the training platform of your choice. Once the model is trained and ready to begin the deployment journey, you would [export or convert it to the ONNX format](onnxconv.md). 
 
 Tools such as [Netron](https://netron.app/) allow inspection and exploration of an ONNX model. When it comes to running the model, there are various back-ends that can be used to test and serve ONNX models. This includes model compilers such as the IBM Deep Learning Compiler (DLC), which is based on ONNX-MLIR. 
 

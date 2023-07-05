@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ibm.github.io/ai-on-z-101/onnxconv/</loc>
+         <lastmod>2023-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ibm.github.io/ai-on-z-101/onnxdlc/</loc>
          <lastmod>2023-07-05</lastmod>
          <changefreq>daily</changefreq>
