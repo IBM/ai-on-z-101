@@ -10,20 +10,20 @@
         <meta name="author" content="IBM Developer">
       
       
-        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/onnxconv/">
+        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/pmmlconv/">
       
       
-        <link rel="prev" href="../tensorflow/">
+        <link rel="prev" href="../onnxconv/">
       
       
-        <link rel="next" href="../pmmlconv/">
+        <link rel="next" href="../opensource/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>ONNX model conversion - AI on IBM Z 101</title>
+        <title>PMML model conversion - AI on IBM Z 101</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#converting-models-to-the-onnx-format" class="md-skip">
+        <a href="#converting-models-to-the-pmml-format" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ONNX model conversion
+              PMML model conversion
             
           </span>
         </div>
@@ -366,6 +366,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../onnxconv/" class="md-nav__link">
+        ONNX model conversion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -376,12 +390,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          ONNX model conversion
+          PMML model conversion
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        ONNX model conversion
+        PMML model conversion
       </a>
       
         
@@ -398,19 +412,12 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#converting-models-to-the-onnx-format" class="md-nav__link">
-    Converting models to the ONNX format
+  <a href="#converting-models-to-the-pmml-format" class="md-nav__link">
+    Converting models to the PMML format
   </a>
   
-    <nav class="md-nav" aria-label="Converting models to the ONNX format">
+    <nav class="md-nav" aria-label="Converting models to the PMML format">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    Best practices
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#samples" class="md-nav__link">
@@ -428,20 +435,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pmmlconv/" class="md-nav__link">
-        PMML model conversion
-      </a>
     </li>
   
 
@@ -785,19 +778,12 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#converting-models-to-the-onnx-format" class="md-nav__link">
-    Converting models to the ONNX format
+  <a href="#converting-models-to-the-pmml-format" class="md-nav__link">
+    Converting models to the PMML format
   </a>
   
-    <nav class="md-nav" aria-label="Converting models to the ONNX format">
+    <nav class="md-nav" aria-label="Converting models to the PMML format">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    Best practices
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#samples" class="md-nav__link">
@@ -829,35 +815,25 @@
   
 
 
-  <h1>ONNX model conversion</h1>
+  <h1>PMML model conversion</h1>
 
-<h2 id="converting-models-to-the-onnx-format">Converting models to the ONNX format<a class="headerlink" href="#converting-models-to-the-onnx-format" title="Permanent link">&para;</a></h2>
-<p>ONNX is the Open Neural Network eXchange. You can read more about it <a href="https://onnx.ai/">here</a> and explore how it is leveraged by the IBM Z Deep Learning Compiler <a href="../onnxdlc/">here</a>.</p>
-<p>Converting or exporting trained deep learning models to the ONNX format is a requirement for leveraging the IBM Z Deep Learning Compiler, whether stand-alone or as part of Watson Machine Learning for z/OS. </p>
-<p>The approach in deep learning frameworks varies - for example:</p>
-<ul>
-<li>TensorFlow models must be converted using the open-source <a href="https://github.com/onnx/tensorflow-onnx">tensorflow-onnx</a> package.</li>
-<li>PyTorch models can be exported directly to ONNX using <a href="https://pytorch.org/docs/master/onnx.html">PyTorch APIs</a>.</li>
-</ul>
-<p>Information on exporting models from other frameworks can be found on the <a href="https://pytorch.org/docs/master/onnx.html">ONNX community page</a>.</p>
-<h3 id="best-practices">Best practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>To avoid endian issues, we strongly recommend converting models to the ONNX format on the platform on which they were trained. (e.g., if a model was trained on an x86 environment, convert the model to ONNX on an x86 environment before transmitting to IBM Z or LinuxONE). </p>
-</li>
-<li>
-<p>For Deep Learning Compiler usage: to determine which ONNX opset to specify for model conversion, see the following references:</p>
-<ul>
-<li><a href="https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-NNPA.md">NNPA supported opset level</a></li>
-<li><a href="https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-cpu.md">CPU supported opset level</a></li>
-</ul>
-</li>
-<li>
-<p>On z16 or LinuxONE 4 machines, we recommend using the highest opset level as specified under NNPA operator support. This will generally be the first statement in the file linked above; for example as of July 2023 "Onnx-mlir currently supports ONNX operations targeting up to opset 18".</p>
-</li>
-</ul>
+<h2 id="converting-models-to-the-pmml-format">Converting models to the PMML format<a class="headerlink" href="#converting-models-to-the-pmml-format" title="Permanent link">&para;</a></h2>
+<p>PMML is the predictive model markup language. You can read more about it <a href="https://dmg.org/pmml/v4-4-1/GeneralStructure.html">here</a>. Machine learning models converted to the PMML format can be leveraged by IBM Snap ML; as described <a href="../snapml/">here</a>, tree based models can utilize the IBM z16 Integrated Accelerator for AI.  </p>
+<p>Additionally, Watson Machine Learning for z/OS can deploy PMML models. </p>
+<p>Generally, the best approach to converting models to PMML is to use <a href="https://github.com/jpmml/sklearn2pmml">sklearn2pmml</a>. This allows the user to create a PMMLPipeline object, which can contain either scikit-learn, xgboost, or lightGBM models as part of a pipeline. </p>
+<p>For considerations for using PMML models in Watson Machine Learning for z/OS, see the <a href="https://www.ibm.com/docs/en/wml-for-zos/enterprise/3.1.0?topic=owe-supported-algorithms-data-sources-data-types-model-types">WMLz documentation</a></p>
 <h3 id="samples">Samples<a class="headerlink" href="#samples" title="Permanent link">&para;</a></h3>
-<p>Additionally, IBM has published samples for both TensorFlow and ONNX, available here: <a href="https://github.com/IBM/ai-on-z-samples">https://github.com/IBM/ai-on-z-samples</a></p>
+<p>For an example of converting a scikit-learn model to PMML, see the IBM Snap ML examples; one such example can be found <a href="https://github.com/IBM/snapml-examples/blob/main/examples/inference/random_forest/example_credit_card_fraud.ipynb">here</a></p>
+<p>Additionally, here is a brief code snippet showing the process: </p>
+<div class="highlight"><pre><span></span><code># Create a scikit-learn Random Forest Classifier model
+model = RandomForestClassifier(n_estimators = 200, max_depth=6, n_jobs=4, random_state=42)
+
+# Train a PMML pipeline that uses the scikit-learn model defined above
+pipeline = PMMLPipeline([(&quot;model&quot;, model)]).fit(X_train, y_train)
+
+# Save the trained PMML pipeline to a file, e.g., &quot;model.pmml&quot;
+sklearn2pmml(pipeline, &quot;model.pmml&quot;, with_repr=True)
+</code></pre></div>
 
 
 

@@ -50,7 +50,7 @@ For machine learning models, such as those created in sci-kit learn, XGBoost, or
  - [**IBM Snap ML**](snapml.md), a machine learning framework that provides optimized training and inference.
     - Tree based models such as Random Forest and Boosting Machine are accelerated using the Integrated Accelerator for AI.
     - [IBM Snap ML](https://github.com/IBM/snapml-examples/tree/main) provides: 
-        - Seamless acceleration of sci-kit learn applications.
+        - Seamless acceleration of scikit-learn applications.
         - Ability to execute lightGBM and XGBoost trained models when converted to JSON, PMML, or ONNX.
 
 For those interested in enhancing frameworks or compilers to use the Integrated Accelerator for AI:
