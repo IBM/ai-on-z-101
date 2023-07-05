@@ -10,16 +10,20 @@
         <meta name="author" content="IBM Developer">
       
       
-        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/ai-on-z-samples/">
+        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/onnxconv/">
       
       
+        <link rel="prev" href="../tensorflow/">
+      
+      
+        <link rel="next" href="../opensource/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>Index - AI on IBM Z 101</title>
+        <title>ONNX model conversion - AI on IBM Z 101</title>
       
     
     
@@ -67,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ai-on-z-samples" class="md-skip">
+        <a href="#converting-models-to-the-onnx-format" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              ONNX model conversion
             
           </span>
         </div>
@@ -333,14 +337,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
       
@@ -349,7 +355,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Model conversion to ONNX or PMML
@@ -360,11 +366,68 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../onnxconv/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ONNX model conversion
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         ONNX model conversion
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#converting-models-to-the-onnx-format" class="md-nav__link">
+    Converting models to the ONNX format
+  </a>
+  
+    <nav class="md-nav" aria-label="Converting models to the ONNX format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best practices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samples" class="md-nav__link">
+    Samples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -700,8 +763,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -710,30 +771,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#scope" class="md-nav__link">
-    Scope
+  <a href="#converting-models-to-the-onnx-format" class="md-nav__link">
+    Converting models to the ONNX format
+  </a>
+  
+    <nav class="md-nav" aria-label="Converting models to the ONNX format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best practices
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#samples-in-this-project" class="md-nav__link">
-    Samples in this project:
+        
+          <li class="md-nav__item">
+  <a href="#samples" class="md-nav__link">
+    Samples
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    License
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -755,40 +815,35 @@
   
 
 
-<!-- This should be the location of the title of the repository, normally the short name -->
+  <h1>ONNX model conversion</h1>
 
-<h1 id="ai-on-z-samples">ai-on-z-samples<a class="headerlink" href="#ai-on-z-samples" title="Permanent link">&para;</a></h1>
-<h2 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link">&para;</a></h2>
-<p>This repository contains small, useful examples that serve to demonstrate some of the interesting 
-technologies available for use on IBM Z and LinuxONE systems. </p>
-<!-- A more detailed Usage or detailed explaination of the repository here -->
-
-<h2 id="samples-in-this-project">Samples in this project:<a class="headerlink" href="#samples-in-this-project" title="Permanent link">&para;</a></h2>
+<h2 id="converting-models-to-the-onnx-format">Converting models to the ONNX format<a class="headerlink" href="#converting-models-to-the-onnx-format" title="Permanent link">&para;</a></h2>
+<p>ONNX is the Open Neural Network eXchange. You can read more about it <a href="https://onnx.ai/">here</a> and explore how it is leveraged by the IBM Z Deep Learning Compiler <a href="../onnxdlc/">here</a>.</p>
+<p>Converting or exporting trained deep learning models to the ONNX format is a requirement for leveraging the IBM Z Deep Learning Compiler, whether stand-alone or as part of Watson Machine Learning for z/OS. </p>
+<p>The approach in deep learning frameworks varies - for example:</p>
 <ul>
-<li><a href="tf-zcx-zos">TensorFlow Serving on zCX and z/OS simple app example.</a></li>
-<li><a href="https://github.com/IBM/ai-on-z-samples/tree/master/onnx-conversion">ONNX model export and conversion examples</a></li>
+<li>TensorFlow models must be converted using the open-source <a href="https://github.com/onnx/tensorflow-onnx">tensorflow-onnx</a> package.</li>
+<li>PyTorch models can be exported directly to ONNX using <a href="https://pytorch.org/docs/master/onnx.html">PyTorch APIs</a>.</li>
 </ul>
-<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
-<!-- Questions can be useful but optional, this gives you a place to say, "This is how to contact this project maintainers or create PRs -->
-
-<p>If you have any questions or issues you can create a new [issue here][issues].</p>
-<p>If you have created a sample that you would like to share, please do so - pull requests are very welcome! 
-Ideally create a topic branch for every contribution or change you would like to suggest. 
-For example:</p>
-<ol>
-<li>Fork the repo</li>
-<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
-<li>Commit your changes (<code>git commit -am 'Added some feature'</code>)</li>
-<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
-<li>Create new Pull Request</li>
-</ol>
-<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p>If you would like to see the detailed LICENSE click <a href="LICENSE">here</a>.</p>
-<div class="highlight"><pre><span></span><code>#
-# Copyright 2020- IBM Inc. All rights reserved
-# SPDX-License-Identifier: Apache2.0
-#
-</code></pre></div>
+<p>Information on exporting models from other frameworks can be found on the <a href="https://pytorch.org/docs/master/onnx.html">ONNX community page</a>.</p>
+<h3 id="best-practices">Best practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>To avoid endian issues, we strongly recommend converting models to the ONNX format on the platform on which they were trained. (e.g., if a model was trained on an x86 environment, convert the model to ONNX on an x86 environment before transmitting to IBM Z or LinuxONE). </p>
+</li>
+<li>
+<p>For Deep Learning Compiler usage: to determine which ONNX opset to specify for model conversion, see the following references:</p>
+<ul>
+<li><a href="https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-NNPA.md">NNPA supported opset level</a></li>
+<li><a href="https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-cpu.md">CPU supported opset level</a></li>
+</ul>
+</li>
+<li>
+<p>On z16 or LinuxONE 4 machines, we recommend using the highest opset level as specified under NNPA operator support. This will generally be the first statement in the file linked above; for example as of July 2023 "Onnx-mlir currently supports ONNX operations targeting up to opset 18".</p>
+</li>
+</ul>
+<h3 id="samples">Samples<a class="headerlink" href="#samples" title="Permanent link">&para;</a></h3>
+<p>Additionally, IBM has published samples for both TensorFlow and ONNX, available here: <a href="https://github.com/IBM/ai-on-z-samples">https://github.com/IBM/ai-on-z-samples</a></p>
 
 
 
