@@ -755,21 +755,21 @@ Log
 <p>These allow the supporting frameworks to target an even broader set of operations to the Integrated Accelerator for AI. </p>
 <p>Currently, the following frameworks can leverage the IBM z16 Integrated Accelerator for AI:</p>
 <ul>
-<li><strong>ONNX deep learning models</strong>, when compiled using the IBM Deep Learning Compiler or ONNX-MLIR. <ul>
+<li><strong>ONNX deep learning models</strong>, when compiled using the <a href="https://github.com/ibm/zdlc">IBM Z Deep Learning Compiler</a> (onnx-mlir). <ul>
 <li>Note that Pytorch, TensorFlow, Apache MXNet and other model types can be easily converted to ONNX.</li>
 </ul>
 </li>
 <li><strong>IBM Snap ML</strong>, a machine learning framework that provides optimized training and inference.<ul>
-<li>Random Forest and Boosting Machine models are accelerated using the Integrated Accelerator for AI.</li>
-<li>IBM Snap ML provides: <ul>
+<li>Tree based models such as Random Forest and Boosting Machine are accelerated using the Integrated Accelerator for AI.</li>
+<li><a href="https://github.com/IBM/snapml-examples/tree/main">IBM Snap ML</a> provides: <ul>
 <li>Seamless acceleration of sci-kit learn applications.</li>
 <li>Ability to execute lightGBM and XGBoost trained models when converted to JSON, PMML, or ONNX.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><strong>TensorFlow</strong> (incubating)<ul>
-<li>Available initially as an open beta in late 2Q 2022.</li>
+<li><strong>TensorFlow</strong><ul>
+<li>By leveraging <a href="https://github.com/IBM/ibm-zdnn-plugin">ibm-zdnn-plugin</a>, which is a device plug-in for TensorFlow that allows it to seamlessly utilize the Integrated Accelerator for AI.</li>
 </ul>
 </li>
 </ul>
