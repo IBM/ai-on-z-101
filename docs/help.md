@@ -14,4 +14,4 @@ This is a discovery workshop designed to help demystify the technology powering 
 
 It's targeted to IBM zSystem and LinuxONE customers who are interested in leveraging AI and analytic capabilities to gain new insights from their workloads and data.
 
-Contact [SysGarage@ibm.com](mailto:sysgarage@ibm.com) for more information.
+Contact [ce4s@ibm.com](mailto:ce4s@ibm.com) for more information.
