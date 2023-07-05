@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ibm.github.io/ai-on-z-101/pmmlconv/</loc>
+         <lastmod>2023-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ibm.github.io/ai-on-z-101/resources/</loc>
          <lastmod>2023-07-05</lastmod>
          <changefreq>daily</changefreq>
