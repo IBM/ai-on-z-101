@@ -15,7 +15,8 @@ nav:
   - Featured Frameworks and Technologies:
       - ONNX and the IBM Deep Learning Compiler: onnxdlc.md
       - IBM Snap Machine Learning (Snap ML): snapml.md
-      - TensorFlow: tensorflow.md
+      - TensorFlow and TensorFlow Serving: tensorflow.md
+      - Triton Inference Server: tritonis.md
       - Db2 13 SQL Data Insights: https://www.ibm.com/common/ssi/ShowDoc.wss?docURL=/common/ssi/rep_ca/1/897/ENUS222-061/index.html
   - Model conversion to ONNX or PMML: 
       - ONNX model conversion: onnxconv.md

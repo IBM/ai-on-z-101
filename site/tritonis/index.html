@@ -10,16 +10,20 @@
         <meta name="author" content="IBM Developer">
       
       
-        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/ai-on-z-fraud-detection/">
+        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/tritonis/">
       
       
+        <link rel="prev" href="../tensorflow/">
+      
+      
+        <link rel="next" href="../onnxconv/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>Index - AI on IBM Z 101</title>
+        <title>Triton Inference Server - AI on IBM Z 101</title>
       
     
     
@@ -67,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#scope" class="md-skip">
+        <a href="#triton-inference-server-for-linux-on-z-environments" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Triton Inference Server
             
           </span>
         </div>
@@ -242,14 +246,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -258,7 +264,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Featured Frameworks and Technologies
@@ -311,11 +317,48 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../tritonis/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Triton Inference Server
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Triton Inference Server
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#triton-inference-server-for-linux-on-z-environments" class="md-nav__link">
+    Triton Inference Server for Linux on Z environments
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -736,36 +779,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#scope" class="md-nav__link">
-    Scope
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    Summary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
-    Environment:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-dataset-used-in-this-repo-can-be-found-here" class="md-nav__link">
-    The dataset used in this repo can be found here:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    License
+  <a href="#triton-inference-server-for-linux-on-z-environments" class="md-nav__link">
+    Triton Inference Server for Linux on Z environments
   </a>
   
 </li>
@@ -788,34 +803,33 @@
   
 
 
-  <h1>Index</h1>
+  <h1>Triton Inference Server</h1>
 
-<h2 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link">&para;</a></h2>
-<p>This repository provides TensorFlow source code for building and training credit card fraud models using an LSTM and a GRU.</p>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>The models included in this repository are multi-layer LSTM or GRU models that analyze time series data to predict whether a credit card transaction is fraudulent.</p>
-<p>The models consist of a recurrent neural network (RNN) with 2 layers of long short-term memory (LSTM) or gated recurrent unit (GRU), 200 units in each layer, followed by a dense layer.  There is one output, which is Fraud/Non-fraud.  A sequence of 7 transactions is used as the input to model. </p>
-<p>In a transactional environment such as z/OS CICS, new data is generated from card terminal transactions.  The transaction is received by a z/OS application that then must process it.  As part of this processing, validation occurs.  This can include the use of AI to provide insight on whether the transaction is potentially fraudulent.</p>
-<p>The TensorFlow saved models were converted to the ONNX format using the tf2onnx 1.10.0 library and are also included in this repo.  The models were converted using the following template:
-<div class="highlight"><pre><span></span><code>import tf2onnx
-spec = (tf.TensorSpec((7, 16, 220), tf.float32, name=&quot;input&quot;),)
-output_path = new_model.name + &quot;.onnx&quot;
-onnx_model = tf2onnx.convert.from_keras(new_model, spec, output_path=output_path)
-</code></pre></div></p>
-<h2 id="environment">Environment:<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h2>
+<h2 id="triton-inference-server-for-linux-on-z-environments">Triton Inference Server for Linux on Z environments<a class="headerlink" href="#triton-inference-server-for-linux-on-z-environments" title="Permanent link">&para;</a></h2>
+<p>Triton Inference Server is a model server open-sourced by Nvidia. Triton supports model inference on both CPU and GPU devices and is commonly used across a wide variety of platforms and architectures, including s390x (Linux on Z). On Linux on Z, Triton is able to leverage AI frameworks that can take advantage of both the SIMD architecture as well as the IBM Integrated Accelerator for AI. </p>
+<p>Features of Triton include:</p>
 <ul>
-<li>s390x</li>
-<li>python version 3.6.9</li>
-<li>pandas version 1.0.1</li>
-<li>numpy version 1.16.2</li>
-<li>scikit-learn version 0.22.1</li>
-<li>sklearn-pandas version 1.8.0</li>
-<li>TensorFlow version 2.1.0</li>
+<li>Server-side micro-batching (Dynamic Batching)</li>
+<li>Support for multiple frameworks</li>
+<li>Supports customization: new frameworks, rule integrations.</li>
+<li>Model version control</li>
+<li>Concurrent model execution</li>
+<li>Metrics/Monitoring Integration</li>
 </ul>
-<h2 id="the-dataset-used-in-this-repo-can-be-found-here">The dataset used in this repo can be found here:<a class="headerlink" href="#the-dataset-used-in-this-repo-can-be-found-here" title="Permanent link">&para;</a></h2>
-<p>https://github.com/IBM/TabFormer/tree/main/data/credit_card</p>
-<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p>If you would like to see the detailed LICENSE click <a href="LICENSE">here</a>.</p>
+<p>Triton is quite flexible and supports a wide variety of model types. It also has the ability to create custom model backends, which make it extremely flexible for a variety of scenarios.  In our testing, we have focused on two primary paths which allow us to deploy models that can leverage the Integrated Accelerator for AI when deployed on IBM z16 or LinuxONE 4. </p>
+<p>These are:</p>
+<ul>
+<li>Traditional machine learning models in the PMML, ONNX, or JSON format that are run using an IBM Snap ML runtime.</li>
+<li>Deep Learning models in the ONNX model format and compiled with the IBM Deep Learning Compiler.</li>
+</ul>
+<p>You can easily build and experiment with either of these capabilities on your Linux on Z environment. For example, IBM has published an example Dockerfile which can be used to build the Triton Inference Server with a custom backend for Snap ML. </p>
+<p>The Dockerfile can be found here: <a href="https://github.com/IBM/ai-on-z-triton-is-examples">https://github.com/IBM/ai-on-z-triton-is-examples</a>.</p>
+<ul>
+<li>The repository includes a detailed example that can be used try the Snap ML support: <a href="https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples">https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples</a>.</li>
+<li>This example builds a random forest classified model and deploys it to Triton; it includes a test script to invoke the model.</li>
+</ul>
+<p>Additionally as mentioned Triton can also be used to deploy ONNX models compiled with the IBM Deep Learning Compiler. Guidance on building and using the Triton Deep Learning Compiler backend can be found here: https://github.com/IBM/onnxmlir-triton-backend</p>
+<p>Note that IBM Snap ML is available for install with PyPI , while the IBM Deep Learning Compiler is available via the IBM Z and LinuxONE Container Repository. Both are no charge sources. </p>
 
 
 
