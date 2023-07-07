@@ -11,6 +11,8 @@ edit_uri: edit/master/docs
 # Navigation
 nav:
   - Overview: README.md
+  - Updates and news:
+    - blog/index.md  
   - Leveraging the IBM z16 Integrated Accelerator for AI: z16Accel.md
   - Featured Frameworks and Technologies:
       - ONNX and the IBM Deep Learning Compiler: onnxdlc.md
@@ -65,6 +67,7 @@ theme:
 # Plugins
 plugins:
   - search
+  - blog
 
 # Customization
 extra:
