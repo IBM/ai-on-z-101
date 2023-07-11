@@ -20,6 +20,7 @@ nav:
       - TensorFlow and TensorFlow Serving: tensorflow.md
       - Triton Inference Server: tritonis.md
       - Db2 13 SQL Data Insights: https://www.ibm.com/common/ssi/ShowDoc.wss?docURL=/common/ssi/rep_ca/1/897/ENUS222-061/index.html
+      - Python AI Toolkit for IBM z/OS: pyaitoolkit.md
   - Model conversion to ONNX or PMML: 
       - ONNX model conversion: onnxconv.md
       - PMML model conversion: pmmlconv.md

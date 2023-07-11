@@ -6,6 +6,7 @@ Packages can be installed using Linux packages managers, PyPI, Anaconda, or of c
 
 Resources: 
 
+- [Python AI Toolkit for IBM z/OS](https://ibm-z-oss-oda.github.io/python_ai_toolkit_zos/)
 - [Anaconda for s390x](https://docs.anaconda.com/anaconda/install/linux-s390x/)
 - [IBM Z and LinuxONE Container Registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html)
 
