@@ -76,6 +76,31 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/CONTRIBUTING/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/MAINTAINERS/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-containers/nlp-spaCy/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-fraud-detection/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ibm.github.io/ai-on-z-101/ai-on-z-samples/</loc>
          <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
@@ -106,7 +131,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ibm.github.io/ai-on-z-101/blog/posts/wmlz-new/</loc>
+         <loc>https://ibm.github.io/ai-on-z-101/blog/2023/07/07/updates-to-our-101-pages/</loc>
          <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -122,6 +147,21 @@
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/zDNN/samples/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/blog/archive/2023/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/blog/category/site-updates/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/blog/category/general/</loc>
          <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
