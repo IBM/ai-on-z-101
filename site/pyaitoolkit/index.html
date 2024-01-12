@@ -10,13 +10,13 @@
         <meta name="author" content="IBM Developer">
       
       
-        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/onnxconv/">
+        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/pyaitoolkit/">
       
       
-        <link rel="prev" href="../aitoolkitloz/">
+        <link rel="prev" href="../tritonis/">
       
       
-        <link rel="next" href="../pmmlconv/">
+        <link rel="next" href="../aitoolkitloz/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>ONNX model conversion - AI on IBM Z 101</title>
+        <title>Python AI Toolkit for IBM z/OS - AI on IBM Z 101</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#converting-models-to-the-onnx-format" class="md-skip">
+        <a href="#getting-started-with-the-python-ai-toolkit-for-ibm-zos" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ONNX model conversion
+              Python AI Toolkit for IBM z/OS
             
           </span>
         </div>
@@ -486,17 +486,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
@@ -509,7 +511,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Featured Frameworks and Technologies
@@ -620,9 +622,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../pyaitoolkit/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Python AI Toolkit for IBM z/OS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -631,6 +651,38 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-the-python-ai-toolkit-for-ibm-zos" class="md-nav__link">
+    Getting Started with the Python AI Toolkit for IBM z/OS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -667,19 +719,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -692,7 +742,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Model conversion to ONNX or PMML
@@ -703,27 +753,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    ONNX model conversion
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../onnxconv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,58 +764,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#converting-models-to-the-onnx-format" class="md-nav__link">
-    Converting models to the ONNX format
-  </a>
-  
-    <nav class="md-nav" aria-label="Converting models to the ONNX format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    Best practices
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator" class="md-nav__link">
-    Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#samples" class="md-nav__link">
-    Samples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1238,36 +1218,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#converting-models-to-the-onnx-format" class="md-nav__link">
-    Converting models to the ONNX format
-  </a>
-  
-    <nav class="md-nav" aria-label="Converting models to the ONNX format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    Best practices
+  <a href="#getting-started-with-the-python-ai-toolkit-for-ibm-zos" class="md-nav__link">
+    Getting Started with the Python AI Toolkit for IBM z/OS
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator" class="md-nav__link">
-    Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#samples" class="md-nav__link">
-    Samples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1289,42 +1249,24 @@
   
 
 
-  <h1>ONNX model conversion</h1>
+  <h1>Python AI Toolkit for IBM z/OS</h1>
 
-<h2 id="converting-models-to-the-onnx-format">Converting models to the ONNX format<a class="headerlink" href="#converting-models-to-the-onnx-format" title="Permanent link">&para;</a></h2>
-<p>ONNX is the Open Neural Network eXchange. You can read more about it <a href="https://onnx.ai/">here</a> and explore how it is leveraged by the IBM Z Deep Learning Compiler <a href="../onnxdlc/">here</a>.</p>
-<p>Converting or exporting trained deep learning models to the ONNX format is a requirement for leveraging the IBM Z Deep Learning Compiler, whether stand-alone or as part of Machine Learning for z/OS. </p>
-<p>The approach in deep learning frameworks varies - for example:</p>
+<p>Python AI Toolkit for IBM z/OS is a library of relevant open source software to support today's artificial intelligence (AI) and machine learning (ML) workloads. It is a collection of Python packages that can be installed and managed using Package Installer for Python (pip), the common Python package manager. These packages are provided to pip from an IBM-hosted PyPi-style repository, leveraging supply chain security, that makes your software management experience common across your Python environments.</p>
+<p>IBM support is available for this product through IBM Shopz.</p>
+<h3 id="getting-started-with-the-python-ai-toolkit-for-ibm-zos">Getting Started with the Python AI Toolkit for IBM z/OS<a class="headerlink" href="#getting-started-with-the-python-ai-toolkit-for-ibm-zos" title="Permanent link">&para;</a></h3>
+<p>Python AI Toolkit for IBM z/OS is available within the IBM z/OS environment.</p>
+<p>Visit the getting started tab on the <a href="https://ibm-z-oss-oda.github.io/python_ai_toolkit_zos/">Python AI Toolkit for IBM z/OS product page</a> to view all the latest documentation installing and using the product.</p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p>For more information, check out these helpful resources:</p>
 <ul>
-<li>TensorFlow models must be converted using the open-source <a href="https://github.com/onnx/tensorflow-onnx">tensorflow-onnx</a> package.</li>
-<li>PyTorch models can be exported directly to ONNX using <a href="https://pytorch.org/docs/master/onnx.html">PyTorch APIs</a>.</li>
+<li><a href="https://ibm.biz/zPAIT_overview">Overview Video</a></li>
+<li><a href="https://ibm.biz/zPAIT_demo">Getting Started Video</a></li>
+<li><a href="https://ibm.biz/zPAIT_redbook">Redpaper Solution Guide</a></li>
+<li><a href="https://ibm.biz/BdPnfS">FAQ</a></li>
+<li><a href="https://ibm.biz/BdPnXX">Annoucement Letter</a></li>
+<li><a href="https://ibm.biz/BdPnE6">Journey to Open Data Analytics</a></li>
+<li><a href="https://www.ibm.com/products/open-enterprise-python-zos">IBM Open Enterprise SDK for Python</a></li>
 </ul>
-<p>Information on exporting models from other frameworks can be found on the <a href="https://onnx.ai/get-started.html">ONNX community page</a>.</p>
-<h3 id="best-practices">Best practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>To avoid endian issues, we strongly recommend converting models to the ONNX format on the platform on which they were trained. (e.g., if a model was trained on an x86 environment, convert the model to ONNX on an x86 environment before transmitting to IBM Z or LinuxONE). </p>
-</li>
-<li>
-<p>For Deep Learning Compiler usage: to determine which ONNX opset to specify for model conversion, see the following references:</p>
-<ul>
-<li><a href="https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-NNPA.md">NNPA supported opset level</a></li>
-<li><a href="https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-cpu.md">CPU supported opset level</a></li>
-</ul>
-</li>
-<li>
-<p>On z16 or LinuxONE 4 machines, we recommend using the highest opset level as specified under NNPA operator support. This will generally be the first statement in the file linked above; for example as of July 2023 "Onnx-mlir currently supports ONNX operations targeting up to opset 18".</p>
-</li>
-</ul>
-<h3 id="determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator">Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:<a class="headerlink" href="#determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator" title="Permanent link">&para;</a></h3>
-<p>When compiling with the IBM Z Deep Learning Compiler, you can get information and insights into various model operations and whether they will run on the accelerator. This can be critical information to help explore model performance. </p>
-<ul>
-<li>For guidance on <a href="https://github.com/ibm/zdlc#view-operation-targets-at-compile-time">displaying model operation targets (CPU or Z accelerator)</a></li>
-<li>Runtime <a href="https://github.com/ibm/zdlc#obtaining-ibm-z-deep-learning-compiler-debug-instrumentation-">instrumentation can be enabled</a></li>
-<li>Check <a href="https://github.com/ibm/zdlc#performance-tips-for-ibm-z-integrated-accelerator-for-ai-">here for other performance guidance</a></li>
-</ul>
-<h3 id="samples">Samples<a class="headerlink" href="#samples" title="Permanent link">&para;</a></h3>
-<p>Additionally, IBM has published samples for both TensorFlow and ONNX, available here: <a href="https://github.com/IBM/ai-on-z-samples">https://github.com/IBM/ai-on-z-samples</a></p>
 
 
 

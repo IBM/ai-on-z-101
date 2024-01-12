@@ -60,7 +60,7 @@ For those interested in enhancing frameworks or compilers to use the Integrated 
 
 For further details, use the navigation bar on this page to select a 'Featured Frameworks and Technologies' choice. 
 
-Each of these are available as standalone packages, free of charge, or embedded within IBM products such as Watson Machine Learning for z/OS and Cloud Pak for Data. 
+Each of these are available as standalone packages, free of charge, or embedded within IBM products such as  Machine Learning for z/OS and Cloud Pak for Data. 
 
 Further reading:
 

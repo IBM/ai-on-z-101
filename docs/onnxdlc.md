@@ -20,17 +20,17 @@ IBM Research enhanced the IBM Deep Learning Compiler (DLC) to target the IBM Int
 
 The best approach to getting started with ONNX models using the IBM Deep Learning Compiler will depend on the IBM zSystem operating system on which you plan to use the inference program. 
 
-**z/OS users** can either choose a Watson Machine Learning for z/OS (WMLz) based approach or leverage Linux on Z options; in either case, z/OS Container Extensions will be required to utilize the IBM Z Deep Learning Compiler.
+**z/OS users** can either choose a  Machine Learning for z/OS (WMLz) based approach or leverage Linux on Z options; in either case, z/OS Container Extensions will be required to utilize the IBM Z Deep Learning Compiler.
  
 There are two WMLz based options:
 
-- **Watson Machine Learning for z/OS Online Scoring Community Edition (OSCE)**, which is freely available and excels at enabling rapid prototyping and proof of concept exercises. 
+- ** Machine Learning for z/OS Online Scoring Community Edition (OSCE)**, which is freely available and excels at enabling rapid prototyping and proof of concept exercises. 
     - Simple install to z/OS Container Extensions (zCX).
     - Enables you to upload your ONNX model then compile and deploy at the push of a button. 
     - Includes serving capability that exposes REST end points to call from an application.
     - Available on the ibm.com WMLz page: ['Download trial code'](https://www.ibm.com/products/machine-learning-for-zos).
 
-- **Watson Machine Learning for z/OS**, which is a z/OS product that manages full model lifecycle and includes numerous features to improve performance for AI models and simplify deployment. 
+- ** Machine Learning for z/OS**, which is a z/OS product that manages full model lifecycle and includes numerous features to improve performance for AI models and simplify deployment. 
     - Enables you to upload your ONNX model then compile and deploy at the push of a button. 
     - Supports server side mini-batching for ONNX/DLC model serving to get the best benefit out of the Integrated Accelerator for AI.
     - Infuse AI into z/OS applications either through native CICS Cobol scoring services or by using model server REST endpoints.

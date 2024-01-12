@@ -10,28 +10,28 @@
         <meta name="author" content="IBM Developer">
       
       
-        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/onnxconv/">
+        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/blog/archive/2024/">
       
       
-        <link rel="prev" href="../aitoolkitloz/">
+        <link rel="prev" href="../../">
       
       
-        <link rel="next" href="../pmmlconv/">
+        <link rel="next" href="../2023/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.2.0-b0">
     
     
       
-        <title>ONNX model conversion - AI on IBM Z 101</title>
+        <title>2024 - AI on IBM Z 101</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.0c456da8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0c456da8.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#converting-models-to-the-onnx-format" class="md-skip">
+        <a href="#2024" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="AI on IBM Z 101" class="md-header__button md-logo" aria-label="AI on IBM Z 101" data-md-component="logo">
+    <a href="../../.." title="AI on IBM Z 101" class="md-header__button md-logo" aria-label="AI on IBM Z 101" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ONNX model conversion
+              2024
             
           </span>
         </div>
@@ -196,7 +196,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="AI on IBM Z 101" class="md-nav__button md-logo" aria-label="AI on IBM Z 101" data-md-component="logo">
+    <a href="../../.." title="AI on IBM Z 101" class="md-nav__button md-logo" aria-label="AI on IBM Z 101" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -225,7 +225,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -242,17 +242,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
@@ -265,7 +267,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Updates and news
@@ -278,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blog/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -296,17 +298,19 @@
                 
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
@@ -319,7 +323,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Archive
@@ -330,9 +334,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../blog/archive/2024/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -341,6 +354,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -352,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blog/archive/2023/" class="md-nav__link">
+      <a href="../2023/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -414,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blog/category/general/" class="md-nav__link">
+      <a href="../../category/general/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -434,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blog/category/site-updates/" class="md-nav__link">
+      <a href="../../category/site-updates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -469,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../z16Accel/" class="md-nav__link">
+      <a href="../../../z16Accel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -522,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../onnxdlc/" class="md-nav__link">
+      <a href="../../../onnxdlc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -542,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../snapml/" class="md-nav__link">
+      <a href="../../../snapml/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tensorflow/" class="md-nav__link">
+      <a href="../../../tensorflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -582,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tritonis/" class="md-nav__link">
+      <a href="../../../tritonis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -622,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pyaitoolkit/" class="md-nav__link">
+      <a href="../../../pyaitoolkit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -642,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aitoolkitloz/" class="md-nav__link">
+      <a href="../../../aitoolkitloz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -667,19 +681,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -692,7 +704,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Model conversion to ONNX or PMML
@@ -703,27 +715,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    ONNX model conversion
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../onnxconv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,58 +726,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#converting-models-to-the-onnx-format" class="md-nav__link">
-    Converting models to the ONNX format
-  </a>
-  
-    <nav class="md-nav" aria-label="Converting models to the ONNX format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    Best practices
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator" class="md-nav__link">
-    Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#samples" class="md-nav__link">
-    Samples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -795,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pmmlconv/" class="md-nav__link">
+      <a href="../../../pmmlconv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -822,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../opensource/" class="md-nav__link">
+      <a href="../../../opensource/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -841,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infusing/" class="md-nav__link">
+      <a href="../../../infusing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terminology/" class="md-nav__link">
+      <a href="../../../terminology/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -879,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../help/" class="md-nav__link">
+      <a href="../../../help/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -959,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../codingAIU/" class="md-nav__link">
+      <a href="../../../codingAIU/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -978,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../resources/" class="md-nav__link">
+      <a href="../../../resources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1230,48 +1172,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#converting-models-to-the-onnx-format" class="md-nav__link">
-    Converting models to the ONNX format
-  </a>
-  
-    <nav class="md-nav" aria-label="Converting models to the ONNX format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    Best practices
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator" class="md-nav__link">
-    Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#samples" class="md-nav__link">
-    Samples
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1280,60 +1182,61 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-  
-
-
-  <h1>ONNX model conversion</h1>
-
-<h2 id="converting-models-to-the-onnx-format">Converting models to the ONNX format<a class="headerlink" href="#converting-models-to-the-onnx-format" title="Permanent link">&para;</a></h2>
-<p>ONNX is the Open Neural Network eXchange. You can read more about it <a href="https://onnx.ai/">here</a> and explore how it is leveraged by the IBM Z Deep Learning Compiler <a href="../onnxdlc/">here</a>.</p>
-<p>Converting or exporting trained deep learning models to the ONNX format is a requirement for leveraging the IBM Z Deep Learning Compiler, whether stand-alone or as part of Machine Learning for z/OS. </p>
-<p>The approach in deep learning frameworks varies - for example:</p>
-<ul>
-<li>TensorFlow models must be converted using the open-source <a href="https://github.com/onnx/tensorflow-onnx">tensorflow-onnx</a> package.</li>
-<li>PyTorch models can be exported directly to ONNX using <a href="https://pytorch.org/docs/master/onnx.html">PyTorch APIs</a>.</li>
-</ul>
-<p>Information on exporting models from other frameworks can be found on the <a href="https://onnx.ai/get-started.html">ONNX community page</a>.</p>
-<h3 id="best-practices">Best practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>To avoid endian issues, we strongly recommend converting models to the ONNX format on the platform on which they were trained. (e.g., if a model was trained on an x86 environment, convert the model to ONNX on an x86 environment before transmitting to IBM Z or LinuxONE). </p>
-</li>
-<li>
-<p>For Deep Learning Compiler usage: to determine which ONNX opset to specify for model conversion, see the following references:</p>
-<ul>
-<li><a href="https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-NNPA.md">NNPA supported opset level</a></li>
-<li><a href="https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-cpu.md">CPU supported opset level</a></li>
-</ul>
-</li>
-<li>
-<p>On z16 or LinuxONE 4 machines, we recommend using the highest opset level as specified under NNPA operator support. This will generally be the first statement in the file linked above; for example as of July 2023 "Onnx-mlir currently supports ONNX operations targeting up to opset 18".</p>
-</li>
-</ul>
-<h3 id="determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator">Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:<a class="headerlink" href="#determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator" title="Permanent link">&para;</a></h3>
-<p>When compiling with the IBM Z Deep Learning Compiler, you can get information and insights into various model operations and whether they will run on the accelerator. This can be critical information to help explore model performance. </p>
-<ul>
-<li>For guidance on <a href="https://github.com/ibm/zdlc#view-operation-targets-at-compile-time">displaying model operation targets (CPU or Z accelerator)</a></li>
-<li>Runtime <a href="https://github.com/ibm/zdlc#obtaining-ibm-z-deep-learning-compiler-debug-instrumentation-">instrumentation can be enabled</a></li>
-<li>Check <a href="https://github.com/ibm/zdlc#performance-tips-for-ibm-z-integrated-accelerator-for-ai-">here for other performance guidance</a></li>
-</ul>
-<h3 id="samples">Samples<a class="headerlink" href="#samples" title="Permanent link">&para;</a></h3>
-<p>Additionally, IBM has published samples for both TensorFlow and ONNX, available here: <a href="https://github.com/IBM/ai-on-z-samples">https://github.com/IBM/ai-on-z-samples</a></p>
-
-
-
-
-
-                
-              </article>
-            </div>
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="2024">2024<a class="headerlink" href="#2024" title="Permanent link">&para;</a></h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-01-12 00:00:00">January 12, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/general/" class="md-meta__link">general</a>, 
+              <a href="../../category/site-updates/" class="md-meta__link">site updates</a></li>
+        
+        
           
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="updates-to-our-101-pages"><a class="toclink" href="../../2024/01/12/updates-to-our-101-pages/">Updates to our 101 pages</a></h2>
+<p>We've added quite a bit of new content - including:</p>
+<ul>
+<li>sections for guidance on converting models to <a href="/ai-on-z-101/onnxconv/">ONNX</a> and <a href="/ai-on-z-101/pmmlconv/">PMML</a></li>
+<li>information on using <a href="/ai-on-z-101/tritonis/">Triton inference server</a></li>
+<li>WMLz renamed as Machine Learning for z/OS</li>
+<li>various updates to existing sections</li>
+</ul>
+<h2 id="launch-of-ai-toolkit-for-ibm-z-and-linuxone"><a class="toclink" href="../../2024/01/12/updates-to-our-101-pages/#launch-of-ai-toolkit-for-ibm-z-and-linuxone">Launch of AI Toolkit for IBM Z and LinuxONE</a></h2>
+<h2 id="-"><a class="toclink" href="../../2024/01/12/updates-to-our-101-pages/#-">-</a></h2>
+
+    <nav class="md-post__action">
+      <a href="../../2024/01/12/updates-to-our-101-pages/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
+      
+    </div>
+  </div>
+
           
         </div>
         
@@ -1425,10 +1328,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.780af0f4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant"], "search": "../../../assets/javascripts/workers/search.780af0f4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f11ae8b1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f11ae8b1.min.js"></script>
       
     
   </body>

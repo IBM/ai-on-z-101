@@ -21,6 +21,7 @@ nav:
       - Triton Inference Server: tritonis.md
       - Db2 13 SQL Data Insights: https://www.ibm.com/common/ssi/ShowDoc.wss?docURL=/common/ssi/rep_ca/1/897/ENUS222-061/index.html
       - Python AI Toolkit for IBM z/OS: pyaitoolkit.md
+      - AI Toolkit for IBM Z and LinuxONE: aitoolkitloz.md
   - Model conversion to ONNX or PMML: 
       - ONNX model conversion: onnxconv.md
       - PMML model conversion: pmmlconv.md
@@ -32,7 +33,7 @@ nav:
     - Fraud Detection: https://github.com/IBM/ai-on-z-fraud-detection/
   - Compiler and AI framework developer resources: codingAIU.md 
   - Need access to a IBM Z or LinuxONE Environment?: resources.md
-  - Resources: 
+  - Samples and other resources: 
       - Samples: https://github.com/IBM/ai-on-z-samples
       - Additional container build files: https://github.com/IBM/ai-on-z-containers
       - zDNN: https://github.com/IBM/zDNN

@@ -12,8 +12,10 @@ Where applicable, for links see the sidebar.
 
 - IBM **Telum** is the zArchitecture chip that is featured in the IBM z16. IBM Telum includes an on-chip inference accelerator, known as the IBM Integrated Accelerator for AI.
 
-- **Watson Machine Learning for z/OS** is a full lifecycle AI solution that features the ability to deploy AI models directly to z/OS for infusion into z/OS applications.
+- **Machine Learning for z/OS** is a full lifecycle AI solution that features the ability to deploy AI models directly to z/OS for infusion into z/OS applications.
 
 - IBM **z16** is IBM's latest zSystem (mainframe), featuring the IBM Telum chip and the Integrated Accelerator for AI. 
 
 - IBM **zDNN** is IBM's open source API library for utilizing the IBM Integrated Accelerator for AI. It provides C APIs that greatly simplify use of the accelerator, including 'helper' functions. zDNN invokes the NNPA instruction on behalf of the caller to drive the accelerator.
+
+- **AI Toolkit for IBM Z and LinuxONE** provides IBM Elite Support for a family of popular open-source AI frameworks. The assets are available at no-charge; the offering is focused on providing support. 

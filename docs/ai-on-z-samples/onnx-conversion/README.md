@@ -15,7 +15,7 @@ This includes:
 
 
 On IBM Z and LinuxONE, you can run these models using [ONNX-MLIR](https://github.com/onnx/onnx-mlir).
-For z/OS users, we recommend you try Watson Machine Learning for z/OS Trial edition, available [here](https://www.ibm.com/products/machine-learning-for-zos).
+For z/OS users, we recommend you try  Machine Learning for z/OS Trial edition, available [here](https://www.ibm.com/products/machine-learning-for-zos).
 
 
 
