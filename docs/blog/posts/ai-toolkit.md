@@ -5,16 +5,15 @@ categories:
   - site updates
 ---
 
+# Launch of AI Toolkit for IBM Z and LinuxONE
+
+- provides IBM Elite support for popular open-source packages
+- Further details available [here](https://www.ibm.com/products/ai-toolkit-for-z-and-linuxone)
+
 # Updates to our 101 pages
 
 We've added quite a bit of new content - including:
 
-- sections for guidance on converting models to [ONNX](/ai-on-z-101/onnxconv/) and [PMML](/ai-on-z-101/pmmlconv/)
-- information on using [Triton inference server](/ai-on-z-101/tritonis/)
 - WMLz renamed as Machine Learning for z/OS
-- various updates to existing sections
-
-# Launch of AI Toolkit for IBM Z and LinuxONE
-
-- 
-- 
+- Added additional ONNX model guidance
+- Various updates to existing sections
