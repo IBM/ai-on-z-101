@@ -19,14 +19,13 @@ ibm-zdnn-plugin follows the TensorFlow [PluggableDevice architecture](https://bl
 
 Read more about this support [here](https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/prashantha-subbarao/2023/02/08/ibm-zdnn-plugin?CommunityKey=038560b2-e962-4500-b0b5-e3745175a065)
 
-### Getting Started with TensorFlow on IBM zSystems and LinuxONE ###
+### Getting started with the AI Toolkit for IBM Z and LinuxONE ###
 
-The recommended path for obtaining TensorFlow is to download a prebuilt container image from the [IBM Z and LinuxONE Container Registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html).
+The recommended path for obtaining TensorFlow and TensorFlow Serving is to download a prebuilt container image from the [IBM Z and LinuxONE Container Registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html).
 
-The following images are available:
-
-- TensorFlow Core (CPU)
-- TensorFlow Serving (CPU)
+These components are part of the [AI Tookit for IBM Z and LinuxONE](aitoolkitloz.md). You can find the latest container images in the [IBM Z and LinuxONE Container Image registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) as either:
+- ibmz-accelerated-for-tensorflow
+- ibmz-accelerated-serving-for-tensorflow
 
 If you are interested in trying TensorFlow out, here is a quick self-directed exercise that demonstrates how to call a TensorFlow model from a z/OS Java program: [TensorFlow and zCX interaction](https://github.com/IBM/ai-on-z-tensorflow-zcx).
 

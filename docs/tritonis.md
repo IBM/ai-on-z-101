@@ -18,12 +18,11 @@ These are:
 - Traditional machine learning models in the PMML, ONNX, or JSON format that are run using an IBM Snap ML runtime.
 - Deep Learning models in the ONNX model format and compiled with the IBM Deep Learning Compiler.
 
-You can easily build and experiment with either of these capabilities on your Linux on Z environment. For example, IBM has published an example Dockerfile which can be used to build the Triton Inference Server with a custom backend for Snap ML. 
+You can easily build and experiment with either of these capabilities on your Linux on Z environment. 
 
-The Dockerfile can be found here: [https://github.com/IBM/ai-on-z-triton-is-examples](https://github.com/IBM/ai-on-z-triton-is-examples).
+Triton Inference Server is a component of the [AI Tookit for IBM Z and LinuxONE](aitoolkitloz.md). You can find the latest container images in the [IBM Z and LinuxONE Container Image registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) under ibmz-accelerated-for-nvidia-triton-inference-server. 
 
-- The repository includes a detailed example that can be used try the Snap ML support: [https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples](https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples).
-- This example builds a random forest classified model and deploys it to Triton; it includes a test script to invoke the model.
+IBM has made detailed examples available that can be used to try the Snap ML support: [https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples](https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples).
     
 Additionally as mentioned Triton can also be used to deploy ONNX models compiled with the IBM Deep Learning Compiler. Guidance on building and using the Triton Deep Learning Compiler backend can be found here: https://github.com/IBM/onnxmlir-triton-backend
 

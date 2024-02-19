@@ -1254,12 +1254,9 @@
 <li>Traditional machine learning models in the PMML, ONNX, or JSON format that are run using an IBM Snap ML runtime.</li>
 <li>Deep Learning models in the ONNX model format and compiled with the IBM Deep Learning Compiler.</li>
 </ul>
-<p>You can easily build and experiment with either of these capabilities on your Linux on Z environment. For example, IBM has published an example Dockerfile which can be used to build the Triton Inference Server with a custom backend for Snap ML. </p>
-<p>The Dockerfile can be found here: <a href="https://github.com/IBM/ai-on-z-triton-is-examples">https://github.com/IBM/ai-on-z-triton-is-examples</a>.</p>
-<ul>
-<li>The repository includes a detailed example that can be used try the Snap ML support: <a href="https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples">https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples</a>.</li>
-<li>This example builds a random forest classified model and deploys it to Triton; it includes a test script to invoke the model.</li>
-</ul>
+<p>You can easily build and experiment with either of these capabilities on your Linux on Z environment. </p>
+<p>Triton Inference Server is a component of the <a href="../aitoolkitloz/">AI Tookit for IBM Z and LinuxONE</a>. You can find the latest container images in the <a href="https://ibm.github.io/ibm-z-oss-hub/main/main.html">IBM Z and LinuxONE Container Image registry</a> under ibmz-accelerated-for-nvidia-triton-inference-server. </p>
+<p>IBM has made detailed examples available that can be used to try the Snap ML support: <a href="https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples">https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples</a>.</p>
 <p>Additionally as mentioned Triton can also be used to deploy ONNX models compiled with the IBM Deep Learning Compiler. Guidance on building and using the Triton Deep Learning Compiler backend can be found here: https://github.com/IBM/onnxmlir-triton-backend</p>
 <p>Note that IBM Snap ML is available for install with PyPI , while the IBM Deep Learning Compiler is available via the IBM Z and LinuxONE Container Repository. Both are no charge sources. </p>
 
