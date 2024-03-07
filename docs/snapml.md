@@ -39,7 +39,7 @@ Integrated AI Accelerator exploitation can be enabled at model import time for:
 
 ### Getting started with Snap ML ###
 
-Snap ML is available for IBM LinuxONE and Linux on Z environments, including z/OS container extensions. A prebuilt container is available as part of the IBM AI Toolkit Offering; additionally Snap ML can be installed via PyPI, and Snap ML is a component of Cloud Pak for Data on Linux on Z.
+IBM Snap ML is available as part of [Machine Learning for z/OS](https://www.ibm.com/products/machine-learning-for-zos), as well as for IBM LinuxONE and Linux on Z environments - including z/OS container extensions. A prebuilt container is available as part of the IBM AI Toolkit Offering; additionally Snap ML can be installed via PyPI, and Snap ML is a component of Cloud Pak for Data on Linux on Z.
 
 As mentioned, IBM Snap ML component of the [AI Tookit for IBM Z and LinuxONE](aitoolkitloz.md). You can find the latest container images in the [IBM Z and LinuxONE Container Image registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) under ibmz-accelerated-for-snapml. 
 

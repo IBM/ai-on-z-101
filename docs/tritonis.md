@@ -20,6 +20,8 @@ These are:
 
 You can easily build and experiment with either of these capabilities on your Linux on Z environment. 
 
+### Getting started with the AI Toolkit for IBM Z and LinuxONE ###
+
 Triton Inference Server is a component of the [AI Tookit for IBM Z and LinuxONE](aitoolkitloz.md). You can find the latest container images in the [IBM Z and LinuxONE Container Image registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) under ibmz-accelerated-for-nvidia-triton-inference-server. 
 
 IBM has made detailed examples available that can be used to try the Snap ML support: [https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples](https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples).
