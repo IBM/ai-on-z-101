@@ -26,6 +26,7 @@ nav:
       - ONNX model conversion: onnxconv.md
       - PMML model conversion: pmmlconv.md
   - Obtaining open-source packages: opensource.md
+  - AI Solution Templates: solutiontemplates.md
   - Infusing AI into your IBM zSystem business applications: infusing.md
   - Terminology: terminology.md
   - Getting help: help.md
