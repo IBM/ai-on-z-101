@@ -64,4 +64,4 @@ Each of these are available as standalone packages, free of charge, or embedded 
 
 Further reading:
 
-- [IBM Telum announcement](https://www.ibm.com/blogs/systems/ibm-telum-processor-the-next-gen-microprocessor-for-ibm-z-and-ibm-linuxone/)
+- [IBM Telum announcement](https://www.ibm.com/blog/ibm-telum-processor-the-next-gen-microprocessor-for-ibm-z-and-ibm-linuxone/)
