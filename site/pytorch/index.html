@@ -10,13 +10,13 @@
         <meta name="author" content="IBM Developer">
       
       
-        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/opensource/">
+        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/pytorch/">
       
       
-        <link rel="prev" href="../pmmlconv/">
+        <link rel="prev" href="../tensorflow/">
       
       
-        <link rel="next" href="../solutiontemplates/">
+        <link rel="next" href="../tritonis/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Obtaining open-source packages - AI on IBM Z 101</title>
+        <title>PyTorch - AI on IBM Z 101</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#obtaining-open-source-ai-packages-on-ibm-z-and-linuxone" class="md-skip">
+        <a href="#ibm-z-accelerated-for-pytorch" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Obtaining open-source packages
+              PyTorch
             
           </span>
         </div>
@@ -530,17 +530,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -554,7 +556,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Featured Frameworks and Technologies
@@ -628,10 +630,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../pytorch/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PyTorch
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -640,6 +660,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ibm-z-accelerated-for-pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      IBM Z Accelerated for PyTorch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IBM Z Accelerated for PyTorch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-started-with-the-ai-toolkit-for-ibm-z-and-linuxone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting started with the AI Toolkit for IBM Z and LinuxONE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -824,28 +886,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Obtaining open-source packages
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../opensource/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,33 +898,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#obtaining-open-source-ai-packages-on-ibm-z-and-linuxone" class="md-nav__link">
-    <span class="md-ellipsis">
-      Obtaining open source AI packages on IBM Z and LinuxONE
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1324,11 +1341,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#obtaining-open-source-ai-packages-on-ibm-z-and-linuxone" class="md-nav__link">
+  <a href="#ibm-z-accelerated-for-pytorch" class="md-nav__link">
     <span class="md-ellipsis">
-      Obtaining open source AI packages on IBM Z and LinuxONE
+      IBM Z Accelerated for PyTorch
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="IBM Z Accelerated for PyTorch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-started-with-the-ai-toolkit-for-ibm-z-and-linuxone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting started with the AI Toolkit for IBM Z and LinuxONE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1350,20 +1382,18 @@
   
 
 
-  <h1>Obtaining open-source packages</h1>
+  <h1>PyTorch</h1>
 
-<h2 id="obtaining-open-source-ai-packages-on-ibm-z-and-linuxone">Obtaining open source AI packages on IBM Z and LinuxONE<a class="headerlink" href="#obtaining-open-source-ai-packages-on-ibm-z-and-linuxone" title="Permanent link">&para;</a></h2>
-<p>You can obtain open source AI packages using many of the methods you are familiar with.  </p>
-<p>Packages can be installed using Linux packages managers, PyPI, Anaconda, or of course built from source where necessary.</p>
-<p>Resources: </p>
-<ul>
-<li><a href="https://ibm-z-oss-oda.github.io/python_ai_toolkit_zos/">Python AI Toolkit for IBM z/OS</a></li>
-<li><a href="https://docs.anaconda.com/anaconda/install/linux-s390x/">Anaconda for s390x</a></li>
-<li><a href="https://ibm.github.io/ibm-z-oss-hub/main/main.html">IBM Z and LinuxONE Container Registry</a></li>
-<li><a href="https://www.ibm.com/products/ai-toolkit-for-z-and-linuxone">AI Toolkit for IBM Z and LinuxONE</a></li>
-</ul>
-<p>Additional guidance on building specific packages for s390x can be found on the <a href="https://www.ibm.com/community/z/open-source-software/">Linux on Z ecosystem repository</a></p>
-<p>If you need assistance with specific other packages, <a href="mailto:aionz@us.ibm.com">contact us</a>. </p>
+<h2 id="ibm-z-accelerated-for-pytorch">IBM Z Accelerated for PyTorch<a class="headerlink" href="#ibm-z-accelerated-for-pytorch" title="Permanent link">&para;</a></h2>
+<p><a href="https://pytorch.org/">PyTorch</a> is an open source machine learning framework that provides a flexible platform for building deep learning models. Released by Facebook's AI Research lab in 2016, PyTorch allows developers to create and modify models easily through its dynamic structure, which offers immediate feedback. This adaptability makes it particularly appealing for researchers and developers who want to experiment with new ideas.</p>
+<p>PyTorch can be used on IBM zSystems and LinuxONE on Linux environments - including z/OS Container Extensions.</p>
+<p>IBM Z Accelerated for PyTorch can be leveraged for various use cases, including applications such as language processing and computer vision. It is optimized to exploit the acceleration of IBM Z Integrated Accelerator for AI on IBM z16 and LinuxONE 4, which improves inference performance for a wide range of PyTorch models. </p>
+<h3 id="getting-started-with-the-ai-toolkit-for-ibm-z-and-linuxone">Getting started with the AI Toolkit for IBM Z and LinuxONE<a class="headerlink" href="#getting-started-with-the-ai-toolkit-for-ibm-z-and-linuxone" title="Permanent link">&para;</a></h3>
+<p>The AI Toolkit for IBM Z and IBM® LinuxONE is designed to enable our clients to deploy and accelerate the adoption of popular open source AI frameworks on their z/OS® and IBM® LinuxONE platforms. The AI Toolkit follows a rigorous IBM Secure Engineering process that vets and scans open source AI-serving frameworks and IBM-certified containers for security vulnerabilities and validates compliance with industry regulations. Clients can also purchase IBM Elite Support for AI Toolkit for IBM Z and LinuxONE.</p>
+<p>The AI Toolkit components are availble in the IBM Z and LinuxONE Container Image Registry (ICR). This registry includes open-source software in container images that are often used as the foundation for new composite workloads. It provides a secure and trustworthy content source. On the IBM Z and LinuxONE Container Registry, these components of AI Toolkit for IBM Z and LinuxONE are freely available. </p>
+<p>See also: 
+<a href="https://www.ibm.com/products/blog/the-rise-of-pytorch">Accelerating PyTorch Inference on IBM Z and LinuxONE</a>
+<a href="https://github.com/IBM/ibmz-accelerated-for-pytorch?tab=readme-ov-file">AI Toolkit page for IBM Z Accelerated for PyTorch</a></p>
 
 
 

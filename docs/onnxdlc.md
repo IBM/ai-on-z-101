@@ -20,9 +20,9 @@ IBM Research enhanced the IBM Deep Learning Compiler (DLC) to target the IBM Int
 
 The best approach to getting started with ONNX models using the IBM Deep Learning Compiler will depend on the IBM zSystem operating system on which you plan to use the inference program. 
 
-**z/OS users** can either choose a  Machine Learning for z/OS (WMLz) based approach or leverage Linux on Z options; in either case, z/OS Container Extensions will be required to utilize the IBM Z Deep Learning Compiler.
+**z/OS users** can either choose a  Machine Learning for z/OS (MLz) based approach or leverage Linux on Z options; in either case, z/OS Container Extensions will be required to utilize the IBM Z Deep Learning Compiler.
  
-There are two WMLz based options:
+There are two MLz based options:
 
 - **Machine Learning for z/OS**, which is a z/OS product that manages full model lifecycle and includes numerous features to improve performance for AI models and simplify deployment. 
     - Enables you to upload your ONNX model then compile and deploy at the push of a button. 
@@ -33,10 +33,7 @@ There are two WMLz based options:
     - Simple install to z/OS Container Extensions (zCX).
     - Enables you to upload your ONNX model then compile and deploy at the push of a button. 
     - Includes serving capability that exposes REST end points to call from an application.
-    - Available on the ibm.com WMLz page: ['Download trial code'](https://www.ibm.com/products/machine-learning-for-zos).
-
-- **Additional resources:** 
-    - If you are interested in trying WMLz OSCE, here is a quick self-directed exercise that demonstrates how to call a ONNX model from a z/OS Java program: [Demonstrating a z/OS application calling WMLz OSCE](https://github.com/IBM/ai-on-z-wmlzce-zos)
+    - Available on the ibm.com MLz page: ['Download trial code'](https://www.ibm.com/products/machine-learning-for-zos).
 
 **Linux on Z and LinuxONE** users can leverage the Deep Learning Compiler directly to create model programs that can be incorporated into serving environments or applications directly.
 

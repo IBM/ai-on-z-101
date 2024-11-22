@@ -18,8 +18,9 @@ nav:
       - ONNX and the IBM Deep Learning Compiler: onnxdlc.md
       - IBM Snap Machine Learning (Snap ML): snapml.md
       - TensorFlow and TensorFlow Serving: tensorflow.md
+      - PyTorch: pytorch.md
       - Triton Inference Server: tritonis.md
-      - Db2 13 SQL Data Insights: https://www.ibm.com/common/ssi/ShowDoc.wss?docURL=/common/ssi/rep_ca/1/897/ENUS222-061/index.html
+      - 'Db2 13 SQL Data Insights': 'https://www.ibm.com/common/ssi/ShowDoc.wss?docURL=/common/ssi/rep_ca/1/897/ENUS222-061/index.html'
       - Python AI Toolkit for IBM z/OS: pyaitoolkit.md
       - AI Toolkit for IBM Z and LinuxONE: aitoolkitloz.md
   - Model conversion to ONNX or PMML: 
@@ -31,18 +32,18 @@ nav:
   - Terminology: terminology.md
   - Getting help: help.md
   - Reference Models:
-    - Fraud Detection: https://github.com/IBM/ai-on-z-fraud-detection/
+    - 'Fraud Detection': 'https://github.com/IBM/ai-on-z-fraud-detection/'
   - Compiler and AI framework developer resources: codingAIU.md 
   - Need access to a IBM Z or LinuxONE Environment?: resources.md
   - Samples and other resources: 
-      - Samples: https://github.com/IBM/ai-on-z-samples
-      - Additional container build files: https://github.com/IBM/ai-on-z-containers
-      - zDNN: https://github.com/IBM/zDNN
+      - 'Samples': 'https://github.com/IBM/ai-on-z-samples'
+      - 'Additional container build files': 'https://github.com/IBM/ai-on-z-containers'
+      - 'zDNN': 'https://github.com/IBM/zDNN'
   - External Content: 
-    - IBM Z and LinuxOne Content Solutions: https://www.ibm.com/support/z-content-solutions/journey-to-ai-on-z/
-    - IBM Z Xplore: https://ibmzxplore.influitive.com
-    - AI on IBM Z and LinuxONE Community: https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=038560b2-e962-4500-b0b5-e3745175a065
-    - IBM Z and LinuxONE Container Registry: https://ibm.github.io/ibm-z-oss-hub/main/main.html
+    - 'IBM Z and LinuxOne Content Solutions': 'https://www.ibm.com/support/z-content-solutions/journey-to-ai-on-z/'
+    - 'IBM Z Xplore': 'https://ibmzxplore.influitive.com'
+    - 'AI on IBM Z and LinuxONE Community': 'https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=038560b2-e962-4500-b0b5-e3745175a065'
+    - 'IBM Z and LinuxONE Container Registry': 'https://ibm.github.io/ibm-z-oss-hub/main/main.html'
 
 
 
