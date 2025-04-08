@@ -1534,26 +1534,13 @@
 <p>Depending on your model type, there are a few essential approaches to leveraging the Integrated Accelerator for AI. These capabilities are all available in various IBM product offerings as well as through no-cost channels (such as the IBM Z Container Image Repository). </p>
 <p>For deep learning models, such as those created in PyTorch or TensorFlow:</p>
 <ul>
-<li><a href="../onnxdlc/"><strong>ONNX deep learning models</strong></a>, when compiled using the <a href="https://github.com/ibm/zdlc">IBM Z Deep Learning Compiler</a> (onnx-mlir). <ul>
-<li>Note that Pytorch, TensorFlow, Apache MXNet and other model types can be easily converted to ONNX.</li>
-</ul>
-</li>
-<li><a href="../tensorflow/"><strong>TensorFlow</strong></a><ul>
-<li>By leveraging <a href="https://github.com/IBM/ibm-zdnn-plugin">ibm-zdnn-plugin</a>, which is a device plug-in for TensorFlow that allows TensorFlow to seamlessly utilize the Integrated Accelerator for AI.</li>
-</ul>
-</li>
+<li><a href="../onnxdlc/"><strong>ONNX deep learning models</strong></a>, when compiled using the <a href="https://github.com/ibm/zdlc">IBM Z Deep Learning Compiler</a> (onnx-mlir). </li>
+<li><a href="../tensorflow/"><strong>TensorFlow</strong></a> </li>
+<li><a href="../pytorch/"><strong>PyTorch</strong></a></li>
 </ul>
 <p>For machine learning models, such as those created in sci-kit learn, XGBoost, or lightGBM:</p>
 <ul>
-<li><a href="../snapml/"><strong>IBM Snap ML</strong></a>, a machine learning framework that provides optimized training and inference.<ul>
-<li>Tree based models such as Random Forest and Boosting Machine are accelerated using the Integrated Accelerator for AI.</li>
-<li><a href="https://github.com/IBM/snapml-examples/tree/main">IBM Snap ML</a> provides: <ul>
-<li>Seamless acceleration of scikit-learn applications.</li>
-<li>Ability to execute lightGBM and XGBoost trained models when converted to JSON, PMML, or ONNX.</li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="../snapml/"><strong>IBM Snap ML</strong></a>, a machine learning framework that provides optimized training and inference.</li>
 </ul>
 <p>For those interested in enhancing frameworks or compilers to use the Integrated Accelerator for AI:</p>
 <ul>
