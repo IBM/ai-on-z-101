@@ -49,18 +49,13 @@ Depending on your model type, there are a few essential approaches to leveraging
 For deep learning models, such as those created in PyTorch or TensorFlow:
 
  - [**ONNX deep learning models**](onnxdlc.md), when compiled using the [IBM Z Deep Learning Compiler](https://github.com/ibm/zdlc) (onnx-mlir). 
-    - Note that Pytorch, TensorFlow, Apache MXNet and other model types can be easily converted to ONNX.
- - [**TensorFlow**](tensorflow.md)
-    - By leveraging [ibm-zdnn-plugin](https://github.com/IBM/ibm-zdnn-plugin), which is a device plug-in for TensorFlow that allows TensorFlow to seamlessly utilize the Integrated Accelerator for AI.
-
+ - [**TensorFlow**](tensorflow.md) 
+ - [**PyTorch**](pytorch.md)
+ 
 For machine learning models, such as those created in sci-kit learn, XGBoost, or lightGBM:
 
  - [**IBM Snap ML**](snapml.md), a machine learning framework that provides optimized training and inference.
-    - Tree based models such as Random Forest and Boosting Machine are accelerated using the Integrated Accelerator for AI.
-    - [IBM Snap ML](https://github.com/IBM/snapml-examples/tree/main) provides: 
-        - Seamless acceleration of scikit-learn applications.
-        - Ability to execute lightGBM and XGBoost trained models when converted to JSON, PMML, or ONNX.
-
+ 
 For those interested in enhancing frameworks or compilers to use the Integrated Accelerator for AI:
 
  - [**IBM zDNN**](codingAIU.md)
