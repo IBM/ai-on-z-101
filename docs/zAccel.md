@@ -6,35 +6,43 @@ With IBM z16 and the Integrated Accelerator for AI, you can build and train your
 
 The IBM Integrated Accelerator for AI is more than just a matrix multiply accelerator - it provides optimization and acceleration for a wide set of complex functions commonly found in deep learning and machine learning models. This enables a broader set of functions to be accelerated on the chip.
 
-As of IBM z16, the following operations are supported on the accelerator:
+The following operations are supported on the accelerator (by machine generation):
 
-```
-LSTM Activation
-GRU Activation
-Fused Matrix Multiply, Bias op
-Fused Matrix Multiply (w/ broadcast)
-Batch Normalization
-Fused Convolution, Bias Add, Relu
-Max Pool 2D
-Average Pool 2D
-Softmax
-Relu
-Tanh
-Sigmoid
-Add
-Subtract
-Multiply
-Divide
-Min
-Max
-Log
-```
+| Operation |  z16 or LinuxONE 4 (Telum I) | z17 (Telum II) | 
+| --------------------- | :---------------------: | :---------------------: |
+| LSTM Activation | Supported | Supported | 
+| GRU Activation |  Supported | Supported | 
+| Fused Matrix Multiply, Bias op |  Supported | + added transpose, INT8 quantization |
+| Fused Matrix Multiply (w/ broadcast) |  Supported | + added transpose, INT8 quantization | 
+| Batch Normalization |  Supported | Supported | 
+| Fused Convolution, Bias Add, Relu | Supported | Supported |
+| L2 Norm |  | Supported |
+| Layer Normalization |  | Supported |
+| Max Pool 2D |  Supported | Supported |
+| Average Pool 2D |  Supported | Supported |
+| Softmax |  Supported | Supported |
+| Relu |  Supported | Supported |
+| Leaky Relu |  | Supported |
+| Gelu |  | Supported |
+| Tanh |  Supported | Supported |
+| Sigmoid |  Supported | Supported |
+| Add |  Supported | Supported |
+| Subtract |  Supported | Supported |
+| Multiply |  Supported | Supported |
+| Divide |  Supported | Supported |
+| Min |  Supported | Supported |
+| Max |  Supported | Supported |
+| Log |  Supported | Supported |
+| Square root |  | Supported |
+| Transform (Tensor) |  | Supported |
+| Reduce  |  | Supported |
+
 
 These allow supporting frameworks to target a significantly larger set of operations to the Integrated Accelerator for AI. 
 
 ### Using the Integrated Accelerator for AI
 
-![z16 AIU reference technologies ](z16aiusw.png)
+![IBM Z and LinuxONE Telum Integrated Accelerator for AI reference technologies ](z16aiusw.png)
 
 Depending on your model type, there are a few essential approaches to leveraging the Integrated Accelerator for AI. These capabilities are all available in various IBM product offerings as well as through no-cost channels (such as the IBM Z Container Image Repository). 
 

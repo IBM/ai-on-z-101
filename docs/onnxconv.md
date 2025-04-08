@@ -20,9 +20,9 @@ Information on exporting models from other frameworks can be found on the [ONNX 
     - [NNPA supported opset level](https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-NNPA.md)
     - [CPU supported opset level](https://github.com/onnx/onnx-mlir/blob/main/docs/SupportedONNXOps-cpu.md)
 
-- On z16 or LinuxONE 4 machines, we recommend using the highest opset level as specified under NNPA operator support. This will generally be the first statement in the file linked above; for example as of July 2023 "Onnx-mlir currently supports ONNX operations targeting up to opset 18".
+- On z16 or LinuxONE 4 machines (or later), we recommend using the highest opset level as specified under NNPA operator support. This will generally be the first statement in the NNPA supported opset level file linked above.
 
-### Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:
+### Determining whether model operations will target the on-chip AI accelerator featured on IBM Telum I and Telum II processors:
 
 When compiling with the IBM Z Deep Learning Compiler, you can get information and insights into various model operations and whether they will run on the accelerator. This can be critical information to help explore model performance. 
 
@@ -30,6 +30,3 @@ When compiling with the IBM Z Deep Learning Compiler, you can get information an
 - Runtime [instrumentation can be enabled](https://github.com/ibm/zdlc#obtaining-ibm-z-deep-learning-compiler-debug-instrumentation-)
 - Check [here for other performance guidance](https://github.com/ibm/zdlc#performance-tips-for-ibm-z-integrated-accelerator-for-ai-)
 
-### Samples
-
-Additionally, IBM has published samples for both TensorFlow and ONNX, available here: [https://github.com/IBM/ai-on-z-samples](https://github.com/IBM/ai-on-z-samples)

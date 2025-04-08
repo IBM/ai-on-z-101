@@ -2,7 +2,7 @@
 
 [PyTorch](https://pytorch.org/) is an open source machine learning framework that provides a flexible platform for building deep learning models. Released by Facebook's AI Research lab in 2016, PyTorch allows developers to create and modify models easily through its dynamic structure, which offers immediate feedback. This adaptability makes it particularly appealing for researchers and developers who want to experiment with new ideas.
 
-PyTorch can be used on IBM zSystems and LinuxONE on Linux environments - including z/OS Container Extensions.
+PyTorch can be used on IBM zSystems and LinuxONE on Linux environments (including z/OS Container Extensions).
 
 IBM Z Accelerated for PyTorch can be leveraged for various use cases, including applications such as language processing and computer vision. It is optimized to exploit the acceleration of IBM Z Integrated Accelerator for AI on IBM z16 and LinuxONE 4, which improves inference performance for a wide range of PyTorch models. 
 

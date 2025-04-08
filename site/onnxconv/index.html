@@ -513,11 +513,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../z16Accel/" class="md-nav__link">
+      <a href="../zAccel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Leveraging the IBM z16 Integrated Accelerator for AI
+    Leveraging the IBM Telum Integrated Accelerator for AI
   </span>
   
 
@@ -841,18 +841,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator" class="md-nav__link">
+  <a href="#determining-whether-model-operations-will-target-the-on-chip-ai-accelerator-featured-on-ibm-telum-i-and-telum-ii-processors" class="md-nav__link">
     <span class="md-ellipsis">
-      Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#samples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Samples
+      Determining whether model operations will target the on-chip AI accelerator featured on IBM Telum I and Telum II processors:
     </span>
   </a>
   
@@ -1378,18 +1369,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator" class="md-nav__link">
+  <a href="#determining-whether-model-operations-will-target-the-on-chip-ai-accelerator-featured-on-ibm-telum-i-and-telum-ii-processors" class="md-nav__link">
     <span class="md-ellipsis">
-      Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#samples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Samples
+      Determining whether model operations will target the on-chip AI accelerator featured on IBM Telum I and Telum II processors:
     </span>
   </a>
   
@@ -1442,18 +1424,16 @@
 </ul>
 </li>
 <li>
-<p>On z16 or LinuxONE 4 machines, we recommend using the highest opset level as specified under NNPA operator support. This will generally be the first statement in the file linked above; for example as of July 2023 "Onnx-mlir currently supports ONNX operations targeting up to opset 18".</p>
+<p>On z16 or LinuxONE 4 machines (or later), we recommend using the highest opset level as specified under NNPA operator support. This will generally be the first statement in the NNPA supported opset level file linked above.</p>
 </li>
 </ul>
-<h3 id="determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator">Determining whether model operations will target the IBM z16 or LinuxONE 4 on-chip accelerator:<a class="headerlink" href="#determining-whether-model-operations-will-target-the-ibm-z16-or-linuxone-4-on-chip-accelerator" title="Permanent link">&para;</a></h3>
+<h3 id="determining-whether-model-operations-will-target-the-on-chip-ai-accelerator-featured-on-ibm-telum-i-and-telum-ii-processors">Determining whether model operations will target the on-chip AI accelerator featured on IBM Telum I and Telum II processors:<a class="headerlink" href="#determining-whether-model-operations-will-target-the-on-chip-ai-accelerator-featured-on-ibm-telum-i-and-telum-ii-processors" title="Permanent link">&para;</a></h3>
 <p>When compiling with the IBM Z Deep Learning Compiler, you can get information and insights into various model operations and whether they will run on the accelerator. This can be critical information to help explore model performance. </p>
 <ul>
 <li>For guidance on <a href="https://github.com/ibm/zdlc#view-operation-targets-at-compile-time">displaying model operation targets (CPU or Z accelerator)</a></li>
 <li>Runtime <a href="https://github.com/ibm/zdlc#obtaining-ibm-z-deep-learning-compiler-debug-instrumentation-">instrumentation can be enabled</a></li>
 <li>Check <a href="https://github.com/ibm/zdlc#performance-tips-for-ibm-z-integrated-accelerator-for-ai-">here for other performance guidance</a></li>
 </ul>
-<h3 id="samples">Samples<a class="headerlink" href="#samples" title="Permanent link">&para;</a></h3>
-<p>Additionally, IBM has published samples for both TensorFlow and ONNX, available here: <a href="https://github.com/IBM/ai-on-z-samples">https://github.com/IBM/ai-on-z-samples</a></p>
 
 
 

@@ -10,7 +10,7 @@
         <meta name="author" content="IBM Developer">
       
       
-        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/z16Accel/">
+        <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/zAccel/">
       
       
         <link rel="prev" href="../blog/archive/2023/">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Leveraging the IBM z16 Integrated Accelerator for AI - AI on IBM Z 101</title>
+        <title>Leveraging the IBM Telum Integrated Accelerator for AI - AI on IBM Z 101</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Leveraging the IBM z16 Integrated Accelerator for AI
+              Leveraging the IBM Telum Integrated Accelerator for AI
             
           </span>
         </div>
@@ -524,7 +524,7 @@
           
   
   <span class="md-ellipsis">
-    Leveraging the IBM z16 Integrated Accelerator for AI
+    Leveraging the IBM Telum Integrated Accelerator for AI
   </span>
   
 
@@ -535,7 +535,7 @@
         
   
   <span class="md-ellipsis">
-    Leveraging the IBM z16 Integrated Accelerator for AI
+    Leveraging the IBM Telum Integrated Accelerator for AI
   </span>
   
 
@@ -1380,36 +1380,157 @@
   
 
 
-  <h1>Leveraging the IBM z16 Integrated Accelerator for AI</h1>
+  <h1>Leveraging the IBM Telum Integrated Accelerator for AI</h1>
 
 <h2 id="leveraging-the-ibm-integrated-accelerator-for-ai">Leveraging the IBM Integrated Accelerator for AI<a class="headerlink" href="#leveraging-the-ibm-integrated-accelerator-for-ai" title="Permanent link">&para;</a></h2>
 <p>The IBM Integrated Accelerator for AI is an on-chip AI accelerator available on the IBM Telum chip that is part of IBM z16 and LinuxONE 4 servers. It is designed to enable high throughput, low latency inference for deep learning and machine learning. </p>
 <p>With IBM z16 and the Integrated Accelerator for AI, you can build and train your models on any platform - including IBM zSystems and LinuxONE. When you are ready to deploy your assets, they will receive transparent acceleration and optimization on IBM zSystems, and will leverage the best available acceleration for the model type.</p>
 <p>The IBM Integrated Accelerator for AI is more than just a matrix multiply accelerator - it provides optimization and acceleration for a wide set of complex functions commonly found in deep learning and machine learning models. This enables a broader set of functions to be accelerated on the chip.</p>
-<p>As of IBM z16, the following operations are supported on the accelerator:</p>
-<div class="highlight"><pre><span></span><code>LSTM Activation
-GRU Activation
-Fused Matrix Multiply, Bias op
-Fused Matrix Multiply (w/ broadcast)
-Batch Normalization
-Fused Convolution, Bias Add, Relu
-Max Pool 2D
-Average Pool 2D
-Softmax
-Relu
-Tanh
-Sigmoid
-Add
-Subtract
-Multiply
-Divide
-Min
-Max
-Log
-</code></pre></div>
+<p>The following operations are supported on the accelerator (by machine generation):</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th style="text-align: center;">z16 or LinuxONE 4 (Telum I)</th>
+<th style="text-align: center;">z17 (Telum II)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LSTM Activation</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>GRU Activation</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Fused Matrix Multiply, Bias op</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">+ added transpose, INT8 quantization</td>
+</tr>
+<tr>
+<td>Fused Matrix Multiply (w/ broadcast)</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">+ added transpose, INT8 quantization</td>
+</tr>
+<tr>
+<td>Batch Normalization</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Fused Convolution, Bias Add, Relu</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>L2 Norm</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Layer Normalization</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Max Pool 2D</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Average Pool 2D</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Softmax</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Relu</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Leaky Relu</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Gelu</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Tanh</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Sigmoid</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Add</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Subtract</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Multiply</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Divide</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Min</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Max</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Log</td>
+<td style="text-align: center;">Supported</td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Square root</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Transform (Tensor)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Supported</td>
+</tr>
+<tr>
+<td>Reduce</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Supported</td>
+</tr>
+</tbody>
+</table>
 <p>These allow supporting frameworks to target a significantly larger set of operations to the Integrated Accelerator for AI. </p>
 <h3 id="using-the-integrated-accelerator-for-ai">Using the Integrated Accelerator for AI<a class="headerlink" href="#using-the-integrated-accelerator-for-ai" title="Permanent link">&para;</a></h3>
-<p><img alt="z16 AIU reference technologies " src="../z16aiusw.png" /></p>
+<p><img alt="IBM Z and LinuxONE Telum Integrated Accelerator for AI reference technologies " src="../z16aiusw.png" /></p>
 <p>Depending on your model type, there are a few essential approaches to leveraging the Integrated Accelerator for AI. These capabilities are all available in various IBM product offerings as well as through no-cost channels (such as the IBM Z Container Image Repository). </p>
 <p>For deep learning models, such as those created in PyTorch or TensorFlow:</p>
 <ul>

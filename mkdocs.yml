@@ -13,7 +13,7 @@ nav:
   - Overview: README.md
   - Updates and news:
     - blog/index.md  
-  - Leveraging the IBM z16 Integrated Accelerator for AI: z16Accel.md
+  - Leveraging the IBM Telum Integrated Accelerator for AI: zAccel.md
   - Featured Frameworks and Technologies:
       - ONNX and the IBM Deep Learning Compiler: onnxdlc.md
       - IBM Snap Machine Learning (Snap ML): snapml.md

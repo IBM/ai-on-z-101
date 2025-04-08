@@ -6,7 +6,7 @@ Additionally,  Machine Learning for z/OS can deploy PMML models.
 
 Generally, the best approach to converting models to PMML is to use [sklearn2pmml](https://github.com/jpmml/sklearn2pmml). This allows the user to create a PMMLPipeline object, which can contain either scikit-learn, xgboost, or lightGBM models as part of a pipeline. 
 
-For considerations for using PMML models in  Machine Learning for z/OS, see the [WMLz documentation](https://www.ibm.com/docs/en/wml-for-zos/enterprise/3.1.0?topic=owe-supported-algorithms-data-sources-data-types-model-types)
+For considerations for using PMML models in  Machine Learning for z/OS, see the [MLz documentation](https://www.ibm.com/docs/en/wml-for-zos/enterprise/3.2.0?topic=owe-supported-algorithms-data-sources-data-types-model-types)
 
 
 ### Samples

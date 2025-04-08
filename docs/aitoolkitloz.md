@@ -4,9 +4,9 @@ The AI Toolkit for IBM Z® and LinuxONE is a family of popular open-source AI fr
 
 This is a select set of containerized software that has been [vetted by IBM](https://www.ibm.com/support/pages/ibm-security-and-privacy-design). The pre-built images are available through the [IBM Z and LinuxONE Container Registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html). 
 
-These images can be run in Linux on Z environents, including z/OS Container Extensions. The software is optimized for IBM Z and LinuxONE platforms, including the ability to leverage the z16 Integrated Accelerator for AI (where applicable).
+These images can be run in Linux on Z environents (including z/OS Container Extensions). The software is optimized for IBM Z and LinuxONE platforms, including the ability to leverage the IBM Telum Integrated Accelerator for AI.
 
-Initially the support offering will apply to the following images:
+As of 2025, the AI Toolkit includes the following components:
 
 - IBM Z Deep Learning Compiler
 - IBM Snap ML 

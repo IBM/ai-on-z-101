@@ -24,9 +24,7 @@ Snap ML:
 - Is fully compatible with the scikit-learn Python API.
 - Supports accelerated scoring of scikit-learn, XGBoost and LightGBM trained models when exported or converted to: PMML, JSON, ONNX.
 
-In addition to being available through PyPI, Snap ML is an available python framework in IBM Cloud Pak for Data. 
-
-### z16 Integrated Accelerator for AI ###
+### IBM Telum Integrated Accelerator for AI ###
 
 Starting with Snap ML version 1.9.0, Snap ML can utilize the IBM Integrated Accelerator for AI. 
 

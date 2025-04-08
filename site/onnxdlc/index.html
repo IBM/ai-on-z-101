@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://ibm.github.io/ai-on-z-101/onnxdlc/">
       
       
-        <link rel="prev" href="../z16Accel/">
+        <link rel="prev" href="../zAccel/">
       
       
         <link rel="next" href="../snapml/">
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploying-onnx-deep-learning-models-on-ibm-zsystems" class="md-skip">
+        <a href="#deploying-onnx-deep-learning-models-on-ibm-z-or-linuxone-systems" class="md-skip">
           Skip to content
         </a>
       
@@ -513,11 +513,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../z16Accel/" class="md-nav__link">
+      <a href="../zAccel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Leveraging the IBM z16 Integrated Accelerator for AI
+    Leveraging the IBM Telum Integrated Accelerator for AI
   </span>
   
 
@@ -612,19 +612,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deploying-onnx-deep-learning-models-on-ibm-zsystems" class="md-nav__link">
+  <a href="#deploying-onnx-deep-learning-models-on-ibm-z-or-linuxone-systems" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploying ONNX deep learning models on IBM zSystems
+      Deploying ONNX deep learning models on IBM Z or LinuxONE Systems
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Deploying ONNX deep learning models on IBM zSystems">
+    <nav class="md-nav" aria-label="Deploying ONNX deep learning models on IBM Z or LinuxONE Systems">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ibm-z16-integrated-accelerator-for-ai" class="md-nav__link">
+  <a href="#ibm-telum-integrated-accelerator-for-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      IBM z16 Integrated Accelerator for AI
+      IBM Telum Integrated Accelerator for AI
     </span>
   </a>
   
@@ -1350,19 +1350,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deploying-onnx-deep-learning-models-on-ibm-zsystems" class="md-nav__link">
+  <a href="#deploying-onnx-deep-learning-models-on-ibm-z-or-linuxone-systems" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploying ONNX deep learning models on IBM zSystems
+      Deploying ONNX deep learning models on IBM Z or LinuxONE Systems
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Deploying ONNX deep learning models on IBM zSystems">
+    <nav class="md-nav" aria-label="Deploying ONNX deep learning models on IBM Z or LinuxONE Systems">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ibm-z16-integrated-accelerator-for-ai" class="md-nav__link">
+  <a href="#ibm-telum-integrated-accelerator-for-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      IBM z16 Integrated Accelerator for AI
+      IBM Telum Integrated Accelerator for AI
     </span>
   </a>
   
@@ -1402,43 +1402,31 @@
 
   <h1>ONNX and the IBM Deep Learning Compiler</h1>
 
-<h2 id="deploying-onnx-deep-learning-models-on-ibm-zsystems">Deploying ONNX deep learning models on IBM zSystems<a class="headerlink" href="#deploying-onnx-deep-learning-models-on-ibm-zsystems" title="Permanent link">&para;</a></h2>
+<h2 id="deploying-onnx-deep-learning-models-on-ibm-z-or-linuxone-systems">Deploying ONNX deep learning models on IBM Z or LinuxONE Systems<a class="headerlink" href="#deploying-onnx-deep-learning-models-on-ibm-z-or-linuxone-systems" title="Permanent link">&para;</a></h2>
 <p>ONNX is the Open Neural Network eXchange. You can read more about it <a href="https://onnx.ai/">here</a>.</p>
 <p>ONNX establishes a streamlined path to take a project from playground to production.  </p>
 <p>With ONNX, you can start a data science project using the frameworks and libraries of your choosing, including popular frameworks such as PyTorch and TensorFlow. The model can be developed and trained leveraging these frameworks on the training platform of your choice. Once the model is trained and ready to begin the deployment journey, you would <a href="../onnxconv/">export or convert it to the ONNX format</a>. </p>
 <p>Tools such as <a href="https://netron.app/">Netron</a> allow inspection and exploration of an ONNX model. When it comes to running the model, there are various back-ends that can be used to test and serve ONNX models. This includes model compilers such as the IBM Deep Learning Compiler (DLC), which is based on ONNX-MLIR. </p>
 <p>The <a href="https://onnx.ai/onnx-mlir/">ONNX-MLIR project</a> provides compiler technology to transform a valid Open Neural Network Exchange (ONNX) graph into code that implements the graph with minimum runtime support. It implements the ONNX standard and is based on the underlying LLVM/MLIR compiler technology. </p>
-<p>The result of this compiler is a lightweight shared object library that has no dependencies on the framework or libraries that the model was developed and trained in. It can easily be used for inference from C++, Java or Python programs. </p>
-<h3 id="ibm-z16-integrated-accelerator-for-ai">IBM z16 Integrated Accelerator for AI<a class="headerlink" href="#ibm-z16-integrated-accelerator-for-ai" title="Permanent link">&para;</a></h3>
+<p>The result of this compiler is a lightweight shared object library that has no dependencies on the framework or libraries that the model was developed and trained in. It can be used for inference from C++, Java or Python programs. </p>
+<h3 id="ibm-telum-integrated-accelerator-for-ai">IBM Telum Integrated Accelerator for AI<a class="headerlink" href="#ibm-telum-integrated-accelerator-for-ai" title="Permanent link">&para;</a></h3>
 <p>IBM Research enhanced the IBM Deep Learning Compiler (DLC) to target the IBM Integrated Accelerator for AI for a variety of ONNX primitives. This support has been contributed to ONNX-MLIR, which is the foundation for the IBM Deep Learning Compiler.</p>
 <h3 id="getting-started-with-the-ibm-z-deep-learning-compiler">Getting Started with the IBM Z Deep Learning Compiler<a class="headerlink" href="#getting-started-with-the-ibm-z-deep-learning-compiler" title="Permanent link">&para;</a></h3>
-<p>The best approach to getting started with ONNX models using the IBM Deep Learning Compiler will depend on the IBM zSystem operating system on which you plan to use the inference program. </p>
-<p><strong>z/OS users</strong> can either choose a  Machine Learning for z/OS (MLz) based approach or leverage Linux on Z options; in either case, z/OS Container Extensions will be required to utilize the IBM Z Deep Learning Compiler.</p>
-<p>There are two MLz based options:</p>
+<p>The best approach to getting started with ONNX models using the IBM Deep Learning Compiler will depend on the IBM Z or LinuxONE operating system on which you plan to use the inference program. </p>
+<p><strong>z/OS users</strong> can either choose a Machine Learning for z/OS (MLz) based approach or leverage Linux on Z options; in either case, z/OS Container Extensions will be required to utilize the IBM Z Deep Learning Compiler.</p>
 <ul>
-<li>
-<p><strong>Machine Learning for z/OS</strong>, which is a z/OS product that manages full model lifecycle and includes numerous features to improve performance for AI models and simplify deployment. </p>
-<ul>
+<li><strong>Machine Learning for z/OS</strong>, which is a z/OS product that manages full model lifecycle and includes numerous features to improve performance for AI models and simplify deployment. <ul>
 <li>Enables you to upload your ONNX model then compile and deploy at the push of a button. </li>
 <li>Supports server side mini-batching for ONNX/DLC model serving to get the best benefit out of the Integrated Accelerator for AI.</li>
 <li>Infuse AI into z/OS applications either through native CICS, IMS, and Java native scoring services or through using model server REST endpoints.</li>
 </ul>
 </li>
-<li>
-<p><strong>Machine Learning for z/OS Online Scoring Community Edition (OSCE)</strong>, which is freely available and excels at enabling rapid prototyping and proof of concept exercises. </p>
-<ul>
-<li>Simple install to z/OS Container Extensions (zCX).</li>
-<li>Enables you to upload your ONNX model then compile and deploy at the push of a button. </li>
-<li>Includes serving capability that exposes REST end points to call from an application.</li>
-<li>Available on the ibm.com MLz page: <a href="https://www.ibm.com/products/machine-learning-for-zos">'Download trial code'</a>.</li>
 </ul>
-</li>
-</ul>
-<p><strong>Linux on Z and LinuxONE</strong> users can leverage the Deep Learning Compiler directly to create model programs that can be incorporated into serving environments or applications directly.</p>
+<p><strong>Linux on Z, z/OS Container Extensions, and LinuxONE</strong> users can leverage the Deep Learning Compiler directly to create model programs that can be incorporated into serving environments or applications directly.</p>
 <ul>
 <li>Available through the <a href="https://ibm.github.io/ibm-z-oss-hub/main/main.html">IBM Z and LinuxONE Container Registry</a> listed under <strong>zDLC</strong>.</li>
 <li>Command-line model compiler that produces a .so library with optional Java and Python wrappers.</li>
-<li>These model libraries can be leveraged either directly or through open-source AI inference servers such as Triton Inference Server. <ul>
+<li>These model libraries can be leveraged either directly or through Triton Inference Server, which is part of the AI Toolkit for IBM Z And LinuxONE. <ul>
 <li><a href="https://github.com/IBM/onnxmlir-triton-backend">Leveraging DLC with Triton Inference Server on LoZ</a></li>
 </ul>
 </li>
@@ -1450,7 +1438,7 @@
 <p>Read our blogs on ONNX for more information:</p>
 <ul>
 <li><a href="https://www.ibm.com/blogs/systems/ibm-z-and-the-open-neural-network-exchange-onnx/">IBM Z and the Open Neural Network Exchange</a></li>
-<li><a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/andrew-sica/2021/10/29/leveraging-onnx-models-on-ibm-z-and-linuxone">Leveraging ONNX models on IBM zSystems and LinuxONE</a></li>
+<li><a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/andrew-sica/2021/10/29/leveraging-onnx-models-on-ibm-z-and-linuxone">Leveraging ONNX models on IBM Z and LinuxONE</a></li>
 <li><a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/charles-volzka/2022/05/26/ibm-z-deep-learning-compiler-onnx-mlir">Announcing ONNX-MLIR/IBM Deep Learning Compiler for Linux on Z and LinuxONE</a></li>
 </ul>
 

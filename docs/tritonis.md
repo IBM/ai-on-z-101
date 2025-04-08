@@ -11,7 +11,7 @@ Features of Triton include:
 - Concurrent model execution
 - Metrics/Monitoring Integration
 
-Triton is quite flexible and supports a wide variety of model types. It also has the ability to create custom model backends, which make it extremely flexible for a variety of scenarios.  In our testing, we have focused on two primary paths which allow us to deploy models that can leverage the Integrated Accelerator for AI when deployed on IBM z16 or LinuxONE 4. 
+Triton is quite flexible and supports a wide variety of model types. It also has the ability to create custom model backends, which make it extremely flexible for a variety of scenarios.  In our testing, we have focused on two primary paths which allow us to deploy models that can leverage the Integrated Accelerator for AI when deployed on IBM z16 or LinuxONE 4 or later machines. 
 
 These are:
 
