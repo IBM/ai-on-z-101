@@ -11,18 +11,19 @@ Features of Triton include:
 - Concurrent model execution
 - Metrics/Monitoring Integration
 
-Triton is quite flexible and supports a wide variety of model types. It also has the ability to create custom model backends, which make it extremely flexible for a variety of scenarios.  In our testing, we have focused on two primary paths which allow us to deploy models that can leverage the Integrated Accelerator for AI when deployed on IBM z16 or LinuxONE 4 or later machines. 
+Triton Inference Server is quite flexible and supports a wide variety of model types. It also has the ability to create custom model backends, which make it extremely flexible for a variety of scenarios.  In our testing, we have focused on two primary paths which allow us to deploy models that can leverage the Integrated Accelerator for AI when deployed on Telum I  and  Telum II processors. 
 
 These are:
 
-- Traditional machine learning models in the PMML, ONNX, or JSON format that are run using an IBM Snap ML runtime.
+- Traditional machine learning models in the PMML, ONNX, or JSON format that are run using an IBM Snap ML C++ runtime.
 - Deep Learning models in the ONNX model format and compiled with the IBM Deep Learning Compiler.
+- Recently introduced PyTorch backend with Telum II support brings unique value by deploying real world multi-model AI use cases on Telum II.
 
 You can easily build and experiment with either of these capabilities on your Linux on Z environment. 
 
 ### Getting started with the AI Toolkit for IBM Z and LinuxONE ###
 
-Triton Inference Server is a component of the [AI Tookit for IBM Z and LinuxONE](aitoolkitloz.md). You can find the latest container images in the [IBM Z and LinuxONE Container Image registry](https://ibm.github.io/ibm-z-oss-hub/main/main.html) under ibmz-accelerated-for-nvidia-triton-inference-server. 
+Triton Inference Server is a component of the [AI Tookit for IBM Z and LinuxONE](aitoolkitloz.md). You can find the latest container images in the [IBM Z and LinuxONE Container Image registry](https://github.com/IBM/ibmz-accelerated-for-nvidia-triton-inference-server) under ibmz-accelerated-for-nvidia-triton-inference-server. 
 
 IBM has made detailed examples available that can be used to try the Snap ML support: [https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples](https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples).
     
