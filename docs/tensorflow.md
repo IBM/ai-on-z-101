@@ -15,11 +15,6 @@ On IBM z16, LinuxONE 4, and later machines (running Linux on IBM Z or IBM® z/OS
 
 ### Getting started with the AI Toolkit for IBM Z and LinuxONE ###
 
-The recommended path for obtaining TensorFlow and TensorFlow Serving is to download a prebuilt container image from the [IBM Z and LinuxONE Container Registry](https://github.com/IBM/ibmz-accelerated-serving-for-tensorflow).
-
-These components are part of the [AI Tookit for IBM Z and LinuxONE](aitoolkitloz.md). You can find the latest container images in the [IBM Z and LinuxONE Container Image registry](https://github.com/IBM/ibmz-accelerated-serving-for-tensorflow) as either:
-- ibmz-accelerated-for-tensorflow
-- ibmz-accelerated-serving-for-tensorflow
-
-
-
+The recommended way to obtain the TensorFlow and TensorFlow Serving components of the [AI Toolkit for IBM Z and LinuxONE](aitoolkitloz.md) is to download prebuilt container images. Instructions for downloading them are available at the following links:
+	-	[TensorFlow](https://github.com/IBM/ibmz-accelerated-for-tensorflow)
+	-	[TensorFlow Serving](https://github.com/IBM/ibmz-accelerated-serving-for-tensorflow)
