@@ -1395,15 +1395,16 @@
 <li>Concurrent model execution</li>
 <li>Metrics/Monitoring Integration</li>
 </ul>
-<p>Triton is quite flexible and supports a wide variety of model types. It also has the ability to create custom model backends, which make it extremely flexible for a variety of scenarios.  In our testing, we have focused on two primary paths which allow us to deploy models that can leverage the Integrated Accelerator for AI when deployed on IBM z16 or LinuxONE 4 or later machines. </p>
+<p>Triton Inference Server is quite flexible and supports a wide variety of model types. It also has the ability to create custom model backends, which make it extremely flexible for a variety of scenarios.  In our testing, we have focused on two primary paths which allow us to deploy models that can leverage the Integrated Accelerator for AI when deployed on Telum I  and  Telum II processors. </p>
 <p>These are:</p>
 <ul>
-<li>Traditional machine learning models in the PMML, ONNX, or JSON format that are run using an IBM Snap ML runtime.</li>
+<li>Traditional machine learning models in the PMML, ONNX, or JSON format that are run using an IBM Snap ML C++ runtime.</li>
 <li>Deep Learning models in the ONNX model format and compiled with the IBM Deep Learning Compiler.</li>
+<li>Recently introduced PyTorch backend with Telum II support brings unique value by deploying real world multi-model AI use cases on Telum II.</li>
 </ul>
 <p>You can easily build and experiment with either of these capabilities on your Linux on Z environment. </p>
 <h3 id="getting-started-with-the-ai-toolkit-for-ibm-z-and-linuxone">Getting started with the AI Toolkit for IBM Z and LinuxONE<a class="headerlink" href="#getting-started-with-the-ai-toolkit-for-ibm-z-and-linuxone" title="Permanent link">&para;</a></h3>
-<p>Triton Inference Server is a component of the <a href="../aitoolkitloz/">AI Tookit for IBM Z and LinuxONE</a>. You can find the latest container images in the <a href="https://ibm.github.io/ibm-z-oss-hub/main/main.html">IBM Z and LinuxONE Container Image registry</a> under ibmz-accelerated-for-nvidia-triton-inference-server. </p>
+<p>Triton Inference Server is a component of the <a href="../aitoolkitloz/">AI Tookit for IBM Z and LinuxONE</a>. You can find the latest container images in the <a href="https://github.com/IBM/ibmz-accelerated-for-nvidia-triton-inference-server">IBM Z and LinuxONE Container Image registry</a> under ibmz-accelerated-for-nvidia-triton-inference-server. </p>
 <p>IBM has made detailed examples available that can be used to try the Snap ML support: <a href="https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples">https://github.com/IBM/ai-on-z-triton-is-examples/tree/main/snapml-examples</a>.</p>
 <p>Additionally as mentioned Triton can also be used to deploy ONNX models compiled with the IBM Deep Learning Compiler. Guidance on building and using the Triton Deep Learning Compiler backend can be found here: https://github.com/IBM/onnxmlir-triton-backend</p>
 <p>Note that IBM Snap ML is available for install with PyPI , while the IBM Deep Learning Compiler is available via the IBM Z and LinuxONE Container Repository. Both are no charge sources. </p>
