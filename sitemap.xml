@@ -2,118 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/aitoolkitloz/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/codingAIU/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/help/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/infusing/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/onnxconv/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/onnxdlc/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/opensource/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/pmmlconv/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/pyaitoolkit/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/pytorch/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/resources/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/snapml/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/solutiontemplates/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/tensorflow/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/terminology/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/tritonis/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/zAccel/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/blog/2025/04/08/announcing-the-ibm-z17/</loc>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/2024/03/15/launch-of-ai-solution-templates-on-ibm-z--linuxone/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/2024/01/12/launch-of-ai-toolkit-for-ibm-z-and-linuxone/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/2024/06/20/new-linux-on-z-focused-redbook-asset/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/2024/11/22/updates-to-our-101-pages/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/2023/07/07/updates-to-our-101-pages/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/blog/archive/2025/</loc>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/archive/2024/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/archive/2023/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/category/general/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
+    </url>
+    <url>
+         <loc>https://ibm.github.io/ai-on-z-101/blog/category/ibm-z/</loc>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/category/site-updates/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
     <url>
          <loc>https://ibm.github.io/ai-on-z-101/blog/category/documentation/</loc>
-         <lastmod>2025-06-19</lastmod>
+         <lastmod>2025-06-20</lastmod>
     </url>
 </urlset>
