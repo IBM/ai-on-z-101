@@ -19,5 +19,4 @@ For more information, check out these helpful resources:
 - [Redpaper Solution Guide](https://ibm.biz/zPAIT_redbook)
 - [FAQ](https://ibm.biz/BdPnfS)
 - [Annoucement Letter](https://ibm.biz/BdPnXX)
-- [Journey to Open Data Analytics](https://ibm.biz/BdPnE6)
 - [IBM Open Enterprise SDK for Python](https://www.ibm.com/products/open-enterprise-python-zos)
