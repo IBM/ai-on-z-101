@@ -1,4 +1,7 @@
 # Getting started with AI on IBM Z and LinuxONE systems
+
+## **[View our new updated page here](https://reneeibm.github.io/updated-ai-on-z/index.html)**
+
 ![This is an image](overview_1.jpg)
 
 IBM Z and LinuxONE feature state of the art hardware and software capabilities designed to optimize AI at scale alongside your enterprise's most critical workloads and data. 
