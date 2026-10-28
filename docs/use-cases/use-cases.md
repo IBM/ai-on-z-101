@@ -2,11 +2,15 @@
 
 Explore a end-to-end solution blueprint demonstrating how to build, deploy, and evaluate a multi-model ensemble AI system on IBM z17. Review the architecture, key capabilities, model pipelines, and system requirements below.
 
-[View on GitHub](https://github.com/ambitus/aionz-st-multi-model-credit-card-fraud-detection) [Book a Workshop at aionz@us.ibm.com →](mailto:aionz@us.ibm.com?subject=Book%20a%20Workshop) z/OS
+<div class="blueprint-card" markdown>
 
 ## Solution Blueprint — Advanced Credit Card Fraud Detection { #fraud-detection-featured }
 
-Multi-Model Ensemble AI on IBM z17
+**Multi-Model Ensemble AI on IBM z17**
+
+[View on GitHub](https://github.com/ambitus/aionz-st-multi-model-credit-card-fraud-detection){ .md-button .md-button--primary } [Book a Workshop →](mailto:aionz@us.ibm.com?subject=Book%20a%20Workshop){ .md-button }
+
+---
 
 Financial institutions need to detect fraudulent transactions quickly and accurately while maintaining the throughput and low latency required for high-volume payment processing. This use case demonstrates an Ensemble AI approach on IBM z17, combining XGBoost and BERT models to enhance credit card fraud detection while optimizing how AI models are applied during transaction processing.
 
@@ -14,7 +18,17 @@ Using IBM Synthetic Data Sets, organizations can train and evaluate models again
 
 The trained models are deployed with Machine Learning for IBM z/OS (MLz), where scoring endpoints enable the models to be integrated into an ensemble inference pipeline and enterprise applications. The end-to-end use case covers AI Model Training, AI Model Deployment, and AI Model Analysis, demonstrating how organizations can operationalize multiple AI models on IBM z17 to identify potential fraud and support decisions to approve, flag, or block transactions.
 
-Architecture ![Architecture diagram — XGBoost Model Training & Inference Pipeline and BERT-Base Encoder Ensemble Pipeline](fraud-detection-architecture.png) Key Features
+---
+
+**Architecture**
+{ .blueprint-subheading }
+
+![Architecture diagram — XGBoost Model Training & Inference Pipeline and BERT-Base Encoder Ensemble Pipeline](fraud-detection-architecture.png)
+
+---
+
+**Key Features**
+{ .blueprint-subheading }
 
 This solution brings together an Ensemble AI approach, IBM-optimized hardware, and a complete end-to-end lifecycle in a single runnable template.
 
@@ -25,9 +39,13 @@ This solution brings together an Ensemble AI approach, IBM-optimized hardware, a
 - **Actionable output —** probability scores let applications approve, flag, or block transactions at the moment they happen
 - **Full lifecycle coverage —** data prep → training → evaluation → export → deployment → analysis, with all sample code included
 
+</div>
+
+---
+
 ## Additional Use Case Resources { #next-steps }
 
-<div class="grid cards" markdown>
+<div class="grid cards clickable-cards" markdown>
 
 - **[Solution Blueprints](ai-solution-template.md)**
 

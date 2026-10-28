@@ -4,7 +4,7 @@
 
 IBM offers a broad set of AI technologies for IBM Z. Many products support more than one stage of the AI lifecycle and often work together. Use the sections below to explore where each product is commonly used, understand how products relate to one another, and see common paths organizations take when building AI solutions.
 
-<div class="grid cards" markdown>
+<div class="grid cards clickable-cards" markdown>
 
 - **[Prepare Data](prepare-data.md)**
 
@@ -32,24 +32,116 @@ IBM offers a broad set of AI technologies for IBM Z. Many products support more 
 
 Explore which products and tools support each stage of the AI lifecycle across **IBM z/OS** and **Linux on Z**.
 
-| Product | Prepare Data | Build Models | Deploy Models | Serve Model | AI Governance | IBM z/OS | Linux on Z |
-|----|----|----|----|----|----|----|----|
-| [IBM Synthetic Data Sets](../products-tools/data-analytics.md#synthetic-data-sets) | ● |  |  |  |  | Yes | Yes |
-| [IBM Z Platform for Apache Spark](../products-tools/data-analytics.md#apache-spark) | ● | ● |  |  |  | Yes | — |
-| [IBM Z Accelerated SnapML\*](../products-tools/ai-frameworks.md#snapml) | ● | ● | ★ |  |  | Yes via zCX | Yes |
-| [IBM Z Accelerated for TensorFlow\*](../products-tools/ai-frameworks.md#tensorflow) |  | ● | ★ |  |  | Yes via zCX | Yes |
-| [IBM Z Accelerated for PyTorch\*](../products-tools/ai-frameworks.md#pytorch) |  | ● | ★ |  |  | Yes via zCX | Yes |
-| [Python AI Toolkit for IBM z/OS](../products-tools/ai-frameworks.md#python-ai-toolkit) |  | ● | ★ |  |  | Yes | — |
-| [ONNX & IBM Z Deep Learning Compiler\*](../products-tools/model-formats.md#zdlc) |  |  | ● |  |  | Yes via zCX | Yes |
-| [IBM Z Accelerated Serving for TensorFlow\*](../products-tools/inference-serving.md#tf-serving) |  |  | ● | ● |  | Yes via zCX | Yes |
-| [IBM Z Accelerated for Triton Inference Server\*](../products-tools/inference-serving.md#triton) |  |  | ● | ★ |  | Yes via zCX | Yes |
-| [Machine Learning for IBM z/OS](../products-tools/ai-platforms.md#mlz) |  | ● | ★ | ★ | Explainability & Drift | Yes | — |
-| [AI Optimizer for IBM Z and LinuxONE](../products-tools/ai-platforms.md#ai-optimizer) |  |  |  | ● |  | — | Yes |
-| [Red Hat OpenShift AI](../products-tools/ai-platforms.md#rhoai) | ● | ● | ● | ★ | TrustyAI | Yes via zCX | Yes |
-| [Red Hat AI Inference Server](../products-tools/inference-serving.md#rh-inference) |  |  |  | ● |  | — | Yes |
-| [watsonx.ai](../products-tools/ai-platforms.md#watsonx-ai) |  | ● | ● | ★ |  | — | Yes |
-| [watsonx.governance](../products-tools/ai-platforms.md#watsonx-governance) |  |  |  |  | ● | — | Yes |
+<style>
+.lc-table { width:100%; border-collapse:collapse; font-size:.6rem; }
+.lc-table th { background:#f4f4f4; color:#161616; font-weight:600; padding:.4rem .6rem; border:1px solid #e0e0e0; text-align:center; }
+.lc-table th:first-child { text-align:left; }
+.lc-table td { padding:.4rem .6rem; border:1px solid #e0e0e0; text-align:center; color:#161616; }
+.lc-table td:first-child { text-align:left; }
+/* Per-column solid blues — light to dark left to right */
+.lc-col1 { background:#e8f1ff; }
+.lc-col2 { background:#c4daff; }
+.lc-col3 { background:#74aaff; }
+.lc-col4 { background:#4589ff; }
+.lc-col5 { background:#0f62fe; color:#fff; }
+/* Stars always gold */
+.lc-star-light, .lc-star-dark { color:#f1a10d; font-size:.9rem; font-weight:700; }
+/* Label cells (Explainability, TrustyAI) */
+.lc-label { background:#0f62fe; color:#fff; font-weight:600; font-size:.6rem; }
+</style>
+
+<table class="lc-table">
+<thead>
+<tr>
+  <th>Product</th>
+  <th>Prepare Data</th>
+  <th>Build Models</th>
+  <th>Deploy Models</th>
+  <th>Serve Model</th>
+  <th>AI Governance</th>
+  <th>IBM z/OS</th>
+  <th>Linux on Z</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../../products-tools/data-analytics/#synthetic-data-sets">IBM Synthetic Data Sets</a></td>
+  <td class="lc-col1"></td><td></td><td></td><td></td><td></td>
+  <td>Yes</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/data-analytics/#apache-spark">IBM Z Platform for Apache Spark</a></td>
+  <td class="lc-col1"></td><td class="lc-col2"></td><td></td><td></td><td></td>
+  <td>Yes</td><td>—</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/ai-frameworks/#snapml">IBM Z Accelerated SnapML*</a></td>
+  <td class="lc-col1"></td><td class="lc-col2"></td><td class="lc-col3"><span class="lc-star-light">★</span></td><td></td><td></td>
+  <td>Yes via zCX</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/ai-frameworks/#tensorflow">IBM Z Accelerated for TensorFlow*</a></td>
+  <td></td><td class="lc-col2"></td><td class="lc-col3"><span class="lc-star-light">★</span></td><td></td><td></td>
+  <td>Yes via zCX</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/ai-frameworks/#pytorch">IBM Z Accelerated for PyTorch*</a></td>
+  <td></td><td class="lc-col2"></td><td class="lc-col3"><span class="lc-star-light">★</span></td><td></td><td></td>
+  <td>Yes via zCX</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/ai-frameworks/#python-ai-toolkit">Python AI Toolkit for z/OS</a></td>
+  <td></td><td class="lc-col2"></td><td class="lc-col3"><span class="lc-star-light">★</span></td><td></td><td></td>
+  <td>Yes</td><td>—</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/model-formats/#zdlc">ONNX &amp; IBM Z Deep Learning Compiler*</a></td>
+  <td></td><td></td><td class="lc-col3"></td><td></td><td></td>
+  <td>Yes via zCX</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/inference-serving/#tf-serving">IBM Z Accelerated Serving for TensorFlow*</a></td>
+  <td></td><td></td><td class="lc-col3"></td><td class="lc-col4"><span class="lc-star-dark">★</span></td><td></td>
+  <td>Yes via zCX</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/inference-serving/#triton">IBM Z Accelerated for Triton Inference Server*</a></td>
+  <td></td><td></td><td class="lc-col3"></td><td class="lc-col4"><span class="lc-star-dark">★</span></td><td></td>
+  <td>Yes via zCX</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/ai-platforms/#mlz">Machine Learning for IBM z/OS</a></td>
+  <td></td><td class="lc-col2"></td><td class="lc-col3"><span class="lc-star-light">★</span></td><td class="lc-col4"><span class="lc-star-dark">★</span></td><td class="lc-label">Explainability &amp; Drift</td>
+  <td>Yes</td><td>—</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/ai-platforms/#ai-optimizer">AI Optimizer for IBM Z and LinuxONE</a></td>
+  <td></td><td></td><td></td><td class="lc-col4"></td><td></td>
+  <td>—</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/ai-platforms/#rhoai">Red Hat OpenShift AI</a></td>
+  <td class="lc-col1"></td><td class="lc-col2"></td><td class="lc-col3"></td><td class="lc-col4"><span class="lc-star-dark">★</span></td><td class="lc-label">TrustyAI</td>
+  <td>Yes via zCX</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/inference-serving/#rh-inference">Red Hat AI Inference Server</a></td>
+  <td></td><td></td><td></td><td class="lc-col4"></td><td></td>
+  <td>—</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/ai-platforms/#watsonx-ai">watsonx.ai</a></td>
+  <td></td><td class="lc-col2"></td><td class="lc-col3"></td><td class="lc-col4"><span class="lc-star-dark">★</span></td><td></td>
+  <td>—</td><td>Yes</td>
+</tr>
+<tr>
+  <td><a href="../../products-tools/ai-platforms/#watsonx-governance">watsonx.governance</a></td>
+  <td></td><td></td><td></td><td></td><td class="lc-col5"></td>
+  <td>—</td><td>Yes</td>
+</tr>
+</tbody>
+</table>
 
 **\*** Available in IBM Container Registry, with support included in AI Toolkit for IBM Z and IBM LinuxONE
 
-★ = Most used capability
+⭐ = Most used capability

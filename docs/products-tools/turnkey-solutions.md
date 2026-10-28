@@ -14,11 +14,11 @@ Not every organization approaches AI the same way. IBM Z supports three common a
 
 This page covers **Pathway 1**. For Pathways 2 and 3, see the [AI Lifecycle](../prepare-data/lifecycle-overview.md) section.
 
-IBM Turnkey Solutions
+<div class="section-divider"><span>IBM Turnkey Solutions</span></div>
 
 ## IBM SQL Data Insights Pro { #sql-data-insights }
 
-**AI Lifecycle:** [Prepare Data](../prepare-data/prepare-data.md) · [Deploy & Serve](../deploy-models/deploy-models.md)
+**AI Lifecycle:** [Prepare Data](../prepare-data/prepare-data.md) · [Deploy Models](../deploy-models/deploy-models.md) · [Serve Model](../serve-model/serve-model.md)
 
 ### What is SQL Data Insights Pro?
 
@@ -56,13 +56,15 @@ The product is especially useful for organizations that want AI-driven insights 
 - [IBM SQL Data Insights Pro product page](https://www.ibm.com/products/sql-data-insights-pro)
 - [IBM Documentation — Db2 SQL Data Insights](https://www.ibm.com/docs/en/sql-data-insights-pro/1.1.1)
 
-ISV Solutions
+<div class="section-divider"><span>ISV Solutions</span></div>
 
 ## ISV Ecosystem — What Are ISV Solutions? { #isv-overview }
 
 IBM provides the underlying AI infrastructure for IBM Z, including hardware accelerators, open-source frameworks, model optimization tools, and inference runtimes. **Independent Software Vendors (ISVs)** build on these capabilities to deliver AI applications tailored to specific business domains such as fraud detection, anti-money laundering, and customer experience.
 
 For organizations looking to adopt AI without building and maintaining their own models, ISV solutions can provide a direct path to production. These offerings typically include pre-built models, domain expertise, and deployment frameworks designed for specific business use cases.
+
+---
 
 ## Embedded AI Core Banking & Payment Solutions { #embedded-ai-solutions }
 
@@ -72,6 +74,8 @@ These solutions integrate with core banking, payments, and transaction processin
 |----|----|----|----|
 | [DXC UmbrellaFraud](https://www.luxoft.com/blog/luxoft-umbrellafraud-ai-ml-hogan-zbased-save-millions-100-coverage) | DXC Hogan / Card and Merchant System | Real-time fraud detection | z/OS |
 | [Worldline Cardlink](https://community.ibm.com/community/user/blogs/demi-chen/2025/08/15/cardlink-next-on-ibm-z17-ai-fraud) | Worldline | Fraud detection | z/OS |
+
+---
 
 ## ISV Packaged AI Solutions { #packaged-ai-solutions }
 
@@ -86,9 +90,11 @@ These are modular, standalone AI applications built by ecosystem partners that r
 | [Exponential AI](https://exponentialai.com/) | Claims/insurance workloads (real-time/batch) | Claims processing (e.g., healthcare) | Linux on Z |
 | [Clari5](https://www.clari5.com/) | Majority of core banking & payments platform | Anti-money laundering & payments fraud | Linux on Z |
 
-Explore other Products & Tools
+---
 
-<div class="grid cards" markdown>
+## Explore other Products & Tools
+
+<div class="grid cards clickable-cards neutral-border-cards" markdown>
 
 - **[Data & Analytics](data-analytics.md)**
 

@@ -34,7 +34,7 @@ The scope of this AI on Z 101 Github page covers **Transactional AI for business
 
 ## What AI on IBM Z can do for your business { #ai-value }
 
-<div class="grid cards" markdown>
+<div class="grid cards no-hover-cards" markdown>
 
 - :material-currency-usd:{ .lg }
 
@@ -58,7 +58,7 @@ The scope of this AI on Z 101 Github page covers **Transactional AI for business
 
 ## AI on IBM Z capabilities { #what-you-can-build }
 
-<div class="grid cards" markdown>
+<div class="grid cards no-hover-cards" markdown>
 
 - :material-database-outline:{ .lg }
 

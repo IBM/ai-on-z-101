@@ -4,7 +4,7 @@
 
 IBM Z offers a comprehensive stack of AI products and tools — spanning hardware accelerators, open-source frameworks, model formats, inference servers, AI platforms, and governance tooling. Browse by category below.
 
-<div class="grid cards" markdown>
+<div class="grid cards clickable-cards neutral-border-cards" markdown>
 
 - **[Data & Analytics](data-analytics.md)**
 

@@ -40,10 +40,19 @@
    (Material's default 61rem leaves only ~700px between the sidebars) */
 .md-grid { max-width: 90rem; }
 
-/* Cards: allow 2-3 across instead of collapsing to one column */
+/* Cards stretch to fill the full content width — 3 equal columns */
 .md-typeset .grid.cards,
 .md-typeset .grid {
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* On narrow screens fall back to a single column */
+@media screen and (max-width: 59.9375em) {
+  .md-typeset .grid.cards,
+  .md-typeset .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Sidebars sit on the gray page. Material paints the sticky nav titles
@@ -96,7 +105,71 @@
 }
 .md-tabs__item--active .md-tabs__link { font-weight: 600; }
 
+/* ─── Dropdown nav ──────────────────────────────────────────── */
+
+/* Material's contain:content and overflow:auto on .md-tabs__list
+   prevent absolutely-positioned dropdowns from escaping. Override all
+   containment and overflow on the entire tabs chain. */
+.md-tabs                 { overflow: visible !important; }
+.md-tabs .md-grid        { overflow: visible !important; }
+.md-tabs__list           { contain: none !important; overflow: visible !important; white-space: normal !important; }
+
+.md-tabs__item--dropdown {
+  position: relative;
+}
+.md-tabs__dropdown-arrow {
+  font-size: .55rem;
+  margin-left: .3rem;
+  opacity: .7;
+}
+.md-tabs__dropdown {
+  background: #1a1a1a;
+  border-top: 2px solid var(--ibm-blue);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.4);
+  display: none;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  min-width: 14rem;
+  padding: .4rem 0;
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+}
+.md-tabs__item--dropdown:hover .md-tabs__dropdown {
+  display: block;
+}
+.md-tabs__dropdown-item {}
+.md-tabs__dropdown-link {
+  color: rgba(255,255,255,.8) !important;
+  display: block;
+  font-size: .65rem;
+  font-weight: 400;
+  padding: .5rem 1.1rem;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.md-tabs__dropdown-link:hover {
+  background: rgba(255,255,255,.08);
+  color: #fff !important;
+}
+.md-tabs__dropdown-item--active .md-tabs__dropdown-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+
 /* ─── Sidebars ──────────────────────────────────────────────── */
+
+/* Hide both sidebars — navigation via top tab dropdowns */
+.md-sidebar--primary { display: none; }
+.md-sidebar--secondary { display: none; }
+
+/* At wide viewports give the content a small left breathing room */
+@media screen and (min-width: 76.25em) {
+  .md-content { margin-left: 1.5rem; }
+}
+
 .md-nav { font-size: .64rem; }
 .md-sidebar--primary .md-nav__title {
   font-size: .55rem;
@@ -144,22 +217,72 @@
 .md-typeset h2 {
   font-size: 1.1rem;
   letter-spacing: -.1px;
-  margin: 2.2em 0 .6em;
+  margin: 1.6em 0 .5em;
 }
 .md-typeset h3 {
   font-size: .85rem;
-  margin: 1.6em 0 .5em;
+  margin: 1.2em 0 .4em;
 }
-/* Small uppercase label ("Step 1 — Connect with the team") */
+/* Section step labels ("Step 1 — Connect with the team") */
 .md-typeset h3.section-label {
-  color: var(--ibm-gray-70);
-  font-size: .55rem;
+  color: var(--ibm-text);
+  font-size: .95rem;
   font-weight: 700;
-  letter-spacing: .9px;
-  margin-top: 2.2em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-top: .9em;
+  margin-bottom: .3em;
+  text-transform: none;
 }
-.md-typeset hr { border-bottom: 1px solid var(--ibm-border); margin: 2.4em 0; }
+
+/* Larger headings for key home page sections */
+.md-typeset h2#what-is-ai,
+.md-typeset h2#where-to-start {
+  font-size: 1.5rem;
+}
+
+/* "Where to start" — extra space + purple top rule centred in the gap */
+.md-typeset h2#where-to-start {
+  border-top: 3px solid var(--ibm-purple);
+  margin-top: 2em;
+  padding-top: 2em;
+}
+.md-typeset hr { border-bottom: 1px solid var(--ibm-border); margin: 2.5rem 0 2rem; }
+
+/* ─── Labelled section divider ──────────────────────────────── */
+/* ─── Resources page — uniform table widths ─────────────────── */
+.resources-tables .md-typeset__scrollwrap,
+.resources-tables .md-typeset__scrollwrap { overflow: visible; }
+.resources-tables table {
+  display: table !important;
+  width: 100% !important;
+  table-layout: fixed;
+}
+.resources-tables table th:first-child,
+.resources-tables table td:first-child { width: 28%; }
+.resources-tables table th:last-child,
+.resources-tables table td:last-child { width: 22%; }
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 3.5rem 0 2.5rem;
+}
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--ibm-border);
+}
+.section-divider span {
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ibm-muted);
+  white-space: nowrap;
+}
 
 /* ─── Buttons ───────────────────────────────────────────────── */
 .md-typeset .md-button {
@@ -192,13 +315,26 @@
   background: #fff;
   border: 1px solid var(--ibm-border);
   border-radius: 8px;
-  padding: 1.1rem 1.1rem .9rem;
-  transition: box-shadow .2s, transform .2s;
+  padding: .7rem .9rem .6rem;
+  font-size: .7rem;
 }
+/* A little more padding for step cards and capabilities cards */
+.md-typeset .grid.cards > ul > li:has(.step-badge),
+#what-you-can-build + .grid.cards > ul > li {
+  padding: .9rem 1.1rem .8rem;
+}
+
 .md-typeset .grid.cards > ul > li:hover {
-  border-color: var(--ibm-border);
+  border-color: var(--ibm-blue);
   box-shadow: 0 4px 18px rgba(15, 98, 254, .13);
   transform: translateY(-2px);
+}
+/* Non-clickable cards (step cards, "What happens at this stage?") have no hover effect */
+.md-typeset .grid.cards > ul > li:has(.step-badge):hover,
+.md-typeset .grid.cards.no-hover-cards > ul > li:hover {
+  border-color: var(--ibm-border);
+  box-shadow: none;
+  transform: none;
 }
 .md-typeset .grid.cards > ul > li > hr { border-color: var(--ibm-border); margin: .6em 0; }
 .md-typeset .grid.cards > ul > li > p:first-child strong { color: var(--ibm-text); }
@@ -300,6 +436,69 @@
 }
 .md-typeset .home-blocks > ul > li a { font-weight: 600; }
 
+/* ─── Blueprint card (single large content card) ────────────── */
+.md-typeset .blueprint-card {
+  background: #fff;
+  border: 1px solid var(--ibm-border);
+  border-top: 4px solid var(--ibm-blue);
+  border-radius: 8px;
+  padding: 1.6rem 2rem 2rem;
+  margin: 1.6rem 0;
+}
+.md-typeset .blueprint-card h2 {
+  margin-top: .4em;
+}
+.md-typeset .blueprint-card hr {
+  margin: 1.5rem 0;
+}
+.md-typeset .blueprint-card .blueprint-subheading {
+  font-size: 1.1rem;
+  margin-bottom: .6rem;
+}
+.md-typeset .blueprint-card .md-button {
+  font-size: .6rem;
+  padding: .4em 1em;
+}
+
+/* ─── Clickable cards (whole card is a link) ────────────────── */
+.md-typeset .grid.cards.clickable-cards > ul > li {
+  position: relative;
+  transition: box-shadow .2s, transform .2s;
+}
+.md-typeset .grid.cards.clickable-cards > ul > li:hover {
+  box-shadow: 0 4px 18px rgba(15, 98, 254, .13);
+  transform: translateY(-2px);
+}
+.md-typeset .grid.cards.clickable-cards > ul > li a::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+/* Products & Tools cards: no outline or blue border in any state (hover, click, focus). */
+.md-typeset .grid.cards.neutral-border-cards > ul > li:hover,
+.md-typeset .grid.cards.neutral-border-cards > ul > li:active,
+.md-typeset .grid.cards.neutral-border-cards > ul > li:focus-within {
+  border-color: var(--ibm-border);
+}
+.md-typeset .grid.cards.neutral-border-cards > ul > li a,
+.md-typeset .grid.cards.neutral-border-cards > ul > li a:focus,
+.md-typeset .grid.cards.neutral-border-cards > ul > li a:focus-visible,
+.md-typeset .grid.cards.neutral-border-cards > ul > li a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ─── Accordion subtitle line ───────────────────────────────── */
+.md-typeset details > summary .accordion-sub {
+  border-top: 1px solid var(--ibm-blue-20);
+  color: var(--ibm-gray-70);
+  display: block;
+  font-size: .65rem;
+  font-weight: 400;
+  margin-top: .35rem;
+  padding-top: .35rem;
+}
+
 /* ─── Collapsible blocks (??? note) ─────────────────────────── */
 .md-typeset details.note,
 .md-typeset details.note > summary,
@@ -307,34 +506,111 @@
   border-color: var(--ibm-blue-20);
 }
 .md-typeset details.note { border-radius: 6px; box-shadow: none; }
+/* No focus outline or glow when an accordion is clicked or focused */
+.md-typeset details.note:focus-within { box-shadow: none; }
+.md-typeset details > summary,
+.md-typeset details > summary:focus,
+.md-typeset details > summary:focus-visible,
+.md-typeset summary.focus-visible {
+  outline: none;
+}
 .md-typeset details.note > summary,
 .md-typeset .admonition.note > .admonition-title {
   background: var(--ibm-blue-10);
   font-weight: 600;
+  font-size: .75rem;
 }
+.md-typeset details > p,
+.md-typeset details > ul,
+.md-typeset details > ol,
+.md-typeset details > table,
+.md-typeset details > h4 { font-size: .75rem; }
+
 .md-typeset details.note > summary::before,
 .md-typeset details.note > summary::after,
 .md-typeset .admonition.note > .admonition-title::before {
   background-color: var(--ibm-blue);
 }
 
+/* ─── Entry point cards — blue top strip ────────────────────── */
+.md-typeset .grid.cards.entry-point-cards > ul > li {
+  border-top: 4px solid var(--ibm-blue) !important;
+  padding-top: 1rem;
+}
+.md-typeset .grid.cards.entry-point-cards > ul > li:hover {
+  border-color: var(--ibm-border);
+  box-shadow: none;
+  transform: none;
+}
+
+/* ─── "What AI on IBM Z can do" list rows ───────────────────── */
+#ai-value + ul {
+  list-style: none;
+  margin: 1.2rem 0;
+  padding: 0;
+}
+#ai-value + ul > li {
+  background: #fff;
+  border: 1px solid var(--ibm-border);
+  border-left: 4px solid var(--ibm-blue);
+  border-radius: 6px;
+  margin-bottom: .8rem;
+  padding: .9rem 1.2rem;
+}
+#ai-value + ul > li .twemoji {
+  color: var(--ibm-blue);
+  margin-right: .4rem;
+  vertical-align: middle;
+}
+
 /* ─── Tables ────────────────────────────────────────────────── */
+
+/* Material's JS wraps tables in .md-typeset__scrollwrap (overflow-x:auto).
+   Override it so tables can fill the full content width. */
+.md-typeset__scrollwrap {
+  overflow-x: visible !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
 .md-typeset table:not([class]) {
   border: 1px solid var(--ibm-border);
   border-radius: 6px;
+  border-spacing: 0;
   box-shadow: none;
   font-size: .68rem;
+  table-layout: fixed;
+  width: 100% !important;
+}
+.md-typeset table:not([class]) thead,
+.md-typeset table:not([class]) tbody,
+.md-typeset table:not([class]) tr,
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  display: revert !important;
+  text-align: left !important;
+  width: auto;
 }
 .md-typeset table:not([class]) th {
-  background: var(--ibm-gray-10);
-  color: var(--ibm-text);
+  background: var(--ibm-purple);
+  color: #fff;
   font-weight: 600;
 }
 .md-typeset table:not([class]) td,
 .md-typeset table:not([class]) th { border-color: var(--ibm-border); }
+/* Tables wrapped in .no-row-hover do not highlight rows on hover */
+.md-typeset .no-row-hover table:not([class]) tbody tr:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+
+/* ─── Permalink anchors (¶) ─────────────────────────────────── */
+.md-typeset .headerlink { display: none; }
 
 /* ─── Misc ──────────────────────────────────────────────────── */
 .md-typeset a { font-weight: 500; }
+.md-typeset strong a, .md-typeset a strong { font-weight: 700; color: var(--ibm-blue); }
 .md-typeset strong { color: var(--ibm-text); }
 .md-footer-meta { background: #262626; }
 
@@ -345,3 +621,6 @@
   .md-typeset .home-hero h1 { font-size: 1.4rem; }
   .md-content { border-radius: 0; margin: 0; }
 }
+
+/* ─── Product anchors: keep the target clear of the sticky header ── */
+.md-typeset div[id]:empty { scroll-margin-top: 6rem; }

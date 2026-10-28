@@ -10,60 +10,72 @@ While AI implementations vary, many follow a similar path from identifying a bus
 
 ![The Three AI Entry Points: Turnkey solution, Select model via IBM or vendor, and Build your own model](ai-entry-points-diagram.png)
 
-#### 1 — Turnkey Solution
+<div class="grid cards entry-point-cards" markdown>
 
-Install, configure, deploy.
+- **1 — Turnkey Solution**
 
-IBM and its partners offer pre-built AI solutions that are ready to deploy with minimal setup. These solutions embed AI directly into the platform or provide vendor-managed models that are purpose-built for specific business domains.
+    *Install, configure, deploy.*
 
-##### When to choose this entry point
+    IBM and its partners offer pre-built AI solutions that are ready to deploy with minimal setup. These solutions embed AI directly into the platform or provide vendor-managed models that are purpose-built for specific business domains.
 
-- Your team has limited or no data science expertise
-- You need fast time-to-value with minimal build effort
-- A proven, pre-built solution already exists for your use case
-- You prefer a managed or embedded AI experience
+    **When to choose this entry point**
 
-[Browse Turnkey & ISV Solutions →](../products-tools/turnkey-solutions.md)
+    - Your team has limited or no data science expertise
+    - You need fast time-to-value with minimal build effort
+    - A proven, pre-built solution already exists for your use case
+    - You prefer a managed or embedded AI experience
 
-#### 2 — Select a Model via IBM or Vendor
+    [Browse Turnkey & ISV Solutions →](../products-tools/turnkey-solutions.md)
 
-Leverage an existing model with IBM Z inferencing acceleration.
+- **2 — Select a Model via IBM or Vendor**
 
-Choose a foundation model, open-source model, or vendor-supplied model and deploy it on IBM Z using IBM's inferencing infrastructure and hardware acceleration. No model training required — focus is on serving and integration.
+    *Leverage an existing model with IBM Z inferencing acceleration.*
 
-##### When to choose this entry point
+    Choose a foundation model, open-source model, or vendor-supplied model and deploy it on IBM Z using IBM's inferencing infrastructure and hardware acceleration. No model training required — focus is on serving and integration.
 
-- A suitable model already exists (IBM, open source, or vendor)
-- Your team has integration and deployment skills but not model training expertise
-- You want hardware-accelerated inferencing (Telum, Spyre) without building a model from scratch
-- You are deploying a foundation model or LLM for generative AI workloads
+    **When to choose this entry point**
 
-#### 3 — Build Your Own Model
+    - A suitable model already exists (IBM, open source, or vendor)
+    - Your team has integration and deployment skills but not model training expertise
+    - You want hardware-accelerated inferencing (Telum, Spyre) without building a model from scratch
+    - You are deploying a foundation model or LLM for generative AI workloads
 
-Full AI lifecycle — from your data to your deployed model.
+- **3 — Build Your Own Model**
 
-When no existing model meets your needs you can build one. This entry point covers the full lifecycle: find and prepare data, train a model on your enterprise data, test and validate it, optimize it for deployment, and serve it in production on IBM Z.
+    *Full AI lifecycle — from your data to your deployed model.*
 
-##### When to choose this entry point
+    When no existing model meets your needs you can build one. This entry point covers the full lifecycle: find and prepare data, train a model on your enterprise data, test and validate it, optimize it for deployment, and serve it in production on IBM Z.
 
-- Your use case is highly specific to your business and data
-- You have data science and machine learning expertise in-house
-- Existing models do not provide sufficient accuracy or coverage
-- You need full control over model behavior, training data, and versioning
+    **When to choose this entry point**
+
+    - Your use case is highly specific to your business and data
+    - You have data science and machine learning expertise in-house
+    - Existing models do not provide sufficient accuracy or coverage
+    - You need full control over model behavior, training data, and versioning
+
+</div>
+
+---
 
 ### Which Entry Point Is Right for You? { #which-entry-point }
 
+<div class="no-row-hover" markdown>
+
 | If you want to… | Entry Point |
-|----|----|
+|---|---|
 | Adopt AI quickly with no model training or data science team | 1 — Turnkey Solution |
 | Deploy a proven IBM, open-source, or vendor model on IBM Z hardware acceleration | 2 — Select a Model |
 | Train a model on your own data and own the full AI lifecycle | 3 — Build Your Own |
 
+</div>
+
 Once you've identified your entry point, explore the [AI Lifecycle](../prepare-data/lifecycle-overview.md) for implementation guidance, and [Products & Tools](../products-tools/overview.md) for a full catalog of available technologies.
+
+---
 
 ## Additional Use Case Resources { #next-steps }
 
-<div class="grid cards" markdown>
+<div class="grid cards clickable-cards" markdown>
 
 - **[Advanced Credit Card Fraud Detection](use-cases.md)**
 

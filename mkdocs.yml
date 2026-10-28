@@ -32,18 +32,17 @@ nav:
       - AI Platforms: products-tools/ai-platforms.md
       - Hardware: products-tools/hardware-solutions.md
       - Turnkey & ISV Solutions: products-tools/turnkey-solutions.md
-  - Getting Help: getting-help/terminology.md
-  - Updates and news:
-      - blog/index.md
+  - Resources & Contacts: getting-help/terminology.md
 
 ## DO NOT CHANGE BELOW THIS LINE
 
 # Copyright
-copyright: Copyright &copy; 2020 IBM Developer
+copyright: Copyright &copy; 2026 IBM Developer
 
 # Theme
 theme:
   name: material
+  custom_dir: overrides
   font:
     text: IBM Plex Sans
     code: IBM Plex Mono
@@ -61,24 +60,12 @@ theme:
 extra_css:
   - stylesheets/ibm-theme.css
 
+extra_javascript:
+  - javascripts/open-accordion.js
+
 # Plugins
 plugins:
   - search
-  - blog
-
-# Customization
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ibm
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ibmdeveloper
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/ibm/
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/user/developerworks
-    - icon: fontawesome/brands/dev
-      link: https://dev.to/ibmdeveloper
 
 # Extensions
 markdown_extensions:
@@ -91,6 +78,7 @@ markdown_extensions:
   - meta
   - toc:
       permalink: true
+      toc_depth: 2
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:

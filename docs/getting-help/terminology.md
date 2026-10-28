@@ -2,6 +2,8 @@
 
 A curated list of resources, links, and communities to help you get further with AI on IBM Z. If you need to reach out to our team, please email us at <aionz@us.ibm.com>.
 
+<div class="resources-tables" markdown>
+
 ## Official IBM Documentation { #ibm-docs }
 
 | Resource | Link |
@@ -58,3 +60,5 @@ A curated list of resources, links, and communities to help you get further with
 ## Staying Current { #staying-current }
 
 AI and IBM Z evolves rapidly. To stay current with new capabilities, hardware announcements, and software updates, [subscribe to our community](https://community.ibm.com/community/user/groupz?CommunityKey=038560b2-e962-4500-b0b5-e3745175a065) for update blogs.
+
+</div>

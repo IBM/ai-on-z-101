@@ -1,10 +1,13 @@
-# Prepare Data { #overview }
+# Prepare Data
+
+## Prepare Data
+
 
 Before a model can be trained, data must be cleaned, transformed, and structured for machine learning. IBM's AI on Z strategy is build and train anywhere, deploy on Z. Organizations may prepare data and develop models in existing environments or work directly on IBM Z, depending on their architecture, data residency, and operational requirements. This page helps you identify the tools that best fit your data sources, team, and AI objectives.
 
 ## What happens at this stage?
 
-<div class="grid cards" markdown>
+<div class="grid cards no-hover-cards" markdown>
 
 - **Access & Connect**
 
@@ -32,9 +35,7 @@ Data preparation is typically performed by **Data Engineers** and **Data Scienti
 
 Your starting point depends on where your data resides, how much preparation is required, and how your team prefers to work. Select a scenario to expand guidance.
 
-??? note "Preparing Historical Data for Model Training"
-
-    Existing tools · [PMML](../products-tools/model-formats.md#pmml) / [ONNX](../products-tools/model-formats.md#onnx)
+??? note "Preparing Historical Data for Model Training · PMML / ONNX<br><span class='accordion-sub'>Your data science team already uses cloud, data lake, or x86-based tooling to prepare historical training data, and you plan to deploy the trained model on IBM Z.</span>"
 
     Your data science team already uses cloud, data lake, or x86-based tooling to prepare historical training data, and you plan to deploy the trained model on IBM Z.
 
@@ -44,9 +45,7 @@ Your starting point depends on where your data resides, how much preparation is 
 
     *Note: Preparing data and building models off-platform is a practical approach. IBM Z is designed to deliver the greatest AI value when models are deployed and served on-platform, where they co-locate with enterprise data, business applications, and high-volume transactions.*
 
-??? note "Starting a POC or Demo"
-
-    [IBM Synthetic Data Sets](../products-tools/data-analytics.md#synthetic-data-sets)
+??? note "Starting a POC or Demo · IBM Synthetic Data Sets<br><span class='accordion-sub'>You don't have access to production data yet, or you want to move quickly without data privacy concerns.</span>"
 
     You don't have access to production data yet, or you want to move quickly without data privacy concerns. IBM Synthetic Data Sets are currently available for three use cases: banking, AML, and insurance.
 
@@ -54,9 +53,7 @@ Your starting point depends on where your data resides, how much preparation is 
 
     *Common approach:* Use synthetic data as a standalone starting point to develop and validate a model, then retrain with production data when it becomes available. Synthetic data can also be used to augment an existing real dataset when more training examples are needed to improve model accuracy — whether you train on-platform or off-platform.
 
-??? note "Building a Production Data Pipeline on IBM Z"
-
-    [IBM Z Platform for Apache Spark](../products-tools/data-analytics.md#apache-spark)
+??? note "Building a Production Data Pipeline on IBM Z · IBM Z Platform for Apache Spark<br><span class='accordion-sub'>You need to process large volumes of enterprise data, perform complex transformations, or create repeatable feature engineering workflows on-platform.</span>"
 
     You need to process large volumes of enterprise data, perform complex transformations, or create repeatable feature engineering workflows, and you want to keep all processing on-platform.
 
@@ -64,9 +61,7 @@ Your starting point depends on where your data resides, how much preparation is 
 
     *Common approach:* Build Spark pipelines that cleanse, transform, and enrich data before supplying it to model training frameworks.
 
-??? note "Writing Python-Based Data Preparation Scripts on IBM Z"
-
-    [Python AI Toolkit for IBM z/OS](../products-tools/ai-frameworks.md#python-ai-toolkit)
+??? note "Writing Python-Based Data Preparation Scripts on IBM Z · Python AI Toolkit for IBM z/OS<br><span class='accordion-sub'>Your team prefers Python-based workflows and you want to run data preparation scripts directly on z/OS, close to your enterprise data.</span>"
 
     Your team prefers Python-based workflows and you want to run data preparation scripts directly on z/OS, close to your enterprise data.
 
@@ -74,9 +69,7 @@ Your starting point depends on where your data resides, how much preparation is 
 
     *Common approach:* Use pandas and scikit-learn pipelines to cleanse, transform, and engineer features from Db2 or VSAM data, keeping all processing on-platform without exporting data to an external environment.
 
-??? note "Unified MLOps Platform"
-
-    [Red Hat OpenShift AI](../products-tools/ai-platforms.md#rhoai)
+??? note "Unified MLOps Platform · Red Hat OpenShift AI<br><span class='accordion-sub'>Multiple teams need shared workspaces, automated pipelines, model management, deployment, and governance across the AI lifecycle.</span>"
 
     Multiple teams need shared workspaces, automated pipelines, model management, deployment, and governance across the AI lifecycle.
 
@@ -88,7 +81,7 @@ Your starting point depends on where your data resides, how much preparation is 
 
 ## Next Steps { #next-step }
 
-<div class="grid cards" markdown>
+<div class="grid cards clickable-cards" markdown>
 
 - **[Build Models](../build-model/build-model.md)**
 
