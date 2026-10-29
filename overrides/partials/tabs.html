@@ -1,0 +1,63 @@
+{#- Override: adds hover dropdown menus to the tab bar -#}
+<nav class="md-tabs" aria-label="{{ lang.t('tabs') }}" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      {% for nav_item in nav.items %}
+        {% set class = "md-tabs__item" %}
+        {% if nav_item.active %}
+          {% set class = class ~ " md-tabs__item--active" %}
+        {% endif %}
+
+        {% if nav_item.children %}
+          {# Collect direct page children for the dropdown #}
+          {% set children = [] %}
+          {% for child in nav_item.children %}
+            {% if child.url %}
+              {% set _ = children.append(child) %}
+            {% elif child.children %}
+              {% for grandchild in child.children %}
+                {% if grandchild.url %}
+                  {% set _ = children.append(grandchild) %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+
+          {% if children | length > 1 %}
+            {# Tab with dropdown #}
+            <li class="{{ class }} md-tabs__item--dropdown">
+              <a href="{{ children[0].url | url }}" class="md-tabs__link">
+                {{ nav_item.title }}
+                <span class="md-tabs__dropdown-arrow">▾</span>
+              </a>
+              <ul class="md-tabs__dropdown">
+                {% for child in children %}
+                  <li class="md-tabs__dropdown-item{% if child.active %} md-tabs__dropdown-item--active{% endif %}">
+                    <a href="{{ child.url | url }}" class="md-tabs__dropdown-link">
+                      {{ child.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            {# Single child — plain tab #}
+            <li class="{{ class }}">
+              <a href="{{ (children[0].url if children else nav_item.url) | url }}" class="md-tabs__link">
+                {{ nav_item.title }}
+              </a>
+            </li>
+          {% endif %}
+
+        {% else %}
+          {# No children — plain tab #}
+          <li class="{{ class }}">
+            <a href="{{ nav_item.url | url }}" class="md-tabs__link">
+              {{ nav_item.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
