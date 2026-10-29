@@ -1,3 +1,8 @@
+---
+title: AI Governance & Model Lifecycle Management - IBM Z
+description: Enterprise AI governance, monitoring, drift detection, and compliance on IBM Z using watsonx.governance and MLz.
+---
+
 # AI Governance { #overview }
 
 ## AI Governance

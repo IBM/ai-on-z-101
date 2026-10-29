@@ -1,3 +1,8 @@
+---
+title: Non-Business & IT Operations AI Use Cases - AI on IBM Z
+description: Discover AI-powered solutions for DevOps, IT operations monitoring, and mainframe modernization on IBM Z and z/OS.
+---
+
 # Non-Business Use Cases { #non-business-intro }
 
 AI is helping simplify and enhance the IBM Z software experience, enabling users across the platform to work more efficiently, make informed decisions faster, and reduce operational complexity. Beyond business-focused AI use cases, IBM Z software incorporates AI-powered capabilities designed to improve productivity, administration, development, and system management. Explore the solutions below to learn more.

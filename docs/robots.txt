@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ibm.github.io/ai-on-z-101/sitemap.xml

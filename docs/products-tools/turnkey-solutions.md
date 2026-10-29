@@ -1,3 +1,8 @@
+---
+title: Turnkey AI & ISV Solutions on IBM Z
+description: Pre-built, ready-to-deploy AI solutions from IBM and partners for fraud detection, payments, AML, and enterprise workflows on IBM Z.
+---
+
 # Turnkey & ISV Solutions
 
 This page covers pre-built solutions from IBM and partners that run on IBM Z without requiring you to build a model from scratch. They are a good starting point if you have a specific use case and need a solution that is ready to deploy.

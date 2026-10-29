@@ -1,3 +1,8 @@
+---
+title: AI Hardware Accelerators - IBM Telum & Spyre on IBM Z
+description: Real-time on-chip AI acceleration on IBM Telum, Telum II, and IBM Spyre Accelerator for IBM Z and LinuxONE.
+---
+
 # Hardware Accelerators
 
 Telum and Spyre are the two AI accelerators available with IBM Z. Telum has an on-chip AI accelerator, designed for real-time inference on traditional ML and deep learning models. Spyre Accelerator for IBM Z is a separate card-based accelerator built for small decoder model workloads.

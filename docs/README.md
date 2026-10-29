@@ -1,3 +1,8 @@
+---
+title: AI on IBM Z 101 - Overview & Getting Started
+description: Official guide to AI and Machine Learning on IBM Z and LinuxONE. Discover architectures, use cases, AI lifecycle workflows, watsonx, and the IBM Telum AI accelerator.
+---
+
 <div class="home-hero" markdown>
 
 # AI on IBM Z 101

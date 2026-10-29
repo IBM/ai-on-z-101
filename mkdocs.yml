@@ -1,7 +1,8 @@
 # Project information
-site_name: AI on IBM Z 101 
+site_name: AI on IBM Z 101
 site_url: https://ibm.github.io/ai-on-z-101/
 site_author: IBM Developer
+site_description: Official guide to AI and Machine Learning on IBM Z and LinuxONE. Discover architectures, use cases, AI lifecycle workflows, watsonx, and the IBM Telum on-chip AI accelerator.
 
 # Repository
 repo_name: ai-on-z-101
@@ -66,6 +67,45 @@ extra_javascript:
 # Plugins
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        # Legacy root pages
+        'aitoolkitloz.md': 'products-tools/ai-frameworks.md'
+        'codingAIU.md': 'products-tools/hardware-solutions.md'
+        'help.md': 'getting-help/terminology.md'
+        'infusing.md': 'prepare-data/lifecycle-overview.md'
+        'onnxconv.md': 'products-tools/model-formats.md'
+        'onnxdlc.md': 'products-tools/model-formats.md'
+        'opensource.md': 'products-tools/ai-frameworks.md'
+        'pmmlconv.md': 'products-tools/model-formats.md'
+        'pyaitoolkit.md': 'products-tools/ai-frameworks.md'
+        'pytorch.md': 'products-tools/ai-frameworks.md'
+        'resources.md': 'getting-help/terminology.md'
+        'snapml.md': 'products-tools/ai-frameworks.md'
+        'solutiontemplates.md': 'use-cases/ai-solution-template.md'
+        'tensorflow.md': 'products-tools/ai-frameworks.md'
+        'terminology.md': 'getting-help/terminology.md'
+        'tritonis.md': 'products-tools/inference-serving.md'
+        'zAccel.md': 'products-tools/hardware-solutions.md'
+        # Legacy blog posts
+        'blog/index.md': 'README.md'
+        'blog/posts/IBM_2Q_2025_Announcement.md': 'README.md'
+        'blog/posts/ai-solution-templates.md': 'use-cases/ai-solution-template.md'
+        'blog/posts/ai-toolkit.md': 'products-tools/ai-frameworks.md'
+        'blog/posts/redbooks.md': 'getting-help/terminology.md'
+        'blog/posts/toolkit-pytorch.md': 'products-tools/ai-frameworks.md'
+        'blog/posts/wmlz-new.md': 'products-tools/ai-platforms.md'
+        # Legacy dated blog URLs
+        'blog/2023/07/07/updates-to-our-101-pages/index.md': 'README.md'
+        'blog/2024/01/12/launch-of-ai-toolkit-for-ibm-z-and-linuxone/index.md': 'products-tools/ai-frameworks.md'
+        'blog/2024/03/15/launch-of-ai-solution-templates-on-ibm-z--linuxone/index.md': 'use-cases/ai-solution-template.md'
+        'blog/2024/06/20/new-linux-on-z-focused-redbook-asset/index.md': 'getting-help/terminology.md'
+        'blog/2024/11/22/updates-to-our-101-pages/index.md': 'README.md'
+        'blog/archive/2023/index.md': 'README.md'
+        'blog/archive/2024/index.md': 'README.md'
+        'blog/category/documentation/index.md': 'README.md'
+        'blog/category/general/index.md': 'README.md'
+        'blog/category/site-updates/index.md': 'README.md'
 
 # Extensions
 markdown_extensions:
