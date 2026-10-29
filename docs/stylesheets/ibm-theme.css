@@ -161,18 +161,16 @@
 
 /* ─── Sidebars ──────────────────────────────────────────────── */
 
-/* Hide both sidebars — navigation via top tab dropdowns */
-.md-sidebar--primary { display: none; }
-.md-sidebar--secondary { display: none; }
-
-/* At wide viewports give the content a small left breathing room */
+/* Hide sidebars on wide screens where navigation is handled via top tab dropdowns */
 @media screen and (min-width: 76.25em) {
+  .md-sidebar--primary { display: none; }
+  .md-sidebar--secondary { display: none; }
   .md-content { margin-left: 1.5rem; }
 }
 
-.md-nav { font-size: .64rem; }
+.md-nav { font-size: .75rem; }
 .md-sidebar--primary .md-nav__title {
-  font-size: .55rem;
+  font-size: .7rem;
   font-weight: 600;
   letter-spacing: .8px;
   text-transform: uppercase;
