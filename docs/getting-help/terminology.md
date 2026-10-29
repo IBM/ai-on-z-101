@@ -1,3 +1,8 @@
+---
+title: Resources, Communities & Contacts - AI on IBM Z
+description: Official documentation, community links, solution blueprints, and contact information for AI on IBM Z and LinuxONE.
+---
+
 # Resources & Contacts { #resources-contacts }
 
 A curated list of resources, links, and communities to help you get further with AI on IBM Z. If you need to reach out to our team, please email us at <aionz@us.ibm.com>.

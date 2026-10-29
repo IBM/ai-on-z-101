@@ -1,3 +1,8 @@
+---
+title: Advanced Credit Card Fraud Detection on IBM Z
+description: Multi-model ensemble AI blueprint for high-throughput, real-time credit card fraud detection on IBM z17 and LinuxONE.
+---
+
 # Advanced Credit Card Fraud Detection { #ai-solution-patterns }
 
 Explore a end-to-end solution blueprint demonstrating how to build, deploy, and evaluate a multi-model ensemble AI system on IBM z17. Review the architecture, key capabilities, model pipelines, and system requirements below.

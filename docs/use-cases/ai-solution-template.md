@@ -1,3 +1,8 @@
+---
+title: AI Solution Blueprints & Templates - AI on IBM Z
+description: Step-by-step AI solution blueprints for Generative AI, fraud detection, credit risk, AML, and health insurance on IBM Z.
+---
+
 # Solution Blueprints { #solution-templates }
 
 Additional AI solution patterns for IBM Z — covering generative AI, fraud detection, credit risk, health insurance, data preprocessing, and anti-money laundering. Each pattern walks you through building, deploying, and integrating an AI model into a business application with working code.

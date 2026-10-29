@@ -1,3 +1,8 @@
+---
+title: Products & Tools Overview - AI on IBM Z
+description: Explore the full stack of AI products and tools for IBM Z, from hardware accelerators and frameworks to inference servers and platforms.
+---
+
 # Products & Tools — Overview
 
 ## Products & Tools Overview { #overview }

@@ -1,3 +1,8 @@
+---
+title: Data & Analytics Tools for IBM Z
+description: Data analytics and preparation tools for IBM Z including IBM Z Platform for Apache Spark and IBM Synthetic Data Sets.
+---
+
 # Data & Analytics Tools
 
 IBM Z Platform for Apache Spark handles large-scale data preparation and analytics directly on Z. IBM Synthetic Data Sets provides realistic artificial data for key IBM Z AI business use cases when real data is restricted or unavailable.
