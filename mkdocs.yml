@@ -2,7 +2,7 @@
 site_name: AI on IBM Z 101
 site_url: https://ibm.github.io/ai-on-z-101/
 site_author: IBM Developer
-site_description: Official guide to AI and Machine Learning on IBM Z and LinuxONE. Discover architectures, use cases, AI lifecycle workflows, watsonx, and the IBM Telum on-chip AI accelerator.
+site_description: Implement AI for business where your mission-critical data and transactions reside, enabling real-time intelligence, minimizing latency, and maintaining data colocation on the world's most secure and resilient enterprise platform.
 
 # Repository
 repo_name: ai-on-z-101
