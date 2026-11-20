@@ -23,6 +23,10 @@ Using IBM Synthetic Data Sets, organizations can train and evaluate models again
 
 The trained models are deployed with Machine Learning for IBM z/OS (MLz), where scoring endpoints enable the models to be integrated into an ensemble inference pipeline and enterprise applications. The end-to-end use case covers AI Model Training, AI Model Deployment, and AI Model Analysis, demonstrating how organizations can operationalize multiple AI models on IBM z17 to identify potential fraud and support decisions to approve, flag, or block transactions.
 
+<div class="video-embed" markdown>
+<iframe src="https://cdnapisec.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/39954662/partner_id/1773841?iframeembed=true&playerId=kaltura_player&entry_id=1_02r7bvfg" title="Advanced Credit Card Fraud Detection on IBM z17" allowfullscreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" loading="lazy"></iframe>
+</div>
+
 ---
 
 **Architecture**
